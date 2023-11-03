@@ -1,0 +1,21 @@
+---
+// 2가지 (메인화면, 서브화면일때) headerType 설정
+type HeaderProps = {
+	type: "main" | "sub";
+	title: string;
+};
+
+// Prop 받기
+const { type, title } = Astro.props as HeaderProps;
+---
+
+<!-- Hedaer -->
+<div id="header" class={type === "main" ? "main-header" : "sub-header"}>
+	<!-- 'main','sub' 타입에 따라 다른 내용 랜더링 -->
+  {type === 'main' ? (
+    <h1>메인헤더</h1>
+  ) : (
+    <h1>서브헤더</h1>
+  )}
+</div>
+<!-- Hedaer eee -->
