@@ -11,8 +11,10 @@ const idName = "main";
 		<nav>
 			<h1 class="nav-logo"><a href="#">로고이미지</a></h1>
 			<ul class="nav-menu">
-				<li><a href="#">Introduction</a></li>
-				<li class="nav-menu__technology">
+				<li>
+					<a href="#">Introduction</a>
+				</li>
+				<li>
 					<a href="#">Technology</a>
 					<ul class="sub-menu sub-menu--display-show">
 						<li><a href="#">SDR Technology</a></li>
@@ -20,19 +22,50 @@ const idName = "main";
 						<li><a href="#">Future Roadmap</a></li>
 					</ul>
 				</li>
-				<li class="nav-menu__solutions">
+				<li>
 					<a href="#">Solutions</a>
-					<!-- <ul class="sub-menu sub-menu--display-show">
+					<ul class="sub-menu sub-menu--display-show">
 						<li><a href="#">SDR Technology</a></li>
 						<li><a href="#">Audio DSP Technology</a></li>
 						<li><a href="#">Future Roadmap</a></li>
-					</ul> -->
+					</ul>
 				</li>
-				<li><a href="#">News</a></li>
+				<li>
+					<a href="#">News</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
 </Layout>
+
+<!-- <script>
+
+	const $$nav_menu_li = document.querySelectorAll(".nav-menu>li");
+
+	$$nav_menu_li.forEach(function (el) {
+		// 0. 각각 li를 호버했을 시.
+		el.addEventListener("mouseenter", function () {
+			// 1. 모든 li를 on을 없애줌
+			$$nav_menu_li.forEach(function (li) {
+				li.classList.remove("on");
+			});
+
+			// 2. 내가 호버한것만 li에 on을 붙임
+			el.classList.add("on");
+		});
+	});
+
+	const $$subMenu = document.querySelectorAll(".sub-menu");
+
+	$$subMenu.forEach(function (el) {
+		el.addEventListener("mouseleave", function () {
+			$$nav_menu_li.forEach(function(el){
+				el.classList.remove("on")
+			})
+		});
+	});
+
+</script> -->
 
 <script>
 	const menuTec = document.querySelector(".nav-menu__technology");
@@ -41,7 +74,11 @@ const idName = "main";
 	menuTec.addEventListener("mouseover", () => {
 		subMenu.style.display = "block";
 	});
-	menuTec.addEventListener("mouseout", () => {
+	// menuTec.addEventListener("mouseout", () => {
+	// 	subMenu.style.display = "none";
+	// });
+
+	document.querySelector('.sub-menu')?.addEventListener("mouseleave",function(){
 		subMenu.style.display = "none";
 	});
 </script>

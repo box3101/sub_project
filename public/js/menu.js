@@ -2,7 +2,7 @@
 	1. 각 GNB>LI를 호버했을때 모든 GBN>LI의 Class on을 제거
 	2. 호버한 GNB>LI 메뉴의 class on을 추가
   3. 모든 .sub-menu의 마우스 범위를 넘어가면 든 GBN>LI의 Class on을 제거
-	*/
+*/
 
 // 1,2
 document.addEventListener("DOMContentLoaded", function () {
