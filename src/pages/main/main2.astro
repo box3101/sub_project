@@ -7,11 +7,42 @@ const idName = "main";
 ---
 
 <Layout pageTitle={pageTitle} idName={idName}>
-	<header id="header" class="header">
-		<!-- 작업 -->
+	<link rel="stylesheet" href="../css/ui.css" />
+	<header class="header">
+		<nav>
+			<h1 class="nav-logo"><a href="#">로고이미지</a></h1>
+			<ul class="nav-menu">
+				<li><a href="#">Introduction</a></li>
+				<li class="nav-menu__technology">
+					<a href="#">Technology</a>
+					<ul class="sub-menu sub-menu--display-show">
+						<li><a href="#">SDR Technology</a></li>
+						<li><a href="#">Audio DSP Technology</a></li>
+						<li><a href="#">Future Roadmap</a></li>
+					</ul>
+				</li>
+				<li class="nav-menu__solutions">
+					<a href="#">Solutions</a>
+					<!-- <ul class="sub-menu sub-menu--display-show">
+						<li><a href="#">SDR Technology</a></li>
+						<li><a href="#">Audio DSP Technology</a></li>
+						<li><a href="#">Future Roadmap</a></li>
+					</ul> -->
+				</li>
+				<li><a href="#">News</a></li>
+			</ul>
+		</nav>
 	</header>
 </Layout>
 
 <script>
-	// 작업
+	const menuTec = document.querySelector(".nav-menu__technology");
+	const subMenu = document.querySelector(".sub-menu--display-show");
+
+	menuTec.addEventListener("mouseover", () => {
+		subMenu.style.display = "block";
+	});
+	menuTec.addEventListener("mouseout", () => {
+		subMenu.style.display = "none";
+	});
 </script>

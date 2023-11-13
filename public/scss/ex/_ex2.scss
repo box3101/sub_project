@@ -1,0 +1,62 @@
+a:link,
+a:visited,
+a:visited,
+a:visited {
+	color: inherit;
+}
+
+body {
+	background: rgb(226, 226, 226);
+}
+
+.header {
+	margin: 0 auto;
+	background: #d9d9d9;
+
+	nav {
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		.nav-logo {
+			margin-right: 200px;
+		}
+	}
+
+	.nav-menu {
+		color: #fff;
+		font-weight: 600;
+		font-size: 25px;
+		display: flex;
+		gap: 100px;
+		text-align: center;
+
+		li {
+			width: 250px;
+		}
+
+		.nav-menu__technology {
+		}
+
+		.sub-menu {
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			bottom: -192px;
+
+			li {
+				background: #fff;
+				color: #000;
+				padding: 23px;
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+	}
+
+	.sub-menu--display-show {
+		display: none;
+	}
+}
