@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "sass": "concurrently \"sass --watch src/scss/ui.scss:src/css/ui.css\" \"sass --watch src/scss/ui.scss:public/assets/css/ui.css\""
+    "sass": "concurrently \"sass --watch public/scss/ui.scss:public/css/ui.css\" \"sass --watch public/scss/ui.scss:src/css/ui.css\""
   },
   "dependencies": {
     "astro": "^3.4.3",

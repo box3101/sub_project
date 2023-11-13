@@ -1,4 +1,6 @@
 ---
+import navMenu from "../../../nav.js";
+
 // 2가지 (메인화면, 서브화면일때) headerType 설정
 type HeaderProps = {
 	type: "main" | "sub";
@@ -6,16 +8,39 @@ type HeaderProps = {
 };
 
 // Prop 받기
-const { type, title } = Astro.props as HeaderProps;
+const { type } = Astro.props as HeaderProps;
 ---
 
-<!-- Hedaer -->
-<div id="header" class={type === "main" ? "main-header" : "sub-header"}>
-	<!-- 'main','sub' 타입에 따라 다른 내용 랜더링 -->
-  {type === 'main' ? (
-    <h1>메인헤더</h1>
-  ) : (
-    <h1>서브헤더</h1>
-  )}
+<!-- Hedaer --><!-- 'main','sub' 타입에 따라 다른 내용 랜더링 -->
+<div id="header" class={type === "main" ? "header" : "header sub"}>
+	<div class="inner">
+		<h1 class="logo">
+			<a href="#">
+				<img src="" alt="" />
+			</a>
+		</h1>
+		<ul id="gnb" class="gnb">
+			{
+				navMenu.map(function (el) {
+					return (
+						<li>
+							<a href={`../sub/${el.title}.html`}>{el.title}</a>
+							{el.items ? (
+								<ul class="sub-menu">
+									{el.items.map(function (a) {
+										return (
+											<li>
+												<a href={`../sub/${a.url}.html`}>${a.title}</a>
+											</li>
+										);
+									})}
+								</ul>
+							) : null}
+						</li>
+					);
+				})
+			}
+		</ul>
+	</div>
 </div>
 <!-- Hedaer eee -->

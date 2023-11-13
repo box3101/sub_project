@@ -1,7 +1,4 @@
 ---
-
-import Header from "../layouts/Header.astro";
-
 const { pageTitle, idName } = Astro.props;
 ---
 
@@ -12,14 +9,20 @@ const { pageTitle, idName } = Astro.props;
 		<meta name="description" content="프로젝트 설명" />
 		<meta name="viewport" content="width=device-width" />
 		<!-- 스타일 -->
-		<link rel="stylesheet" href="../assets/css/ui.css" />
+		<link rel="stylesheet" href="../../css/ui.css" />
+		<!-- 스타일 eee-->
 		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<main id={idName} class={idName}>
 			<div id="wrap">
-				<slot></slot>
+				<slot />
 			</div>
 		</main>
+
+		<!-- 스크립트 -->
+		<script defer src="../../js/menu.js"></script>
+		<script defer src="../../js/scroll.js"></script>
+		<!-- 스크립트 eee-->
 	</body>
 </html>

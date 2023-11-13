@@ -3,9 +3,21 @@ import Layout from "../../layouts/Layout.astro";
 import Header from "../../layouts/Header.astro";
 
 const pageTitle = `Home`;
-const idName = 'main';
+const idName = "main";
 ---
 
 <Layout pageTitle={pageTitle} idName={idName}>
-  <Header type="main"></Header>
+	<Header type="main" />
+
+	<section class="box1"></section>
+	<section class="box2"></section>
+	<section class="box3"></section>
+	<section class="box4"></section>
+
+	<ul id="navi">
+		<li><span>About us</span></li>
+		<li><span>About us2</span></li>
+		<li><span>About us3</span></li>
+		<li><span>About us4</span></li>
+	</ul>
 </Layout>
