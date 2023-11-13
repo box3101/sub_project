@@ -16,7 +16,7 @@ const idName = "main";
 				</li>
 				<li>
 					<a href="#">Technology</a>
-					<ul class="sub-menu sub-menu--display-show">
+					<ul class="sub-menu">
 						<li><a href="#">SDR Technology</a></li>
 						<li><a href="#">Audio DSP Technology</a></li>
 						<li><a href="#">Future Roadmap</a></li>
@@ -24,7 +24,7 @@ const idName = "main";
 				</li>
 				<li>
 					<a href="#">Solutions</a>
-					<ul class="sub-menu sub-menu--display-show">
+					<ul class="sub-menu">
 						<li><a href="#">SDR Technology</a></li>
 						<li><a href="#">Audio DSP Technology</a></li>
 						<li><a href="#">Future Roadmap</a></li>
@@ -68,17 +68,24 @@ const idName = "main";
 </script> -->
 
 <script>
-	const menuTec = document.querySelector(".nav-menu__technology");
-	const subMenu = document.querySelector(".sub-menu--display-show");
+	const subMenu = document.querySelectorAll(".sub-menu");
+	const navMenuli = document.querySelectorAll(".nav-menu > li");
+	console.log(navMenuli);
 
-	menuTec.addEventListener("mouseover", () => {
-		subMenu.style.display = "block";
+	navMenuli.forEach(function (el) {
+		el.addEventListener("mouseenter", function () {
+			navMenuli.forEach(function (el) {
+				el.classList.remove("on");
+			});
+			el.classList.add("on");
+		});
 	});
-	// menuTec.addEventListener("mouseout", () => {
-	// 	subMenu.style.display = "none";
-	// });
 
-	document.querySelector('.sub-menu')?.addEventListener("mouseleave",function(){
-		subMenu.style.display = "none";
+	subMenu.forEach(function (el) {
+		el.addEventListener("mouseleave", function () {
+			navMenuli.forEach(function (el) {
+				el.classList.remove("on");
+			});
+		});
 	});
 </script>
