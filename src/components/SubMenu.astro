@@ -1,0 +1,21 @@
+---
+const { items } = Astro.props;
+---
+
+<nav class="sub-menu v-motion">
+	<ul>
+		{
+			items.map((el,idx) => (
+				<li>
+					<a href={'#a' + idx}>{el.name}</a>
+          { /*level2가 있을 경우 */ } 
+					{el.level2 && el.level2.length > 0 && (
+						<ul class="level2-menu">
+							{el.level2.map((a,idx) => <li><a href={idx}>{a.name}</a></li>)}
+						</ul>
+					)}
+				</li>
+			))
+		}
+	</ul>
+</nav>

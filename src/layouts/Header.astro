@@ -15,8 +15,7 @@ const { type } = Astro.props as HeaderProps;
 <div id="header" class={type === "main" ? "header" : "header sub"}>
 	<div class="inner">
 		<h1 class="logo">
-			<a href="#">
-				<img src="" alt="" />
+			<a href="../main/main.html">
 			</a>
 		</h1>
 		<ul id="gnb" class="gnb">
@@ -24,7 +23,7 @@ const { type } = Astro.props as HeaderProps;
 				navMenu.map(function (el) {
 					return (
 						<li>
-							<a href={`../sub/${el.title}.html`}>{el.title}</a>
+							<a href={`../sub/${el.url}.html`}>{el.title}</a>
 							{el.items ? (
 								<ul class="sub-menu">
 									{el.items.map(function (a) {

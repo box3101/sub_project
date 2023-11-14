@@ -16,3 +16,23 @@ body,html{
 #navi { position:fixed; right:50px; top:50%; margin-top:-60px;}
 #navi li { width:20px; height:20px; background:#fff; margin-bottom:10px; border-radius:10px; cursor:pointer;}
 #navi li.on { background:#000;}
+
+.v-motion {
+  animation: motion-fadeInLeft 0.5s ease-in-out;
+}
+
+.v-motion-fast {
+  animation: motion-fadeInLeft 1s ease-in-out;
+  animation-delay: 0.1s;
+}
+
+@keyframes motion-fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

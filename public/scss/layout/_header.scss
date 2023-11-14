@@ -4,6 +4,15 @@
   top: 0;
 	height: 80px;
 	border-bottom: 1px solid #aaa;
+  &.sub{
+    background: #fff;
+    .gnb > li > a{
+      color: #000;
+    }
+    .gnb > li .sub-menu{
+      top: 94px;
+    }
+  }
 	.inner {
 		height: 100%;
 	}
@@ -15,6 +24,7 @@
 		background: #aaa;
     a{
       display:block;
+      height: 100%;
     }
 	}
 	.gnb {

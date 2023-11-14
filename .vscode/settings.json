@@ -1,0 +1,46 @@
+{
+	"editor.wordWrap": "on", // 텍스트가 화면 폭을 넘어갈 때 자동으로 줄 바꿈
+	"editor.fontFamily": "d2coding,verdana", // 에디터에서 사용할 폰트
+	"window.zoomLevel": 0.5, // 윈도우의 확대/축소 레벨
+	"editor.mouseWheelZoom": true, // 마우스 휠로 폰트 크기 조절
+	"editor.lineNumbers": "on", // 줄 번호 표시
+	"powermode.enabled": true, // Power Mode 확장 기능 사용 여부
+	"editor.colorDecorators": true, // 색상 표시기 사용 여부
+	"liveServer.settings.donotShowInfoMsg": true, // Live Server 확장 기능의 정보 메시지 표시 여부
+	"workbench.iconTheme": "vscode-icons", // 아이콘 테마
+	"vsicons.dontShowNewVersionMessage": true, // vscode-icons 확장 기능의 새 버전 메시지 표시 여부
+	"liveServer.settings.CustomBrowser": "chrome", // Live Server 확장 기능에서 사용할 웹 브라우저
+	"liveServer.settings.donotVerifyTags": true, // Live Server 확장 기능에서 태그 검증 여부
+	"workbench.colorTheme": "Monokai Dimmed", // 컬러 테마
+	"editor.tabSize": 2, // 탭 크기
+	"prettier.tabWidth": 2, // Prettier 확장 기능의 탭 크기
+	"prettier.useTabs": true, // Prettier 확장 기능에서 탭 사용 여부
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features" // HTML 파일의 기본 포맷터
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features" // JSON 파일의 기본 포맷터
+	},
+	"powermode.shake.enabled": false, // Power Mode 확장 기능에서 화면 흔들림 효과 사용 여부
+	"powermode.explosions.size": 30, // Power Mode 확장 기능에서 폭발 효과 크기
+	"powermode.explosions.backgroundMode": "image", // Power Mode 확장 기능에서 폭발 효과 배경 모드
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // SCSS 파일의 기본 포맷터
+	},
+	"terminal.integrated.defaultProfile.windows": "Command Prompt", // 터미널의 기본 프로필
+	"files.autoSave": "onFocusChange", // 파일 자동 저장 옵션
+	"git.autofetch": true, // Git 자동 가져오기 옵션
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode" // Astro 파일의 기본 포맷터
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // CSS 파일의 기본 포맷터
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+	"bitoAI.codeCompletion.setAutoCompletionTriggerLogic": 250,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}

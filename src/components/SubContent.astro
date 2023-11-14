@@ -1,0 +1,13 @@
+---
+const { subCntTit } = Astro.props;
+
+---
+
+<div class="sub-contents v-motion-fast ">
+  <h1 class="sub-title">
+    {subCntTit}
+  </h1>
+  <div class="sub-info">
+    <slot></slot>
+  </div>
+</div>

@@ -1,0 +1,159 @@
+.sub-banner {
+	margin-top: 80px;
+	height: 200px;
+	background: burlywood;
+	.inner {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		article {
+			opacity: 0;
+			z-index: 1;
+			&.on {
+				display: block;
+				opacity: 1;
+				z-index: 2;
+
+				h1 span {
+					transform: translateY(0%);
+				}
+			}
+			h1 {
+				color: #fff;
+				font-size: 45px;
+				font-weight: 500;
+				overflow: hidden;
+				line-height: 2;
+				padding-right: 10px;
+				span {
+					display: inline-block;
+					transform: translateY(100%);
+					transition-duration: 0.5s;
+					text-shadow: 10px 10px 0 rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+	}
+}
+
+.sub-layout {
+	padding-top: 80px;
+	.inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		align-items: flex-start;
+	}
+	.sub-menu {
+		@include make-before {
+			position: absolute;
+			left: 0;
+			top: 3px;
+			height: calc(100% - 18px);
+			width: 2px;
+			background: #A265CA;
+		}
+		position: sticky;
+		top: 110px;
+		flex: 0 0 200px;
+		> ul {
+			margin-top: -12px;
+			>li {
+				padding-left: 22px;
+				>a {
+					display: inline-block;
+					padding: 12px 0;
+					font-size: 16px;
+					color: #000;
+					&:hover{
+						color:  $main-color;
+					}
+				}
+				&.on {
+					color: $main-color;
+					position: relative;
+					@include make-before {
+						position: absolute;
+						width: 15px;
+						height: 15px;
+						background: $main-color;
+						border-radius: 50%;
+						left: -5px;
+						top: 14px;
+					}
+					> a {
+						color: $main-color;
+					}
+					.level2-menu{
+						opacity: 1;
+						visibility:visible;
+						height: auto;
+					}
+				}
+				.level2-menu {
+					padding-left: 20px;
+					opacity: 0;
+					visibility: hidden;
+					height: 0;
+					// transition: all 0.2s ease-out;
+					li {
+						padding: 5px 0;
+						a{
+							position: relative;
+							@include make-before{
+								position: absolute;
+								left: -19px;
+								top: 50%; transform: translateY(-50%);
+								width: 7px;
+								height: 1px;
+								background: #666;
+							}
+							@include make-after{
+								position: absolute;
+								left: -19px;
+								top: 50%; transform: translateY(-50%);
+								width: 7px;
+								height: 1px;
+								background: #666;
+							}
+							&:before{
+								transform: translateY(-2px) rotate(45deg);
+							}
+							&:after{
+								transform: translateY(2px) rotate(-45deg);
+							}
+							display: inline-block;
+							color: #666;
+							padding: 4px 0;
+							font-size: 14px;
+							&:hover{
+								color:  $main-color;
+							}
+						}
+						&.on{
+							a{
+								color: $main-color;
+								&::before,&::after{
+									background: $main-color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.sub-contents {
+		padding-top: 20px;
+		flex: 1;
+		min-height: 2000px;
+		background: #fff;
+		.sub-title {
+			text-align: center;
+			font-size: 45px;
+			color: #262626;
+		}
+	}
+}
+
+

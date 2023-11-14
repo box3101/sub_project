@@ -150,6 +150,15 @@ a {
   height: 80px;
   border-bottom: 1px solid #aaa;
 }
+.header.sub {
+  background: #fff;
+}
+.header.sub .gnb > li > a {
+  color: #000;
+}
+.header.sub .gnb > li .sub-menu {
+  top: 94px;
+}
 .header .inner {
   height: 100%;
 }
@@ -164,6 +173,7 @@ a {
 }
 .header .logo a {
   display: block;
+  height: 100%;
 }
 .header .gnb {
   height: 100%;
@@ -270,6 +280,189 @@ body, html {
   background: #000;
 }
 
+.v-motion {
+  animation: motion-fadeInLeft 0.5s ease-in-out;
+}
+
+.v-motion-fast {
+  animation: motion-fadeInLeft 1s ease-in-out;
+  animation-delay: 0.1s;
+}
+
+@keyframes motion-fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.sub-banner {
+  margin-top: 80px;
+  height: 200px;
+  background: burlywood;
+}
+.sub-banner .inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.sub-banner .inner article {
+  opacity: 0;
+  z-index: 1;
+}
+.sub-banner .inner article.on {
+  display: block;
+  opacity: 1;
+  z-index: 2;
+}
+.sub-banner .inner article.on h1 span {
+  transform: translateY(0%);
+}
+.sub-banner .inner article h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 500;
+  overflow: hidden;
+  line-height: 2;
+  padding-right: 10px;
+}
+.sub-banner .inner article h1 span {
+  display: inline-block;
+  transform: translateY(100%);
+  transition-duration: 0.5s;
+  text-shadow: 10px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+.sub-layout {
+  padding-top: 80px;
+}
+.sub-layout .inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+}
+.sub-layout .sub-menu {
+  position: sticky;
+  top: 110px;
+  flex: 0 0 200px;
+}
+.sub-layout .sub-menu:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  height: calc(100% - 18px);
+  width: 2px;
+  background: #A265CA;
+}
+.sub-layout .sub-menu > ul {
+  margin-top: -12px;
+}
+.sub-layout .sub-menu > ul > li {
+  padding-left: 22px;
+}
+.sub-layout .sub-menu > ul > li > a {
+  display: inline-block;
+  padding: 12px 0;
+  font-size: 16px;
+  color: #000;
+}
+.sub-layout .sub-menu > ul > li > a:hover {
+  color: #A265CA;
+}
+.sub-layout .sub-menu > ul > li.on {
+  color: #A265CA;
+  position: relative;
+}
+.sub-layout .sub-menu > ul > li.on:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #A265CA;
+  border-radius: 50%;
+  left: -5px;
+  top: 14px;
+}
+.sub-layout .sub-menu > ul > li.on > a {
+  color: #A265CA;
+}
+.sub-layout .sub-menu > ul > li.on .level2-menu {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+.sub-layout .sub-menu > ul > li .level2-menu {
+  padding-left: 20px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+.sub-layout .sub-menu > ul > li .level2-menu li {
+  padding: 5px 0;
+}
+.sub-layout .sub-menu > ul > li .level2-menu li a {
+  position: relative;
+  display: inline-block;
+  color: #666;
+  padding: 4px 0;
+  font-size: 14px;
+}
+.sub-layout .sub-menu > ul > li .level2-menu li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -19px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 1px;
+  background: #666;
+}
+.sub-layout .sub-menu > ul > li .level2-menu li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -19px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 1px;
+  background: #666;
+}
+.sub-layout .sub-menu > ul > li .level2-menu li a:before {
+  transform: translateY(-2px) rotate(45deg);
+}
+.sub-layout .sub-menu > ul > li .level2-menu li a:after {
+  transform: translateY(2px) rotate(-45deg);
+}
+.sub-layout .sub-menu > ul > li .level2-menu li a:hover {
+  color: #A265CA;
+}
+.sub-layout .sub-menu > ul > li .level2-menu li.on a {
+  color: #A265CA;
+}
+.sub-layout .sub-menu > ul > li .level2-menu li.on a::before, .sub-layout .sub-menu > ul > li .level2-menu li.on a::after {
+  background: #A265CA;
+}
+.sub-layout .sub-contents {
+  padding-top: 20px;
+  flex: 1;
+  min-height: 2000px;
+  background: #fff;
+}
+.sub-layout .sub-contents .sub-title {
+  text-align: center;
+  font-size: 45px;
+  color: #262626;
+}
+
 /*이은영*/
 /*김영은*/
 a:link,
@@ -331,9 +524,6 @@ body {
   padding: 23px;
   font-size: 18px;
   font-weight: 500;
-}
-.header2 .sub-menu--display-show {
-  display: none;
 }
 
 /*이찬용*/
