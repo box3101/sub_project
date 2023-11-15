@@ -38,7 +38,7 @@
 			len = $$level2_li.length;
 
 			for (var i = 0; i < len; i++) {
-				var insertCode = $$wrap_div[i].offsetTop + 200;
+				var insertCode = $$wrap_div[i].offsetTop + 210;
 				posArr.push(insertCode);
 			}
 

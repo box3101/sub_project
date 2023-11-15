@@ -4,7 +4,6 @@ const subBannerElement = document.querySelector('.sub-banner');
 // 해당 요소가 존재하는 경우, 스크립트를 실행합니다.
 if (subBannerElement) {
 
-
   const boxs = document.querySelectorAll('article');
 
   //box를 반복

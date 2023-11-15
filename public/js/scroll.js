@@ -14,7 +14,9 @@
 
 			let scroll = window.scrollY; // 현재 스크롤 값
 
+
 			activateBtn(scroll); //스크롤 버튼 활성화 함수 호출
+
 			//브라우저를 스크롤할 때마다
 			window.addEventListener("scroll", function () {
 			  scroll = window.scrollY; // 현재 스크롤 값
@@ -71,7 +73,7 @@
 					$$navi_li[i].classList.add(class_name);
 				}
 			}
-			
+
 			//스크롤 위치값이 맨밑으로 갔을때 실행되는 로직
 			scrollHeight = document.documentElement.scrollHeight; // 문서의 전체 높이
 			clientHeight = document.documentElement.clientHeight; // 브라우저 창의 높이
@@ -84,7 +86,6 @@
 
 		//인수로 순서값을 이용해 해당 순서의 박스의 세로 위치로 자동 스크롤하는 함수
 		function moveScroll(i) {
-			document.documentElement.style.scrollBehavior = "smooth"; // 스크롤을 부드럽게 해주는 속성
 
 			window.scrollTo({
 				top: posArr[i],

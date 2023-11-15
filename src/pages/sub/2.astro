@@ -5,7 +5,6 @@ import SubLayout from "../../layouts/SubLayout.astro";
 import SubContent from "../../components/SubContent.astro";
 import SubBanner from "../../components/SubBanner.astro";
 import SubMenu from "../../components/SubMenu.astro";
-import SubCntBox from "../../components/SubCntBox.astro";
 import { technologyMenuItems } from "../../data/menus/technologyMenu.js";
 import "../../css/ui.css";
 
@@ -20,10 +19,15 @@ const pageTitle = `Home > Technology`;
 		<SubContent>
 			<!-- TODO 콘텐츠를 추가 내용 작성 -->
 			<div id="wrap2">
-				
-				<SubCntBox />
-				<SubCntBox />
-				<SubCntBox />
+				<section class="box1">
+					DRM Solution Key Points
+					1</section>
+				<section class="box2">
+					DRM Solution Key Points
+					2</section>
+				<section class="box3">
+					DRM Solution Key Points
+					3</section>
 			</div>
 			<!-- 콘텐츠를 추가 내용 작성 eee -->
 		</SubContent>

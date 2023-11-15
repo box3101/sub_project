@@ -1,19 +1,19 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Header from "../../layouts/Header.astro";
+import Header from "../../layouts/Header.astro"
 
-const pageTitle = `Home`;
+const pageTitle = 'Home';
+const idName = 'main';
 ---
 
-<Layout pageTitle={pageTitle} idName="main">
-	<Header type="main" />
-
-	<section class="box1">1</section>
+<Layout pageTitle={pageTitle} idName={idName}>
+  <Header type="main"></Header>
+  <section class="box1">1</section>
 	<section class="box2">2</section>
 	<section class="box3">3</section>
 	<section class="box4">4</section>
 
-	<ul id="navi">
+  <ul id="navi">
 		<li><span>About us</span></li>
 		<li><span>About us2</span></li>
 		<li><span>About us3</span></li>

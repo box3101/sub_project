@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const $subMenu = document.querySelector(".sub-layout .sub-menu");
 	const $$subMenu_li = document.querySelectorAll(".sub-menu>ul>li");
-	const $$subMenu_li_li = document.querySelectorAll(".sub-menu>ul>li>ul>li");
 	const $subMenu_li_first = document.querySelector(".sub-menu>ul>li");
 
 	if ($subMenu) {

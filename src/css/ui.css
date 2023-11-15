@@ -452,7 +452,6 @@ body, html {
   background: #A265CA;
 }
 .sub-layout .sub-contents {
-  padding-top: 20px;
   flex: 1;
   min-height: 2000px;
   background: #fff;
