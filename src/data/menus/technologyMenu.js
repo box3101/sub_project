@@ -3,21 +3,23 @@ export const technologyMenuItems = [
 		name: "Supporting Standards",
 		link: "/technology/item1",
 		level2: [
-			{ name: "DAB Solution2223", link: "" },
+			{ name: "DAB Solution1", link: "" },
+			{ name: "DAB Solution2", link: "" },
+			{ name: "DAB Solution3", link: "" },
 		],
 	},
 	{
 		name: "Operating System(OS)",
 		link: "/technology/item2",
 		level2: [
-			{ name: "DAB Solut3ion", link: "" },
+			{ name: "DAB Solut3ion4", link: "" },
 		],
 	},
 	{
 		name: "Supporting SoCs",
 		link: "/technology/item2",
 		level2: [
-			{ name: "DAB Solution", link: "" },
+			{ name: "DAB Solution5", link: "" },
 		],
 	},
 ];

@@ -1,8 +1,8 @@
 ---
-const { title } = Astro.props;
+const { title, bgUrl } = Astro.props;
 ---
 
-<div class="sub-banner">
+<div class="sub-banner" style=`background-image:url(../../img/${bgUrl}.jpg)`>
 	<div class="inner">
 		<article>
 			<h1>
