@@ -1,70 +1,32 @@
-a:link,
-a:visited,
-a:visited,
-a:visited {
-	color: inherit;
+
+// 작업
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:map-get($media-size,smallDesk)){
 }
-
-.header2 {
-	margin: 0 auto;
-	background: #d9d9d9;
-
-	nav {
-		height: 80px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: relative;
-
-		.nav-logo {
-			margin-right: 200px;
-		}
-	}
-
-	.nav-menu {
-		color: #fff;
-		font-weight: 600;
-		font-size: 25px;
-		display: flex;
-		text-align: center;
-		height: 100%;
-
-		li {
-			width: 250px;
-			height: 100%;
-
-			&.on {
-				.sub-menu {
-					display: block;
-				}
-			}
-
-			a {
-				width: 100%;
-				height: 100%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-		}
-
-		.nav-menu__technology {
-		}
-
-		.sub-menu {
-			// display: flex;
-			display: none;
-			flex-direction: column;
-			position: absolute;
-			bottom: -192px;
-
-			li {
-				background: #fff;
-				color: #000;
-				padding: 23px;
-				font-size: 18px;
-				font-weight: 500;
-			}
-		}
-	}
+@media(max-width:map-get($media-size,tablet)){
 }
+@media(max-width:map-get($media-size,largeMo)){
+}
+// 작업 eee
+
+
+
+
+
+
+
+

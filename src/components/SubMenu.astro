@@ -1,7 +1,6 @@
 ---
 const { items } = Astro.props;
 let counter = 0;
-
 ---
 
 <nav class="sub-menu v-motion">
@@ -22,12 +21,11 @@ let counter = 0;
 					)}
 				</li>
 			))
-		}
+		} 
 	</ul>
 
 	<!-- 모바일용 select 메뉴 -->
-
-	<select class="mobile-sub-menu" onchange="location = this.value;">
+	<!-- <select class="mobile-sub-menu" onchange="location = this.value;">
 		{
 			items.map((el) => {
 				return el.level2.map((a) => {
@@ -36,5 +34,5 @@ let counter = 0;
 				});
 			})
 		}
-	</select>
+	</select> -->
 </nav>

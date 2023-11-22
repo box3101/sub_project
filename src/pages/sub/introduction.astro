@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../layouts/Header.astro";
+import SubLayout from "../../layouts/SubLayout.astro";
+import SubContent from "../../components/SubContent.astro";
+import SubBanner from "../../components/SubBanner.astro";
+import SubMenu from "../../components/SubMenu.astro";
+import SubCntBox from "../../components/SubCntBox.astro";
+import { introMenu } from "../../data/menus/introMenu.js";
+import "../../css/ui.css";
+
+const pageTitle = `Home > Introduction`;
+---
+
+<Layout pageTitle={pageTitle} idName="Introduction">
+	<Header type="sub" />
+	<SubBanner title="Introduction" bgUrl="bg-intro" />
+	<SubLayout>
+		<SubMenu items={introMenu} />
+		<SubContent>
+			<!-- TODO 콘텐츠를 추가 내용 작성 -->
+			<div id="wrap2">
+				<SubCntBox subCntTit="What is Possible with SDR?" id="box0">
+					<img src="../../img/img01.png" alt="">
+				</SubCntBox>
+				<SubCntBox subCntTit="Advantages of R2D’s SDR Approach" id="box1">
+					<img src="../../img/img01.png" alt="">
+				</SubCntBox>
+				<SubCntBox subCntTit="Radio Solutions" id="box2">
+					3
+				</SubCntBox>
+				<SubCntBox subCntTit="Solutions Portfolio" id="box3">
+					4
+				</SubCntBox>
+			</div>
+			<!-- 콘텐츠를 추가 내용 작성 eee -->
+		</SubContent>
+	</SubLayout>
+</Layout>

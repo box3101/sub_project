@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../layouts/Header.astro";
+import SubLayout from "../../layouts/SubLayout.astro";
+import SubContent from "../../components/SubContent.astro";
+import SubBanner from "../../components/SubBanner.astro";
+import SubMenu from "../../components/SubMenu.astro";
+import SubCntBox from "../../components/SubCntBox.astro";
+import { technologyMenuItems } from "../../data/menus/technologyMenu.js";
+import "../../css/ui.css";
+
+const pageTitle = `Home > Introduction`;
+---
+
+<Layout pageTitle={pageTitle} idName="Introduction">
+	<Header type="sub" />
+	<SubBanner title="Technology" bgUrl="bg-tech" />
+	<SubLayout>
+		<SubMenu items={technologyMenuItems} />
+		<SubContent>
+			<!-- TODO 콘텐츠를 추가 내용 작성 -->
+			<div id="wrap2">
+				<SubCntBox subCntTit="DAB Solution Key Points" id="box0">
+					12323
+				</SubCntBox>
+				<SubCntBox subCntTit="DAB Solution Key Points2" id="box1">
+					1232
+				</SubCntBox>
+				<SubCntBox subCntTit="DAB Solution Key Points3" id="box2">
+					123
+				</SubCntBox>
+				<SubCntBox subCntTit="DAB Solution1" id="box3">
+					1
+				</SubCntBox>
+				<SubCntBox subCntTit="DAB Solution1" id="box4">
+					1
+				</SubCntBox>
+				<SubCntBox subCntTit="DAB Solution1" id="box5">
+					1
+				</SubCntBox>
+				<SubCntBox subCntTit="DAB Solution1" id="box6">
+					1
+				</SubCntBox>
+			</div>
+			<!-- 콘텐츠를 추가 내용 작성 eee -->
+		</SubContent>
+	</SubLayout>
+</Layout>

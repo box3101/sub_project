@@ -12,7 +12,7 @@ export const technologyMenuItems = [
 		name: "Operating System(OS)",
 		link: "/technology/item2",
 		level2: [
-			{ name: "DAB Solut3ion4", link: "" },
+			{ name: "DAB Solution4", link: "" },
 		],
 	},
 	{

@@ -32,3 +32,35 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   })
 });
+
+// 모바일 메뉴
+document.addEventListener('DOMContentLoaded', function() {
+
+	const $mobileMenu = document.querySelector('.mobile-menu');
+	const $$subMenu = document.querySelectorAll('.submenu')
+	const $$subLink = document.querySelectorAll('.submenu-link')
+
+	// 메인 메뉴 토글
+	document.querySelector('.menu-toggle').addEventListener('click', function() {
+			document.querySelector('.mobile-menu').classList.toggle('active');
+			this.classList.toggle('active');
+	});
+
+	// 서브메뉴 토글
+	$mobileMenu.addEventListener("click",function(e){
+		let target = e.target;
+		
+		for(const el of $$subLink){
+			const $subMenu = el.parentElement.querySelector(".submenu");
+			if(target == el && $subMenu){
+				e.preventDefault();
+				if(!$subMenu.classList.contains("active")){
+					for(const el2 of $$subMenu) el2.classList.remove("active");
+					$subMenu.classList.add("active");
+				}else{
+					$subMenu.classList.remove("active");
+				}
+			}
+		}
+	})
+});

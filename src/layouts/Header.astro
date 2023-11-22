@@ -39,6 +39,36 @@ const { type } = Astro.props as HeaderProps;
 				})
 			}
 		</ul>
+		<!-- 모바일 네비게이션 메뉴 -->
+		<nav class="mobile-nav">
+			<div class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+		<ul class="mobile-menu">
+			{
+				navMenu.map(function (el) {
+					return (
+						<li>
+							<a class="submenu-link" href={`../sub/${el.url}.html`}>{el.title}</a>
+							{el.items ? (
+								<ul class="submenu">
+									{el.items.map(function (a) {
+										return (
+											<li>
+												<a href={`../sub/${a.url}.html`}>${a.title}</a>
+											</li>
+										);
+									})}
+								</ul>
+							) : null}
+						</li>
+					);
+				})
+			}
+		</ul>
 	</div>
 </div>
 <!-- Hedaer eee -->
