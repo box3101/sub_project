@@ -3,7 +3,8 @@
 	z-index: 10;
 	top: 0;
 	height: 5rem;
-	border-bottom: 0.0625rem solid #aaa;
+	background: rgba(31,40,51,0.2);
+	transition: all 0.4s;
 	&.sub {
 		background: #fff;
 		.gnb > li > a {
@@ -13,6 +14,10 @@
 			top: 5.875rem;
 		}
 	}
+	&.on{
+		height: 4rem;
+		border-bottom: 1px solid #cccccc5c;
+	}
 	.inner {
 		height: 100%;
 	}
@@ -21,7 +26,6 @@
 		left: 0;
 		width: 9.875rem;
 		height: 2rem;
-		background: #aaa;
 		z-index: 1000;
 		a {
 			display: block;
@@ -49,6 +53,11 @@
 				font-weight: 500;
 				position: relative;
 				z-index: 10;
+				transition: all 0.4s;
+
+				&:hover {
+					color: $main-color;
+				}
 			}
 			.sub-menu {
 				opacity: 0;

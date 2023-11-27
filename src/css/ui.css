@@ -143,12 +143,29 @@ a {
   cursor: pointer;
 }
 
+.com-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #F29F05;
+}
+
+.flex {
+  display: flex;
+}
+
+.all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header {
   position: fixed !important;
   z-index: 10;
   top: 0;
   height: 5rem;
-  border-bottom: 0.0625rem solid #aaa;
+  background: rgba(31, 40, 51, 0.2);
+  transition: all 0.4s;
 }
 .header.sub {
   background: #fff;
@@ -158,6 +175,10 @@ a {
 }
 .header.sub .gnb > li .sub-menu {
   top: 5.875rem;
+}
+.header.on {
+  height: 4rem;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.3607843137);
 }
 .header .inner {
   height: 100%;
@@ -169,7 +190,6 @@ a {
   left: 0;
   width: 9.875rem;
   height: 2rem;
-  background: #aaa;
   z-index: 1000;
 }
 .header .logo a {
@@ -199,6 +219,10 @@ a {
   font-weight: 500;
   position: relative;
   z-index: 10;
+  transition: all 0.4s;
+}
+.header .gnb > li > a:hover {
+  color: #A265CA;
 }
 .header .gnb > li .sub-menu {
   opacity: 0;
@@ -342,16 +366,43 @@ a {
 }
 
 #navi li {
-  width: 20px;
-  height: 20px;
-  background: #fff;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.4);
   margin-bottom: 10px;
   border-radius: 10px;
   cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 17px;
+}
+#navi li span {
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  line-height: 1;
+  transform: translateY(-50%);
+  right: 35px;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  width: max-content;
+}
+#navi li:last-of-type {
+  margin-bottom: 0;
 }
 
 #navi li.on {
-  background: #000;
+  background: #fff;
+  width: 15px;
+  height: 15px;
+}
+#navi li.on span {
+  visibility: visible;
+  opacity: 1;
 }
 
 .v-motion {
@@ -601,6 +652,13 @@ a {
     flex: 1;
     width: 100%;
   }
+  /* main */
+  #main #wrap > section {
+    padding: 0 15px;
+  }
+  #navi {
+    display: none;
+  }
 }
 @media (max-width: 800px) {
   html {
@@ -612,6 +670,63 @@ a {
     font-size: 11px;
   }
 }
+#main .box1 {
+  background: url("../img/bg-main01.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  min-height: 60rem;
+}
+#main .box2 {
+  background: url("../img/bg-main02.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  min-height: 60rem;
+}
+#main .box3 {
+  background: url("../img/bg-main03.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  min-height: 60rem;
+}
+#main .box4 {
+  background: url("../img/bg-main04.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  min-height: 60rem;
+}
+
+.all-center {
+  width: 100%;
+  height: 100%;
+}
+.all-center .info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.all-center .info p {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
 /*이은영*/
 /*김영은*/
 /*이찬용*/

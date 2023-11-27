@@ -6,15 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	if ($subMenu) {
 		// 첫번째 메뉴만 클래스 on
 		$subMenu_li_first.classList.add("on");
-		$subMenu_li_first.querySelector("ul li").classList.add("on");
+		if($subMenu_li_first.querySelector("ul li")){
+			$subMenu_li_first.querySelector("ul li").classList.add("on");
+		}
 
 		$$subMenu_li.forEach(function (li) {
 			공통네비(li, $$subMenu_li);
 		});
-
-		// $$subMenu_li_li.forEach(function (li) {
-		// 	공통네비(li, $$subMenu_li_li);
-		// });
 	}
 
 	function 공통네비(li, a) {
