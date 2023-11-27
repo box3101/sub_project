@@ -1,60 +1,91 @@
-.inner{
-  position: relative;
-  max-width: 1280px;
-  margin: 0 auto;
+.inner {
+	position: relative;
+	max-width: 1420px;
+	margin: 0 auto;
 }
 
-#wrap>div { width:100%; position:relative; }
-.box1 { height:600px; background:lightblue;}
-.box2 { height:400px; background:pink;}
-.box3 { height:800px; background:orange;}
-.box4 { height:1500px; background:violet;}
-
-#navi { position:fixed; right:50px; top:50%; margin-top:-60px;}
-#navi li { width:10px; height:10px; background:rgba(255,255,255,0.4); margin-bottom:10px; border-radius:10px; cursor:pointer;
-position: relative;left: 50%;
-transform: translateX(-50%);
-  margin-bottom: 17px;
-  span{
-    transition: all 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    line-height: 1;
-    transform: translateY(-50%);
-    right: 35px;
-    font-size: 18px;
-    color: #fff;
-    display: block;
-    width: max-content;
-  }
-  &:last-of-type{margin-bottom: 0;}
+#wrap > div {
+	width: 100%;
+	position: relative;
 }
-#navi li.on { 
-  background:#fff; width: 15px;height: 15px;
-  span{
-    visibility: visible;
-    opacity: 1;
-  }
+.box1 {
+	height: 600px;
+	background: lightblue;
+}
+.box2 {
+	height: 400px;
+	background: pink;
+}
+.box3 {
+	height: 800px;
+	background: orange;
+}
+.box4 {
+	height: 1500px;
+	background: violet;
+}
+
+#navi {
+	position: fixed;
+	right: 50px;
+	top: 50%;
+	margin-top: -60px;
+}
+#navi li {
+	width: 10px;
+	height: 10px;
+	background: rgba(255, 255, 255, 0.4);
+	margin-bottom: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 17px;
+	span {
+		transition: all 0.3s;
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 50%;
+		line-height: 1;
+		transform: translateY(-50%);
+		right: 35px;
+		font-size: 18px;
+		color: #fff;
+		display: block;
+		width: max-content;
+	}
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+#navi li.on {
+	background: #fff;
+	width: 15px;
+	height: 15px;
+	span {
+		visibility: visible;
+		opacity: 1;
+	}
 }
 
 .v-motion {
-  animation: motion-fadeInLeft 0.5s ease-in-out;
+	animation: motion-fadeInLeft 0.5s ease-in-out;
 }
 
 .v-motion-fast {
-  animation: motion-fadeInLeft 1s ease-in-out;
-  animation-delay: 0.1s;
+	animation: motion-fadeInLeft 1s ease-in-out;
+	animation-delay: 0.1s;
 }
 
 @keyframes motion-fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

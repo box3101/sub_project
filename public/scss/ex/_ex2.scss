@@ -1,11 +1,10 @@
 // 작업
-.intro-menu01 .sub-info {
+.sub-info .intro-menu01 {
 	text-align: center;
 
 	.intro-img01 {
 		height: 42.75rem;
 		width: 42.75rem;
-		padding-top: 1rem;
 	}
 
 	.intro-img02 {
@@ -21,10 +20,83 @@
 }
 
 .intro-menu02 {
-	margin: 116px 0 58px;
-
 	.intro-advantages-wrap {
 		display: flex;
+		flex-wrap: wrap;
+		place-items: flex-end;
+
+		.intro-advantages__item {
+			width: 370px;
+			height: 365px;
+			background: #f6f6f6;
+			padding: 25px 30px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			&.perfor {
+				margin-bottom: 26px;
+			}
+			&.proven {
+				margin: 56px 40px 38px 40px;
+			}
+			&.advan {
+				margin-top: 223px;
+			}
+			&.flex {
+				margin-right: 40px;
+			}
+
+			.icon {
+				width: 90px;
+				height: 90px;
+			}
+
+			.ico-perfor {
+				background: url(../../img/ico06.png);
+			}
+			.ico-proven {
+				background: url(../../img/ico07.png);
+			}
+			.ico-advan {
+				background: url(../../img/ico08.png);
+			}
+			.ico-flex {
+				background: url(../../img/ico10.png);
+			}
+			.ico-progress {
+				background: url(../../img/ico12.png);
+			}
+
+			p {
+				font-size: 30px;
+				line-height: 45px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100px;
+			}
+			.intro-advantages__list {
+				margin-top: 21px;
+				li {
+					font-size: 16px;
+					line-height: 24px;
+					padding: 5px;
+					position: relative;
+
+					&::before {
+						content: "";
+						background: #a265ca;
+						width: 5px;
+						height: 5px;
+						position: absolute;
+						left: -10px;
+						top: 15px;
+					}
+				}
+			}
+		}
 	}
 }
 
