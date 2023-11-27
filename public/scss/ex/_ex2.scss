@@ -1,32 +1,37 @@
-
 // 작업
+.intro-menu01 .sub-info {
+	text-align: center;
 
+	.intro-img01 {
+		height: 42.75rem;
+		width: 42.75rem;
+		padding-top: 1rem;
+	}
 
+	.intro-img02 {
+		height: 42.625rem;
+		margin-top: 80px;
+		padding: 40px 60px;
+		border: 1px solid #e5e5e5;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:map-get($media-size,smallDesk)){
+	img {
+		width: 100%;
+	}
 }
-@media(max-width:map-get($media-size,tablet)){
+
+.intro-menu02 {
+	margin: 116px 0 58px;
+
+	.intro-advantages-wrap {
+		display: flex;
+	}
 }
-@media(max-width:map-get($media-size,largeMo)){
+
+@media (max-width: map-get($media-size,smallDesk)) {
+}
+@media (max-width: map-get($media-size,tablet)) {
+}
+@media (max-width: map-get($media-size,largeMo)) {
 }
 // 작업 eee
-
-
-
-
-
-
-
-

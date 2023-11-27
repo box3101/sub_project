@@ -7,7 +7,6 @@ import SubBanner from "../../components/SubBanner.astro";
 import SubMenu from "../../components/SubMenu.astro";
 import SubCntBox from "../../components/SubCntBox.astro";
 import { introMenu } from "../../data/menus/introMenu.js";
-import "../../css/ui.css";
 
 const pageTitle = `Home > Introduction`;
 ---
@@ -20,18 +19,65 @@ const pageTitle = `Home > Introduction`;
 		<SubContent>
 			<!-- TODO 콘텐츠를 추가 내용 작성 -->
 			<div id="wrap2">
-				<SubCntBox subCntTit="What is Possible with SDR?" id="box0">
-					<img src="../../img/img01.png" alt="">
-				</SubCntBox>
-				<SubCntBox subCntTit="Advantages of R2D’s SDR Approach" id="box1">
-					<img src="../../img/img01.png" alt="">
-				</SubCntBox>
-				<SubCntBox subCntTit="Radio Solutions" id="box2">
-					3
-				</SubCntBox>
-				<SubCntBox subCntTit="Solutions Portfolio" id="box3">
-					4
-				</SubCntBox>
+				<div class="intro-menu01">
+					<SubCntBox subCntTit="What is Possible with SDR?" id="box0">
+						<img src="../../img/img01.png" alt="" class="intro-img01" />
+						<img src="../../img/img02.png" alt="" class="intro-img02" />
+					</SubCntBox>
+				</div>
+				<div class="intro-menu02">
+					<SubCntBox subCntTit="Advantages of R2D’s SDR Approach" id="box1">
+						<div class="intro-advantages-wrap">
+							<div>
+								<div class="ico"></div>
+								<p>Performance</p>
+								<ul>
+									<li>Optimized Resource Usage</li>
+									<li>Beyond Chipset Performance</li>
+									<li>EV Ready Adv. Functions</li>
+								</ul>
+							</div>
+							<div>
+								<div class="ico"></div>
+								<p>Performance</p>
+								<ul>
+									<li>Optimized Resource Usage</li>
+									<li>Beyond Chipset Performance</li>
+									<li>EV Ready Adv. Functions</li>
+								</ul>
+							</div>
+							<div>
+								<div class="ico"></div>
+								<p>Performance</p>
+								<ul>
+									<li>Optimized Resource Usage</li>
+									<li>Beyond Chipset Performance</li>
+									<li>EV Ready Adv. Functions</li>
+								</ul>
+							</div>
+							<div>
+								<div class="ico"></div>
+								<p>Performance</p>
+								<ul>
+									<li>Optimized Resource Usage</li>
+									<li>Beyond Chipset Performance</li>
+									<li>EV Ready Adv. Functions</li>
+								</ul>
+							</div>
+							<div>
+								<div class="ico"></div>
+								<p>Performance</p>
+								<ul>
+									<li>Optimized Resource Usage</li>
+									<li>Beyond Chipset Performance</li>
+									<li>EV Ready Adv. Functions</li>
+								</ul>
+							</div>
+						</div>
+					</SubCntBox>
+				</div>
+				<SubCntBox subCntTit="Radio Solutions" id="box2">3</SubCntBox>
+				<SubCntBox subCntTit="Solutions Portfolio" id="box3">4</SubCntBox>
 			</div>
 			<!-- 콘텐츠를 추가 내용 작성 eee -->
 		</SubContent>
