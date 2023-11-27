@@ -729,6 +729,31 @@ a {
 
 /*이은영*/
 /*김영은*/
+.intro-menu01 .sub-info {
+  text-align: center;
+}
+.intro-menu01 .sub-info .intro-img01 {
+  height: 42.75rem;
+  width: 42.75rem;
+  padding-top: 1rem;
+}
+.intro-menu01 .sub-info .intro-img02 {
+  height: 42.625rem;
+  margin-top: 80px;
+  padding: 40px 60px;
+  border: 1px solid #e5e5e5;
+}
+.intro-menu01 .sub-info img {
+  width: 100%;
+}
+
+.intro-menu02 {
+  margin: 116px 0 58px;
+}
+.intro-menu02 .intro-advantages-wrap {
+  display: flex;
+}
+
 /*이찬용*/
 
 /*# sourceMappingURL=ui.css.map */
