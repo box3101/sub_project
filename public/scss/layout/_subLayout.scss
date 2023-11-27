@@ -154,7 +154,10 @@
 			font-size: 2.8125rem;
 			color: #262626;
 			margin-top: 3.625rem;
-			padding-bottom: 4rem;
+			padding: 3.75rem 3.75rem;
+			@at-root #wrap2 section:first-of-type h1.sub-title{
+				padding-top: 0;
+			}
 			&:nth-of-type(1){
 				margin-top: 0;
 			}
