@@ -1,10 +1,11 @@
 const navMenu = [
   {
-    title : "Introduction"
+    title : "Introduction",
+    url : 'Introduction',
   },
   {
     title : "Technology",
-    url : `SDR`,
+    url : 'SDR',
     items : [
       { url : `SDR` , title: "SDR Technolog"},
       { url : `Audio` , title: "Audio DSP Technology"},
@@ -13,9 +14,9 @@ const navMenu = [
   },
   {
     title : "Solutions",
-    url : `SDR`,
+    url : `Solutions`,
     items : [
-      { url : `SDR` , title: "SDR Technolog"},
+      { url : `Solutions` , title: "SDR Technolog"},
       { url : `Audio` , title: "Audio DSP Technology"},
       { url : `Future` , title: "Future Roadmap"},
     ],

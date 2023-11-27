@@ -12,6 +12,8 @@
 //===========================
 @import "utility/function.scss";
 @import "utility/mixin.scss";
+@import "utility/text.scss";
+@import "utility/flex.scss";
 
 //===========================
 //layout
@@ -21,6 +23,10 @@
 @import "layout/subLayout.scss";
 @import "layout/responsive.scss";
 
+//===========================
+//pages
+//===========================
+@import "pages/main.scss";
 
 //===========================
 //ex

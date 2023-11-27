@@ -13,6 +13,9 @@
   .sub-layout .inner{flex-direction: column;}
   .sub-layout .sub-menu:before{display: none;}
   .sub-layout .sub-menu{flex:1;width:100%;}
+  /* main */
+  #main #wrap>section {padding: 0 15px;}
+  #navi{display: none;}
 }
 @media(max-width:map-get($media-size,tablet)){
   html{font-size: 13px;}

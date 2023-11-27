@@ -14,12 +14,11 @@
 
 			let scroll = window.scrollY; // 현재 스크롤 값
 
-
 			activateBtn(scroll); //스크롤 버튼 활성화 함수 호출
 
 			//브라우저를 스크롤할 때마다
 			window.addEventListener("scroll", function () {
-			  scroll = window.scrollY; // 현재 스크롤 값
+				scroll = window.scrollY; // 현재 스크롤 값
 				activateBtn(scroll); //스크롤 버튼 활성화 함수 호출
 			});
 
@@ -41,9 +40,10 @@
 			class_name,
 			scrollHeight,
 			clientHeight,
-			maxScrollTop;
+			maxScrollTop
 
 		function dom초기화() {
+			$header = document.querySelector(".header");
 			$$navi_li = document.querySelectorAll("#navi li");
 			$$wrap_div = document.querySelectorAll("#wrap>section");
 			$wrap_div_last = $$wrap_div[$$wrap_div.length - 1];
@@ -86,7 +86,6 @@
 
 		//인수로 순서값을 이용해 해당 순서의 박스의 세로 위치로 자동 스크롤하는 함수
 		function moveScroll(i) {
-
 			window.scrollTo({
 				top: posArr[i],
 				behavior: "smooth",

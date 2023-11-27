@@ -8,7 +8,7 @@ let counter = 0;
 		{
 			items.map((el, idx) => (
 				<li>
-					<a href="#none">{el.name}</a>
+					<a href={el.link}>{el.name}</a>
 					{/*level2가 있을 경우 */}
 					{el.level2 && el.level2.length > 0 && (
 						<ul class="level2-menu">
@@ -25,14 +25,19 @@ let counter = 0;
 	</ul>
 
 	<!-- 모바일용 select 메뉴 -->
-	<!-- <select class="mobile-sub-menu" onchange="location = this.value;">
+	<select class="mobile-sub-menu" onchange="location = this.value;">
 		{
 			items.map((el) => {
-				return el.level2.map((a) => {
+				if(el.level2){
+					return el.level2.map((a) => {
+						const uniqueId = `box${counter++}`;
+						return <option value={`#${uniqueId}`}>{a.name}</option>;
+					})
+				}else{
 					const uniqueId = `box${counter++}`;
-					return <option value={`#${uniqueId}`}>{a.name}</option>;
-				});
+					return <option value={`#${uniqueId}`}>{el.name}</option>;
+				}
 			})
 		}
-	</select> -->
+	</select>
 </nav>
