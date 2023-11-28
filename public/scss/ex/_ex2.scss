@@ -19,11 +19,24 @@
 	}
 }
 
-.intro-menu02 {
+.sub-info .intro-menu02 {
+	display: flex;
 	.intro-advantages-wrap {
 		display: flex;
 		flex-wrap: wrap;
-		place-items: flex-end;
+		flex-direction: column;
+
+		&.perfor {
+			gap: 26px;
+			margin-right: 40px;
+		}
+		&.proven {
+			gap: 38px;
+			margin: 56px 35px 0 0;
+		}
+		&.advan {
+			margin-top: 167px;
+		}
 
 		.intro-advantages__item {
 			width: 370px;
@@ -34,19 +47,6 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-
-			&.perfor {
-				margin-bottom: 26px;
-			}
-			&.proven {
-				margin: 56px 40px 38px 40px;
-			}
-			&.advan {
-				margin-top: 223px;
-			}
-			&.flex {
-				margin-right: 40px;
-			}
 
 			.icon {
 				width: 90px;
@@ -76,6 +76,7 @@
 				align-items: center;
 				justify-content: center;
 				height: 100px;
+				color: #222222;
 			}
 			.intro-advantages__list {
 				margin-top: 21px;
@@ -84,6 +85,7 @@
 					line-height: 24px;
 					padding: 5px;
 					position: relative;
+					color: #222222;
 
 					&::before {
 						content: "";
@@ -95,6 +97,102 @@
 						top: 15px;
 					}
 				}
+			}
+		}
+	}
+}
+
+// .sub-contents .sub-title-.sub-title-exclu {
+// 	padding: 3.75rem 3.75rem 0.9375rem 60px;
+// }
+
+.sub-info .intro-menu03 {
+	p {
+		font-size: 24px;
+		color: #777777;
+		line-height: 36px;
+		font-weight: 500;
+		text-align: center;
+	}
+	.radio-wrap {
+		margin-top: 57px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 38px;
+
+		.radio-card {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			flex: calc(30%);
+			border: 1px solid #e5e5e5;
+			padding: 20px;
+
+			.icon-wrap {
+				display: flex;
+				gap: 45px;
+			}
+
+			.icon {
+				width: 140px;
+				height: 65px;
+				margin-top: 9px;
+
+				&.ico-am {
+					background-image: url(../../img/Partner_logo01.png);
+				}
+				&.ico-dab {
+					background: url(../../img/Partner_logo02.png);
+				}
+				&.ico-drm {
+					background: url(../../img/Partner_logo03.png);
+				}
+				&.ico-hdr {
+					background: url(../../img/Partner_logo04.png);
+				}
+				&.ico-cdr {
+					background: url(../../img/Partner_logo05.png);
+				}
+				&.ico-ip {
+					background: url(../../img/Partner_logo06.png);
+				}
+				&.ico-radio {
+					background: url(../../img/Partner_logo07.png);
+				}
+			}
+
+			.top-title {
+				font-size: 30px;
+				line-height: 45px;
+				color: #222222;
+				text-align: center;
+			}
+
+			.mid-title {
+				height: 75px;
+				font-size: 24px;
+				line-height: 36px;
+				color: inherit;
+				margin: 15px 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				word-wrap: break-word;
+			}
+
+			.con-txt {
+				font-size: 16px;
+				line-height: 24px;
+				color: inherit;
+				text-align: left;
+				margin-bottom: 12px;
+				word-wrap: break-word;
+			}
+			.con-txt-gray {
+				font-size: 14px;
+				line-height: 21px;
+				color: #999999;
 			}
 		}
 	}
