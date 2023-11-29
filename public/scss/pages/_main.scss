@@ -34,10 +34,16 @@
       li{
         flex:1;
         text-align: center;
+        &:hover{
+          img{
+            transform : rotateY(180deg)
+          }
+        }
         img{
           text-align: center;
           display: inline-block;
           margin-bottom: 3.125rem;
+          transition: all 0.3s;
         }
         
         p.tit{

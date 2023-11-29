@@ -20823,10 +20823,14 @@ body.on {
   flex: 1;
   text-align: center;
 }
+#main .box2 ul li:hover img {
+  transform: rotateY(180deg);
+}
 #main .box2 ul li img {
   text-align: center;
   display: inline-block;
   margin-bottom: 3.125rem;
+  transition: all 0.3s;
 }
 #main .box2 ul li p.tit {
   padding: 0.875rem 0;
