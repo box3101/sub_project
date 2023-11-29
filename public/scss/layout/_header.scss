@@ -30,6 +30,9 @@
 		a {
 			display: block;
 			height: 100%;
+			img{
+				width: 9.875rem;
+			}
 		}
 	}
 	.gnb {
@@ -92,7 +95,7 @@
 		position: absolute;
 		display: none;
 		right: 15px;
-		top: 50%;
+		top: 54%;
 		transform: translateY(-50%);
 		z-index: 101;
 
@@ -107,18 +110,25 @@
 			}
 			span:nth-child(1) {
 				top: 0;
+					background: #fff;
 			}
 			span:nth-child(2) {
 				top: 10px;
+					background: #fff;
 			}
 			span:nth-child(3) {
 				bottom: 0;
+					background: #fff;
+			}
+			@at-root .header.sub .mobile-nav .menu-toggle span{
+				background: #333;
 			}
 			&.active {
 				span:nth-child(1) {
 					position: relative;
 					top: 10px;
 					transform: rotate(45deg);
+					background: #333;
 				}
 
 				span:nth-child(2) {
@@ -130,6 +140,7 @@
 					position: relative;
 					bottom: 6px;
 					transform: rotate(-45deg);
+					background: #333;
 				}
 			}
 		}

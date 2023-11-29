@@ -20177,6 +20177,9 @@ a {
   display: block;
   height: 100%;
 }
+.header .logo a img {
+  width: 9.875rem;
+}
 .header .gnb {
   height: 100%;
   display: flex;
@@ -20234,7 +20237,7 @@ a {
   position: absolute;
   display: none;
   right: 15px;
-  top: 50%;
+  top: 54%;
   transform: translateY(-50%);
   z-index: 101;
 }
@@ -20250,17 +20253,25 @@ a {
 }
 .header .mobile-nav .menu-toggle span:nth-child(1) {
   top: 0;
+  background: #fff;
 }
 .header .mobile-nav .menu-toggle span:nth-child(2) {
   top: 10px;
+  background: #fff;
 }
 .header .mobile-nav .menu-toggle span:nth-child(3) {
   bottom: 0;
+  background: #fff;
 }
+.header.sub .mobile-nav .menu-toggle span {
+  background: #333;
+}
+
 .header .mobile-nav .menu-toggle.active span:nth-child(1) {
   position: relative;
   top: 10px;
   transform: rotate(45deg);
+  background: #333;
 }
 .header .mobile-nav .menu-toggle.active span:nth-child(2) {
   position: relative;
@@ -20270,6 +20281,7 @@ a {
   position: relative;
   bottom: 6px;
   transform: rotate(-45deg);
+  background: #333;
 }
 .header .mobile-menu {
   background: #fff;
@@ -20564,7 +20576,7 @@ section.box {
 .sub-layout .sub-menu > ul > li > a {
   display: inline-block;
   padding: 0.75rem 0;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: #000;
 }
 .sub-layout .sub-menu > ul > li > a:hover {
@@ -20582,7 +20594,7 @@ section.box {
   height: 0.9375rem;
   background: #A265CA;
   border-radius: 50%;
-  left: -0.3125rem;
+  left: -0.3825rem;
   top: 0.875rem;
 }
 .sub-layout .sub-menu > ul > li.on > a {
@@ -20607,7 +20619,7 @@ section.box {
   display: inline-block;
   color: #666;
   padding: 0.25rem 0;
-  font-size: 0.875rem;
+  font-size: 0.975rem;
 }
 .sub-layout .sub-menu > ul > li .level2-menu li a:before {
   content: "";
