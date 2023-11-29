@@ -244,10 +244,54 @@
 			line-height: 25px;
 			font-weight: 400;
 		}
-		.icon-sw {
-			background: url(../../img/ico-sw.svg);
-			width: 260px;
-			height: 100px;
+	}
+}
+.ico-wave {
+	background: url(../../img/ico-wave.svg);
+	width: 260px;
+	height: 100px;
+}
+
+.sub-info .solu-menu03.role-table {
+	display: flex;
+	// justify-content: center;
+	// align-items: center;
+	background: #1f2833;
+	border-radius: 15px;
+	padding: 20px;
+
+	.con-left-wrap {
+		p {
+			font-size: 32px;
+			font-weight: 500;
+			line-height: 47px;
+			color: #fff;
+			margin-bottom: 24px;
+		}
+	}
+	.con-right-wrap {
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+
+		.role-table-wrap table {
+			th,
+			td {
+				height: 40px;
+				text-align: center;
+				font-size: 16px;
+				line-height: 24px;
+				border: 1px solid #fff;
+			}
+			th {
+				font-size: 18px;
+				font-weight: 600;
+				background: #a265ca;
+				color: #fff;
+			}
+			td {
+				background: #f3ecf8;
+			}
 		}
 	}
 }

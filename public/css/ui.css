@@ -21416,10 +21416,47 @@ body {
   line-height: 25px;
   font-weight: 400;
 }
-.sub-info .solu-menu02.sw-type .sw-type-wrap .icon-sw {
-  background: url(../../img/ico-sw.svg);
+
+.ico-wave {
+  background: url(../../img/ico-wave.svg);
   width: 260px;
   height: 100px;
+}
+
+.sub-info .solu-menu03.role-table {
+  display: flex;
+  background: #1f2833;
+  border-radius: 15px;
+  padding: 20px;
+}
+.sub-info .solu-menu03.role-table .con-left-wrap p {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 47px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.sub-info .solu-menu03.role-table .con-right-wrap {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+.sub-info .solu-menu03.role-table .con-right-wrap .role-table-wrap table th,
+.sub-info .solu-menu03.role-table .con-right-wrap .role-table-wrap table td {
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #fff;
+}
+.sub-info .solu-menu03.role-table .con-right-wrap .role-table-wrap table th {
+  font-size: 18px;
+  font-weight: 600;
+  background: #a265ca;
+  color: #fff;
+}
+.sub-info .solu-menu03.role-table .con-right-wrap .role-table-wrap table td {
+  background: #f3ecf8;
 }
 
 /*이찬용*/
