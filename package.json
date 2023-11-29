@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npm run sass-build && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "sass": "concurrently \"sass --watch public/scss/ui.scss:public/css/ui.css\" \"sass --watch public/scss/ui.scss:src/css/ui.css\""
+    "sass": "concurrently \"sass --watch public/scss/ui.scss:public/css/ui.css\" \"sass --watch public/scss/ui.scss:src/css/ui.css\"",
+    "sass-build": "sass public/scss/ui.scss:public/css/ui.css && sass public/scss/ui.scss:src/css/ui.css"
   },
   "dependencies": {
     "animate.css": "^4.1.1",

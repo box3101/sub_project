@@ -20483,7 +20483,7 @@ html {
 }
 
 section.box {
-  padding-bottom: 3.75rem;
+  padding-bottom: 6.75rem;
 }
 
 .sub-banner {
@@ -20865,6 +20865,106 @@ body.on {
   flex-direction: column;
   transition: all 0.7s ease-in-out;
 }
+#main .box3 ul:not(.off) > li:nth-of-type(1) .img {
+  background-image: url("../img/ico01_off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#main .box3 ul:not(.off) > li:nth-of-type(1):hover .img {
+  background-image: url("../img/ico01_on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#main .box3 ul:not(.off) > li:nth-of-type(2) .img {
+  background-image: url("../img/ico02_off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#main .box3 ul:not(.off) > li:nth-of-type(2):hover .img {
+  background-image: url("../img/ico02_on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#main .box3 ul:not(.off) > li:nth-of-type(3) .img {
+  background-image: url("../img/ico03_off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#main .box3 ul:not(.off) > li:nth-of-type(3):hover .img {
+  background-image: url("../img/ico03_on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#main .box3 ul:not(.off) > li:nth-of-type(4) .img {
+  background-image: url("../img/ico04_off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#main .box3 ul:not(.off) > li:nth-of-type(4):hover .img {
+  background-image: url("../img/ico04_on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#main .box3 ul:not(.off) > li:nth-of-type(5) .img {
+  background-image: url("../img/ico05_off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#main .box3 ul:not(.off) > li:nth-of-type(5):hover .img {
+  background-image: url("../img/ico05_on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: "center";
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 #main .box3 ul:not(.off) > li p {
   color: #fff;
   opacity: 0.7;
@@ -20926,6 +21026,10 @@ body.on {
 .all-center {
   width: 100%;
   height: 100%;
+}
+
+.sub-info .intro-menu03 p {
+  margin-top: -25px;
 }
 
 body {
