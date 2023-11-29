@@ -20402,6 +20402,7 @@ html {
 /* 전체 웹사이트에 적용되는 스크롤바 스타일 */
 ::-webkit-scrollbar {
   width: 10px; /* 스크롤바의 너비 */
+  height: 5px;
 }
 
 /* 스크롤바 트랙 (바탕) 스타일 */
@@ -20435,6 +20436,7 @@ html {
   position: fixed;
   right: 6.3125rem;
   bottom: 2.8125rem;
+  z-index: 100;
 }
 .floating-banner.on .contact-pop {
   display: block;
@@ -20445,9 +20447,12 @@ html {
 .floating-banner .contact-pop {
   display: none;
   max-width: 19.375rem;
-  background: #5C3973;
+  background: #5c3973;
   padding: 1.4375rem 0.9375rem;
   position: relative;
+}
+.floating-banner .contact-pop .img img {
+  width: 3rem;
 }
 .floating-banner .contact-pop .close {
   position: absolute;
@@ -20455,7 +20460,7 @@ html {
   right: 0;
   width: 17px;
   height: 15px;
-  background: #5C3973;
+  background: #5c3973;
   text-align: center;
   line-height: 13px;
 }
@@ -20472,7 +20477,7 @@ html {
   line-height: 1.6875rem;
   text-align: center;
   border: 0.0625rem solid #fff;
-  color: #5C3973;
+  color: #5c3973;
   font-size: 1rem;
   font-weight: 700;
   position: relative;
@@ -20823,8 +20828,10 @@ body.on {
   flex: 1;
   text-align: center;
 }
-#main .box2 ul li:hover img {
-  transform: rotateY(180deg);
+@media (min-width: 1280px) {
+  #main .box2 ul li:hover img {
+    transform: rotateY(180deg);
+  }
 }
 #main .box2 ul li img {
   text-align: center;
@@ -20885,6 +20892,11 @@ body.on {
   background-size: auto;
   background-repeat: no-repeat;
 }
+@media (max-width: 1280px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(1):hover .img {
+    background-size: 30px;
+  }
+}
 #main .box3 ul:not(.off) > li:nth-of-type(2) .img {
   background-image: url("../img/ico02_off.svg");
   background-repeat: no-repeat;
@@ -20904,6 +20916,11 @@ body.on {
   background-position: "center";
   background-size: auto;
   background-repeat: no-repeat;
+}
+@media (max-width: 1280px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(2):hover .img {
+    background-size: 30px;
+  }
 }
 #main .box3 ul:not(.off) > li:nth-of-type(3) .img {
   background-image: url("../img/ico03_off.svg");
@@ -20925,6 +20942,11 @@ body.on {
   background-size: auto;
   background-repeat: no-repeat;
 }
+@media (max-width: 1280px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(3):hover .img {
+    background-size: 30px;
+  }
+}
 #main .box3 ul:not(.off) > li:nth-of-type(4) .img {
   background-image: url("../img/ico04_off.svg");
   background-repeat: no-repeat;
@@ -20945,6 +20967,11 @@ body.on {
   background-size: auto;
   background-repeat: no-repeat;
 }
+@media (max-width: 1280px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(4):hover .img {
+    background-size: 30px;
+  }
+}
 #main .box3 ul:not(.off) > li:nth-of-type(5) .img {
   background-image: url("../img/ico05_off.svg");
   background-repeat: no-repeat;
@@ -20964,6 +20991,11 @@ body.on {
   background-position: "center";
   background-size: auto;
   background-repeat: no-repeat;
+}
+@media (max-width: 1280px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(5):hover .img {
+    background-size: 30px;
+  }
 }
 #main .box3 ul:not(.off) > li p {
   color: #fff;
@@ -20991,7 +21023,7 @@ body.on {
   height: auto;
 }
 #main .box3 ul:not(.off) > li:hover .img {
-  background: #F29F05;
+  background: #f29f05;
 }
 #main .box3 .off {
   opacity: 0;
@@ -21016,7 +21048,7 @@ body.on {
   width: 0.4375rem;
   height: 0.4375rem;
   left: 0;
-  background: #BF939B;
+  background: #bf939b;
   border-radius: 50%;
 }
 #main .box3 .off li:last-of-type {
@@ -21147,7 +21179,7 @@ body {
 }
 @media (max-width: 600px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
   }
   #main #wrap > section {
     padding: 7rem -15rem;

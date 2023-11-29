@@ -29,12 +29,10 @@ body{overflow-x: hidden;}
   #main .box4 .info{overflow-x: scroll;overflow-y: hidden;}
   .floating-banner{right: 10px;}
 }
-
-
 @media(max-width:map-get($media-size,tablet)){
   html{font-size: 13px;}
 }
 @media(max-width:map-get($media-size,largeMo)){
-  html{font-size: 11px;}
+  html{font-size: 12px;}
   #main #wrap > section{padding: 7rem -15rem;}
 }
