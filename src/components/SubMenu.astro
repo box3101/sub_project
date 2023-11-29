@@ -8,7 +8,7 @@ let counter = 0;
 		{
 			items.map((el, idx) => (
 				<li>
-					<a href={el.link}>{el.name}</a>
+					<a href="#none"> <span>{el.name}</span></a>
 					{/*level2가 있을 경우 */}
 					{el.level2 && el.level2.length > 0 && (
 						<ul class="level2-menu">

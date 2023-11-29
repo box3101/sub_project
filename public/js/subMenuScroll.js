@@ -5,9 +5,6 @@
 			dom초기화();
 			각박스의세로위치값();
 
-			let scroll = window.scrollY;
-			activateBtn(scroll);
-
 			window.addEventListener("scroll", function () {
 				let scroll = window.scrollY;
 				activateBtn(scroll);
@@ -37,7 +34,7 @@
 				len = $$level2_li.length;
 
 				for (let i = 0; i < len; i++) {
-					let insertCode = $$wrap_div[i].offsetTop + 210;
+					let insertCode = $$wrap_div[i].offsetTop + 220;
 					posArr.push(insertCode);
 				}
 
@@ -49,7 +46,7 @@
 				len = $$subMenu_li.length;
 
 				for (let i = 0; i < len; i++) {
-					let insertCode = $$wrap_div[i].offsetTop + 210;
+					let insertCode = $$wrap_div[i].offsetTop + 220;
 					posArr.push(insertCode);
 				}
 
@@ -83,20 +80,11 @@
 				$$subMenu_li.forEach(function (el) {
 					for (let i = 0; i < len; i++) {
 						if (k >= posArr[i] && k < posArr[i + 1]) {
-							// for(const el of $$subMenu_li) el.classList.remove(class_name)
-							// $$subMenu_li[i].classList.add(class_name);
+							for(const el of $$subMenu_li) el.classList.remove(class_name)
+							$$subMenu_li[i].classList.add(class_name);
 						}
 					}
 				});
-			}
-
-			//스크롤 위치값이 맨밑으로 갔을때 실행되는 로직
-			let scrollHeight = document.documentElement.scrollHeight; // 문서의 전체 높이
-			let clientHeight = document.documentElement.clientHeight; // 브라우저 창의 높이
-			let maxScrollTop = scrollHeight - clientHeight; // 맨밑 값.
-
-			if (k >= maxScrollTop) {
-				console.log("스크롤 마지막!");
 			}
 		}
 

@@ -1,0 +1,58 @@
+<div class="floating-banner">
+	<div data-aos="fade-up" data-aos-delay="200" class="tar">
+		<a href="#">
+			<img src="../img/move-top.svg" alt="" />
+		</a>
+	</div>
+	<div class="contact-pop mt20">
+		<a href="#" class="close">
+			<img src="../img/close-pop.svg" alt="" />
+		</a>
+		<div class="top flex aic gap20">
+			<div class="img">
+				<img src="../img/contact-img.svg" alt="" />
+			</div>
+			<p class="txt">
+				Are you ready to learn more about RF2Digital? Contact us for a detailed
+				quote, license, or demo.
+			</p>
+		</div>
+		<button type="button" class="mt15 openPop">Contact</button>
+	</div>
+</div>
+
+<script defer>
+	(function () {
+		setTimeout(function () {
+			//스크롤 위치값이 맨밑으로 갔을때 실행되는 로직
+			const $close = document.querySelector(".floating-banner .close");
+			const $floatingBanner = document.querySelector(".floating-banner");
+      const $openPop = document.querySelector('.openPop');
+      const $comPopup = document.querySelector('.com-popup-wrap');
+      const $body = document.querySelector('body');
+
+			let scrollHeight = document.documentElement.scrollHeight; // 문서의 전체 높이
+			let clientHeight = document.documentElement.clientHeight; // 브라우저 창의 높이
+			let maxScrollTop = scrollHeight - clientHeight; // 맨밑 값.
+			let scroll;
+
+			window.addEventListener("scroll", function () {
+				scroll = window.scrollY; // 현재 스크롤 값
+				if (scroll >= maxScrollTop - 7) $floatingBanner.classList.add("on");
+				else $floatingBanner.classList.remove("on");
+			});
+
+			$close.addEventListener("click", function (e) {
+				e.preventDefault();
+				this.closest(".floating-banner").classList.remove("on");
+			});
+
+
+      $openPop.addEventListener("click",function(){
+        $comPopup.classList.add("on");
+        $body.classList.add("on");
+      });
+
+		}, 10);
+	})();
+</script>

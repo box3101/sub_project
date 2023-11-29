@@ -37,10 +37,7 @@
 			$$navi_li,
 			$$wrap_div,
 			$wrap_div_last,
-			class_name,
-			scrollHeight,
-			clientHeight,
-			maxScrollTop
+			class_name
 
 		function dom초기화() {
 			$header = document.querySelector(".header");
@@ -72,15 +69,6 @@
 				if (k >= posArr[i] && k < posArr[i + 1]) {
 					$$navi_li[i].classList.add(class_name);
 				}
-			}
-
-			//스크롤 위치값이 맨밑으로 갔을때 실행되는 로직
-			scrollHeight = document.documentElement.scrollHeight; // 문서의 전체 높이
-			clientHeight = document.documentElement.clientHeight; // 브라우저 창의 높이
-			maxScrollTop = scrollHeight - clientHeight; // 맨밑 값.
-
-			if (k >= maxScrollTop) {
-				console.log("스크롤 마지막!");
 			}
 		}
 

@@ -42,5 +42,6 @@
 	"bitoAI.codeCompletion.setAutoCompletionTriggerLogic": 250,
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	},
+	"editor.inlineSuggest.showToolbar": "onHover"
 }

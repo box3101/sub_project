@@ -18,6 +18,7 @@ export const technologyMenuItems = [
 	},
 	{
 		name: "Supporting SoCs",
+    
 		link: "/technology/item2",
 		level2: [
 			{ name: "DAB Solution5", link: "" },

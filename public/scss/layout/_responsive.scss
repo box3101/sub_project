@@ -1,5 +1,7 @@
+body{overflow-x: hidden;}
 @media(max-width:map-get($media-size,smallDesk)){
   html{font-size: 14px;}
+  // .header{background: #fff;}
   .header .gnb{display: none;}
   .header .mobile-nav{display: block;}
   .sub-layout{z-index: 1;}
@@ -14,12 +16,25 @@
   .sub-layout .sub-menu:before{display: none;}
   .sub-layout .sub-menu{flex:1;width:100%;}
   /* main */
-  #main #wrap>section {padding: 0 15px;}
+  #main #wrap>section{height: auto;min-height: auto;padding: 10rem 15px;}
   #navi{display: none;}
+  #main .box2 ul{flex-wrap: wrap;gap:43px;}
+  #main .box2 ul li{flex: 1 1 48%;}
+  #main .box2 ul li img{width: 7rem;}
+  #main .box2 ul li p.txt{max-width: 31rem;margin: 0 auto;}
+  #main .box3 ul:not(.off){flex-direction: column;}
+  #main .box3 .info{width: 100%;}
+  #main .box3 ul:not(.off) > li{transition: 0s;padding: 2rem 0;}
+  #main .box3 .off{text-align: center;display: flex;flex-direction: column;align-items:center;transition: 0s;}
+  #main .box4 .info{overflow-x: scroll;overflow-y: hidden;}
+  .floating-banner{right: 10px;}
 }
+
+
 @media(max-width:map-get($media-size,tablet)){
   html{font-size: 13px;}
 }
 @media(max-width:map-get($media-size,largeMo)){
   html{font-size: 11px;}
+  #main #wrap > section{padding: 7rem -15rem;}
 }

@@ -1,0 +1,109 @@
+body.on{
+  overflow-y: hidden;
+}
+
+.com-popup-wrap {
+	&.on {
+		.com-popup,
+		.bg {
+			display: block;
+		}
+	}
+	.bg {
+		display: none;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+	}
+	.com-popup {
+		display: none;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		max-width: 31.25rem;
+		border-radius: 0.4375rem;
+    z-index: 101;
+		.popup-header {
+			width: 100%;
+			height: 3.75rem;
+			background: #8d58b0;
+			color: #fff;
+			font-size: 1.125rem;
+			text-align: left;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			line-height: 3.75rem;
+			border-radius: 0.4375rem 0.4375rem 0 0;
+		}
+		.popup-info {
+			background: #fff;
+			padding: 1rem;
+
+			.form-group {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 1.5625rem;
+				margin-bottom: 0.75rem;
+				label {
+					flex: 0 0 5rem;
+					font-size: 1.0625rem;
+					line-height: 1.3;
+					span {
+						color: #ef3123;
+					}
+				}
+			}
+
+			input {
+				width: 100%;
+				height: 3rem;
+				background: #fafafc;
+				border: 0.0625rem solid #e5e5e5;
+				border-radius: 0.4375rem;
+				padding-left: 0.9375rem;
+				font-size: 1rem;
+        color: #333;
+			}
+
+			textarea {
+				width: 100%;
+				height: 5.625rem;
+				background: #fafafc;
+				border: 0.0625rem solid #e5e5e5;
+				border-radius: 0.4375rem;
+				padding-left: 0.9375rem;
+				padding: 0.9375rem;
+				font-size: 1rem;
+        color: #333;
+        font-weight: 500;
+				font-family: 'Oswald';
+    font-weight: 500;
+			}
+
+			button {
+				width: 100%;
+				background: #f29f05;
+				border: none;
+				color: #fff;
+				height: 3.75rem;
+				line-height: 3.75rem;
+				text-align: center;
+				font-size: 1.25rem;
+				font-weight: 500;
+				border-radius: 0.4375rem;
+				margin-top: 1.25rem;
+				cursor: pointer;
+			}
+			button:hover {
+				background: #e68a00; /* 클릭 시 색상 변경 */
+			}
+		}
+	}
+}

@@ -1,4 +1,6 @@
 ---
+import ComContact from "../components/ComContact.astro";
+import ComContactPopup from "../components/ComContactPopup.astro";
 const { pageTitle, idName } = Astro.props;
 ---
 
@@ -9,7 +11,8 @@ const { pageTitle, idName } = Astro.props;
 		<meta name="description" content="프로젝트 설명" />
 		<meta name="viewport" content="width=device-width" />
 		<!-- 스타일 -->
-		<link rel="stylesheet" href="../../css/ui.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/ui.css" />
 		<!-- 스타일 eee-->
 		<title>{pageTitle}</title>
 	</head>
@@ -18,9 +21,13 @@ const { pageTitle, idName } = Astro.props;
 			<div id="wrap">
 				<slot />
 			</div>
+
+			<ComContact />	
+			<ComContactPopup />
 		</main>
 
 		<!-- 스크립트 -->
+		<script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script defer src="../../public/js/gnb.js"></script>
 		<script defer src="../../public/js/subMenu.js"></script>
 		<script defer src="../../public/js/scroll.js"></script>

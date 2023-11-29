@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="그룹_8905" data-name="그룹 8905" transform="translate(-1523 -1331)">
+    <circle id="타원_50" data-name="타원 50" cx="24" cy="24" r="24" transform="translate(1523 1331)" fill="#fff"/>
+    <g id="ico_contanct" transform="translate(1533 1341)">
+      <rect id="사각형_2631" data-name="사각형 2631" width="28" height="28" fill="none"/>
+      <path id="chat_134716" d="M21.6,2.5H2.4A2.432,2.432,0,0,0,0,4.9V18.1a2.432,2.432,0,0,0,2.4,2.4H8.222L11.7,24.368a.4.4,0,0,0,.594,0L15.778,20.5H21.6A2.432,2.432,0,0,0,24,18.1V4.9A2.432,2.432,0,0,0,21.6,2.5ZM6.4,12.9A1.6,1.6,0,1,1,8,11.3,1.6,1.6,0,0,1,6.4,12.9Zm5.6,0a1.6,1.6,0,1,1,1.6-1.6A1.6,1.6,0,0,1,12,12.9Zm5.6,0a1.6,1.6,0,1,1,1.6-1.6A1.6,1.6,0,0,1,17.6,12.9Z" transform="translate(2 0.5)" fill="#5c3973"/>
+    </g>
+  </g>
+</svg>

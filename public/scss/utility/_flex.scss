@@ -1,6 +1,34 @@
 .flex{
   display: flex;
+  &.aic{
+    align-items: center;
+  }
+  &.jcb{
+    justify-content: space-between;
+  }
 }
+
+@for $i from 1 to 999{
+  .gap#{$i}{
+    gap: #{$i}px;
+  }
+}
+
+@for $i from 1 to 999{
+  .mt#{$i}{
+    margin-top: #{$i}px;
+  }
+  .ml#{$i}{
+    margin-left: #{$i}px;
+  }
+  .mr#{$i}{
+    margin-right: #{$i}px;
+  }
+  .mb#{$i}{
+    margin-bottom: #{$i}px;
+  }
+}
+ 
 .all-center{
   display: flex;
   align-items: center;
