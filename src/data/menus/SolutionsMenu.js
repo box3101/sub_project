@@ -1,27 +1,34 @@
-export const technologyMenuItems = [
+export const SolutionsMenu = [
 	{
-		name: "Supporting Standards",
-		link: "/technology/item1",
+		name: "Alpha-Orion",
+		link: "",
 		level2: [
-			{ name: "DAB Solution1", link: "" },
-			{ name: "DAB Solution2", link: "" },
-			{ name: "DAB Solution3", link: "" },
+			{ name: "Solution Concept" },
+			{ name: "SW Architecture" },
+			{ name: "Role & Responsibility" },
 			// { name: "DAB Solution3", link: "" },
 		],
 	},
 	{
-		name: "Operating System(OS)",
-		link: "/technology/item2",
+		name: "Alpha-Trinity",
+		link: "",
 		level2: [
-			{ name: "DAB Solution4", link: "" },
+			{ name: "Solution Concept", link: "" },
+			{ name: "SW Architecture", link: "" },
+			{ name: "Role & Responsibility", link: "" },
 		],
 	},
 	{
-		name: "Supporting SoCs",
-    
-		link: "/technology/item2",
+		name: "Alpha-Infuser",
+		link: "",
 		level2: [
-			{ name: "DAB Solution5", link: "" },
+			{ name: "Solution Concept", link: "" },
+			{ name: "SW Architecture", link: "" },
+			{ name: "Role & Responsibility", link: "" },
 		],
+	},
+	{
+		name: "Advanced Features",
+		link: "",
 	},
 ];

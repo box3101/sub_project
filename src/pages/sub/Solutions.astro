@@ -6,31 +6,41 @@ import SubContent from "../../components/SubContent.astro";
 import SubBanner from "../../components/SubBanner.astro";
 import SubMenu from "../../components/SubMenu.astro";
 import SubCntBox from "../../components/SubCntBox.astro";
-import { technologyMenuItems } from "../../data/menus/technologyMenu1.js";
+import { SolutionsMenu } from "../../data/menus/SolutionsMenu.js";
 import "../../css/ui.css";
 
-const pageTitle = `Home > Technology`;
+const pageTitle = `Home > Solutuions`;
 ---
 
-<Layout pageTitle={pageTitle} idName="Technology">
+<Layout pageTitle={pageTitle} idName="Solutions">
 	<Header type="sub" />
-	<SubBanner title="Technology" bgUrl="bg-intro" />
+	<SubBanner title="Solutions" bgUrl="bg-intro" />
 	<SubLayout>
-		<SubMenu items={technologyMenuItems} />
+		<SubMenu items={SolutionsMenu} />
 		<SubContent>
 			<!-- TODO 콘텐츠를 추가 내용 작성 -->
 			<div id="wrap2">
-				<SubCntBox subCntTit="DAB Solution1" id="box0">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia
-					molestias nostrum a, eligendi temporibus laudantium nisi, ex voluptate
-					ut officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.
+				<SubCntBox subCntTit="Turn-Key Approach with α-OrionTM" id="box0">
+					<div class="solu-menu01">
+						<p>When R&D time is short or the resource is limited</p>
+						<img src="../../img/img04.png" alt="" />
+					</div>
 				</SubCntBox>
-				<SubCntBox subCntTit="DAB Solution2" id="box1">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia
-					molestias nostrum a, eligendi temporibus laudantium nisi, ex voluptate
-					ut officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.
+				<SubCntBox subCntTit="SW Architecture Subsystem Type" id="box1">
+					<div class="solu-menu02 sw-type">
+						<img src="../../img/img05.png" alt="" />
+						<div class="sw-type-wrap">
+							<div>
+								<p class="sw-type-tit">
+									Hybrid Approach with <span>α-OrionTM</span>
+								</p>
+								<p class="sw-type-txt">
+									When R&D time is short or resource is limited
+								</p>
+							</div>
+							<div class="icon-sw"></div>
+						</div>
+					</div>
 				</SubCntBox>
 				<SubCntBox subCntTit="DAB Solution3" id="box2">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia

@@ -54,19 +54,19 @@
 			}
 
 			.ico-perfor {
-				background: url(../../img/ico06.png);
+				background: url(../../img/ico06.svg);
 			}
 			.ico-proven {
-				background: url(../../img/ico07.png);
+				background: url(../../img/ico07.svg);
 			}
 			.ico-advan {
-				background: url(../../img/ico08.png);
+				background: url(../../img/ico08.svg);
 			}
 			.ico-flex {
-				background: url(../../img/ico10.png);
+				background: url(../../img/ico10.svg);
 			}
 			.ico-progress {
-				background: url(../../img/ico12.png);
+				background: url(../../img/ico12.svg);
 			}
 
 			p {
@@ -140,25 +140,25 @@
 				margin-top: 9px;
 
 				&.ico-am {
-					background-image: url(../../img/Partner_logo01.png);
+					background-image: url(../../img/Partner_logo01.svg);
 				}
 				&.ico-dab {
-					background: url(../../img/Partner_logo02.png);
+					background: url(../../img/Partner_logo02.svg);
 				}
 				&.ico-drm {
-					background: url(../../img/Partner_logo03.png);
+					background: url(../../img/Partner_logo03.svg);
 				}
 				&.ico-hdr {
-					background: url(../../img/Partner_logo04.png);
+					background: url(../../img/Partner_logo04.svg);
 				}
 				&.ico-cdr {
-					background: url(../../img/Partner_logo05.png);
+					background: url(../../img/Partner_logo05.svg);
 				}
 				&.ico-ip {
-					background: url(../../img/Partner_logo06.png);
+					background: url(../../img/Partner_logo06.svg);
 				}
 				&.ico-radio {
-					background: url(../../img/Partner_logo07.png);
+					background: url(../../img/Partner_logo07.svg);
 				}
 			}
 
@@ -194,6 +194,60 @@
 				line-height: 21px;
 				color: #999999;
 			}
+		}
+	}
+}
+
+.sub-info .solu-menu01 {
+	p {
+		font-size: 25px;
+		font-weight: 500;
+		color: #f29f05;
+		line-height: 37px;
+		margin-bottom: 34px;
+		text-align: center;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.sub-info .solu-menu02.sw-type {
+	display: flex;
+	padding: 25px 25px 36px;
+	background: #d9e2eb;
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+
+	.sw-type-wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 39px 36px 40px;
+
+		.sw-type-tit {
+			font-size: 32px;
+			font-weight: 500;
+			line-height: 47px;
+			margin-bottom: 16px;
+
+			span {
+				color: #f29f05;
+			}
+		}
+		.sw-type-txt {
+			font-size: 16px;
+			line-height: 25px;
+			font-weight: 400;
+		}
+		.icon-sw {
+			background: url(../../img/ico-sw.svg);
+			width: 260px;
+			height: 100px;
 		}
 	}
 }
