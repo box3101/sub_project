@@ -6,7 +6,7 @@ export const technologyMenuItems = [
 			{ name: "DAB Solution"},
 			{ name: "CDR Solution"},
 			{ name: "DRM Solution"},
-			{ name: "DRHD Radio"},
+			{ name: "Hd Radio"},
 
 		],
 	},

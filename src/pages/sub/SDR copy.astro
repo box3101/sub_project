@@ -1,0 +1,89 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../layouts/Header.astro";
+import SubLayout from "../../layouts/SubLayout.astro";
+import SubContent from "../../components/SubContent.astro";
+import SubBanner from "../../components/SubBanner.astro";
+import SubMenu from "../../components/SubMenu.astro";
+import SubCntBox from "../../components/SubCntBox.astro";
+import TechCard from "../../components/TechCard.astro";
+import { technologyMenuItems } from "../../data/menus/technologyMenu1.js";
+import { techCardItems01 } from "../../data/cards/TechCard01.js";
+import "../../css/ui.css";
+
+const pageTitle = `Home > Technology`;
+---
+
+<Layout pageTitle={pageTitle} idName="Technology">
+	<Header type="sub" />
+	<SubBanner title="Technology" bgUrl="bg-technology" />
+	<SubLayout>
+		<SubMenu items={technologyMenuItems} />
+		<SubContent>
+			<!-- TODO 콘텐츠를 추가 내용 작성 -->
+			<div id="wrap2">
+				<SubCntBox subCntTit="DAB Solution Key Points" id="box0">
+					<ul class="com-card">
+						{
+							techCardItems01.map((el, idx) => {
+								return (
+									<TechCard
+										num={techCardItems01[idx].num}
+										title={techCardItems01[idx].title}
+										items={techCardItems01[idx].items}
+									/>
+								);
+							})
+						}
+					</ul>
+				</SubCntBox>
+				<SubCntBox subCntTit="CDR Solution Key Points" id="box1">
+					<ul class="com-card">
+						{
+							techCardItems01.map((el, idx) => {
+								return (
+									<TechCard
+										num={techCardItems01[idx].num}
+										title={techCardItems01[idx].title}
+										items={techCardItems01[idx].items}
+									/>
+								);
+							})
+						}
+					</ul>
+				</SubCntBox>
+				<SubCntBox subCntTit="DAB Solution Key Points" id="box2">
+					<ul class="com-card">
+						{
+							techCardItems01.map((el, idx) => {
+								return (
+									<TechCard
+										num={techCardItems01[idx].num}
+										title={techCardItems01[idx].title}
+										items={techCardItems01[idx].items}
+									/>
+								);
+							})
+						}
+					</ul>
+				</SubCntBox>
+				<SubCntBox subCntTit="DAB Solution Key Points" id="box3">
+					<ul class="com-card">
+						{
+							techCardItems01.map((el, idx) => {
+								return (
+									<TechCard
+										num={techCardItems01[idx].num}
+										title={techCardItems01[idx].title}
+										items={techCardItems01[idx].items}
+									/>
+								);
+							})
+						}
+					</ul>
+					<!-- 콘텐츠를 추가 내용 작성 eee -->
+				</SubCntBox>
+			</div>
+		</SubContent>
+	</SubLayout>
+</Layout>

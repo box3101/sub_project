@@ -6,11 +6,15 @@ import SubContent from "../../components/SubContent.astro";
 import SubBanner from "../../components/SubBanner.astro";
 import SubMenu from "../../components/SubMenu.astro";
 import SubCntBox from "../../components/SubCntBox.astro";
+import TechCard from "../../components/TechCard.astro";
 import { technologyMenuItems } from "../../data/menus/technologyMenu1.js";
+import { techCardItems01 } from "../../data/cards/TechCard01.js";
+import { techCardItems02 } from "../../data/cards/TechCard02.js";
+import { techCardItems03 } from "../../data/cards/TechCard03.js";
 import "../../css/ui.css";
 
 const pageTitle = `Home > Technology`;
---- 
+---
 
 <Layout pageTitle={pageTitle} idName="Technology">
 	<Header type="sub" />
@@ -21,454 +25,114 @@ const pageTitle = `Home > Technology`;
 			<!-- TODO 콘텐츠를 추가 내용 작성 -->
 			<div id="wrap2">
 				<SubCntBox subCntTit="DAB Solution Key Points" id="box0">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia
-					molestias nostrum a, eligendi temporibus laudantium nisi, ex voluptate
-					ut officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.
+					<ul class="com-card">
+						{
+							techCardItems01.map((el, idx) => {
+								return (
+									<TechCard
+										num={techCardItems01[idx].num}
+										title={techCardItems01[idx].title}
+										items={techCardItems01[idx].items}
+									/>
+								);
+							})
+						}
+					</ul>
 				</SubCntBox>
-				<SubCntBox subCntTit="DAB Solution2" id="box1">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia
-					molestias nostrum a, eligendi temporibus laudantium nisi, ex voluptate
-					ut officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.
+				<SubCntBox subCntTit="CDR Solution Key Points" id="box1">
+					<ul class="com-card">
+						{
+							techCardItems02.map((el, idx) => {
+								return (
+									<TechCard
+										num={techCardItems02[idx].num}
+										title={techCardItems02[idx].title}
+										items={techCardItems02[idx].items}
+									/>
+								);
+							})
+						}
+					</ul>
 				</SubCntBox>
-				<SubCntBox subCntTit="DAB Solution3" id="box2">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia
-					molestias nostrum a, eligendi temporibus laudantium nisi, ex voluptate
-					ut officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis. Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis. Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.
+				<SubCntBox subCntTit="DRM Solution Key Points" id="box2">
+					<ul class="com-card">
+						{
+							techCardItems03.map((el, idx) => {
+								return (
+									<TechCard
+										num={techCardItems03[idx].num}
+										title={techCardItems03[idx].title}
+										items={techCardItems03[idx].items}
+									/>
+								);
+							})
+						}
+					</ul>
 				</SubCntBox>
-				<SubCntBox subCntTit="DAB Solution4" id="box3">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia
-					molestias nostrum a, eligendi temporibus laudantium nisi, ex voluptate
-					ut officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis. Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis. Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.
-				</SubCntBox>
-				<SubCntBox subCntTit="DAB Solution5" id="box4">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia
-					molestias nostrum a, eligendi temporibus laudantium nisi, ex voluptate
-					ut officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis. Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis. Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.Lorem ipsum
-					dolor sit amet consectetur adipisicing elit. Optio officia molestias
-					nostrum a, eligendi temporibus laudantium nisi, ex voluptate ut
-					officiis quod natus dolorum explicabo ipsum autem dolor accusamus
-					nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-					officia molestias nostrum a, eligendi temporibus laudantium nisi, ex
-					voluptate ut officiis quod natus dolorum explicabo ipsum autem dolor
-					accusamus nobis.Lorem ipsum dolor sit amet consectetur adipisicing
-					elit. Optio officia molestias nostrum a, eligendi temporibus
-					laudantium nisi, ex voluptate ut officiis quod natus dolorum explicabo
-					ipsum autem dolor accusamus nobis.Lorem ipsum dolor sit amet
-					consectetur adipisicing elit. Optio officia molestias nostrum a,
-					eligendi temporibus laudantium nisi, ex voluptate ut officiis quod
-					natus dolorum explicabo ipsum autem dolor accusamus nobis.
+				<SubCntBox subCntTit="Steps of How to Implement HDRadio" id="box3">
+					<ul class="com-step-wrap">
+						<li data-aos="fade-up" data-aos-delay="0" class="com-step">
+							<div class="title-wrap">
+								Step <span>04</span>
+							</div>
+							<div class="info">
+								<p class="title">Pay the royalty and NRE to Integrator</p>
+								<p class="txt">
+									The integrator is eligible to get paid for the framework and
+									other S/W IP royalty as well as NRE for the integration work
+								</p>
+							</div>
+						</li>
+						<li data-aos="fade-up" data-aos-delay="100" class="com-step">
+							<div class="title-wrap">
+								Step <span>03</span>
+							</div>
+							<div class="info">
+								<p class="title">Pay the royalty directly to Xperi</p>
+								<p class="txt">
+									When mass production starts, Tier1 has to pay the HDRadio SDR
+									solution royalty to DTS directly
+								</p>
+								<p class="txt">
+									License fees that have been paid to Xperi previously,
+									excluding the SDR royalty, must continue to be paid as usual.
+								</p>
+								<p class="txt">
+									Only the chipset price shall be replaced with the above
+									solution royalty
+								</p>
+							</div>
+						</li>
+						<li data-aos="fade-up" data-aos-delay="200" class="com-step">
+							<div class="title-wrap">
+								Step <span>02</span>
+							</div>
+							<div class="info">
+								<p class="title">Obtain the library and pass it on</p>
+								<p class="txt">
+									Xperi shall provide HDRadio library to the Tier1
+								</p>
+								<p class="txt">
+									Tier1 has to provide the library to the integrator
+								</p>
+							</div>
+						</li>
+						<li data-aos="fade-up" data-aos-delay="300" class="com-step">
+							<div class="title-wrap">
+								Step <span>01</span>
+							</div>
+							<div class="info">
+								<p class="title">Contract with Xperi to get HDR library</p>
+								<p class="txt">
+									A Tier1 customer wanting to implement SDR-based HDRadio must
+									first establish a license contract directly with Xperi.
+								</p>
+								<p class="txt">Define who will perform the integration work</p>
+							</div>
+						</li>
+					</ul>
 				</SubCntBox>
 			</div>
-			<!-- 콘텐츠를 추가 내용 작성 eee -->
 		</SubContent>
 	</SubLayout>
 </Layout>

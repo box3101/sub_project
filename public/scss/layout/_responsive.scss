@@ -28,11 +28,27 @@ body{overflow-x: hidden;}
   #main .box3 .off{text-align: center;display: flex;flex-direction: column;align-items:center;transition: 0s;}
   #main .box4 .info{overflow-x: scroll;overflow-y: hidden;}
   .floating-banner{right: 10px;}
+  /* sub */
+  .com-step{width: 100%;}
+  .com-step .title-wrap::before,.com-step .title-wrap::after,.com-step .info:after{display: none!important;}
+  .com-step-wrap li:nth-of-type(1),.com-step-wrap li:nth-of-type(2),.com-step-wrap li:nth-of-type(3),.com-step-wrap li:nth-of-type(4){right:auto}
+  .com-step .info{width:calc(100% - 10.3125rem);padding-left: 1.8125rem;}
+  .com-step .title-wrap{justify-content: center;}
+  .sub-banner .inner article h1{padding-left: 13px;}
+  .header.sub.on{height: 5rem;}
 }
 @media(max-width:map-get($media-size,tablet)){
   html{font-size: 13px;}
+  /* sub */
+  .com-step{height: 14rem;}
+  .com-card > li{flex:0 0 100%;}
+  section.box {padding-bottom: 2.75rem;}
+
 }
 @media(max-width:map-get($media-size,largeMo)){
   html{font-size: 12px;}
   #main #wrap > section{padding: 7rem -15rem;}
+  /* sub */
+  .com-step {height: 24rem;}
+  .com-step .info{justify-content: flex-start; padding-top: 20px;padding-left: 10px;padding-right: 10px;}
 }
