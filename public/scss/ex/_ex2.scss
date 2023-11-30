@@ -102,10 +102,6 @@
 	}
 }
 
-// .sub-contents .sub-title-.sub-title-exclu {
-// 	padding: 3.75rem 3.75rem 0.9375rem 60px;
-// }
-
 .sub-info .intro-menu03 {
 	p {
 		font-size: 24px;
@@ -198,100 +194,177 @@
 	}
 }
 
-.sub-info .solu-menu01 {
-	p {
-		font-size: 25px;
-		font-weight: 500;
-		color: #f29f05;
-		line-height: 37px;
-		margin-bottom: 34px;
-		text-align: center;
-	}
+.sub-info {
+	.img-type {
+		p {
+			font-size: 25px;
+			font-weight: 500;
+			color: #f29f05;
+			line-height: 37px;
+			margin-bottom: 34px;
+			text-align: center;
+		}
 
-	img {
-		width: 100%;
+		img {
+			width: 100%;
+		}
 	}
 }
 
-.sub-info .solu-menu02.sw-type {
-	display: flex;
-	padding: 25px 25px 36px;
-	background: #d9e2eb;
-	width: 100%;
-
-	img {
+.sub-info {
+	.sw-type {
+		display: flex;
+		padding: 25px 25px 36px;
+		background: #d9e2eb;
 		width: 100%;
-	}
 
-	.sw-type-wrap {
+		img {
+			width: 100%;
+		}
+
+		.sw-type-wrap {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 39px 36px 40px;
+
+			.sw-type-tit {
+				font-size: 32px;
+				font-weight: 500;
+				line-height: 47px;
+				margin-bottom: 16px;
+
+				span {
+					color: #f29f05;
+				}
+			}
+			.sw-type-txt {
+				font-size: 16px;
+				line-height: 25px;
+				font-weight: 400;
+			}
+		}
+	}
+	.ico-wave {
+		background: url(../../img/ico-wave.svg);
+		width: 260px;
+		height: 100px;
+	}
+}
+
+.sub-info {
+	.table-type {
+		display: flex;
+		background: #1f2833;
+		border-radius: 15px;
+		padding: 20px;
+
+		.con-left-wrap {
+			padding: 33px 25px 0 5px;
+			text-align: center;
+			p {
+				font-size: 32px;
+				font-weight: 500;
+				line-height: 47px;
+				color: #fff;
+				margin-bottom: 24px;
+			}
+		}
+		.con-right-wrap {
+			display: flex;
+			flex-direction: column;
+			background: #fff;
+
+			.role-table-wrap table {
+				width: 100%;
+				th,
+				td {
+					height: 40px;
+					text-align: center;
+					font-size: 16px;
+					line-height: 24px;
+					border-right: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+					padding: 7px;
+
+					&:last-child {
+						border-right: none;
+					}
+					&:last-child {
+						border-left: 1px solid #fff;
+					}
+				}
+				th {
+					font-size: 18px;
+					font-weight: 600;
+					color: #fff;
+				}
+				thead tr:nth-child(even) {
+					background: #ba8dd8;
+				}
+				thead tr:nth-child(odd) {
+					background: #a265ca;
+				}
+				tbody tr:nth-child(even) {
+					background: #e8d9f2;
+				}
+				tbody tr:nth-child(odd) {
+					background: #f3ecf8;
+				}
+			}
+		}
+		.note-wrap {
+			padding: 32px 30px 25px;
+
+			p {
+				font-size: 18px;
+				color: #222222;
+				line-height: 26px;
+				font-weight: 500;
+				border-bottom: 1px solid #ebebeb;
+				padding-bottom: 17.5px;
+			}
+			ul {
+				padding-top: 17.5px;
+				font-size: 0;
+
+				li {
+					font-size: 16px;
+					color: initial;
+					line-height: 24px;
+					padding-bottom: 12px;
+					&::before {
+						content: "";
+						display: inline-block;
+						background: url(../../img/ico-check.svg);
+						width: 12px;
+						height: 12px;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+	}
+}
+.sub-info .solu-menu09.table-type {
+	.con-left-wrap {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 39px 36px 40px;
-
-		.sw-type-tit {
-			font-size: 32px;
-			font-weight: 500;
-			line-height: 47px;
-			margin-bottom: 16px;
-
-			span {
-				color: #f29f05;
-			}
-		}
-		.sw-type-txt {
-			font-size: 16px;
-			line-height: 25px;
-			font-weight: 400;
-		}
 	}
-}
-.ico-wave {
-	background: url(../../img/ico-wave.svg);
-	width: 260px;
-	height: 100px;
-}
 
-.sub-info .solu-menu03.role-table {
-	display: flex;
-	// justify-content: center;
-	// align-items: center;
-	background: #1f2833;
-	border-radius: 15px;
-	padding: 20px;
-
-	.con-left-wrap {
-		p {
-			font-size: 32px;
-			font-weight: 500;
-			line-height: 47px;
-			color: #fff;
-			margin-bottom: 24px;
+	.role-table-wrap table {
+		thead tr:nth-child(odd) {
+			background: #428dff;
 		}
-	}
-	.con-right-wrap {
-		display: flex;
-		flex-direction: column;
-		background: #fff;
-
-		.role-table-wrap table {
-			th,
-			td {
-				height: 40px;
-				text-align: center;
-				font-size: 16px;
-				line-height: 24px;
-				border: 1px solid #fff;
-			}
-			th {
-				font-size: 18px;
-				font-weight: 600;
-				background: #a265ca;
-				color: #fff;
-			}
-			td {
-				background: #f3ecf8;
-			}
+		thead tr:nth-child(even) {
+			background: #7aafff;
+		}
+		tbody tr:nth-child(odd) {
+			background: #d9e8ff;
+		}
+		tbody tr:nth-child(even) {
+			background: #c6dcff;
 		}
 	}
 }
