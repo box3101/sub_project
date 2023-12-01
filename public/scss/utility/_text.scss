@@ -1,17 +1,49 @@
-.com-title{
-  font-size: 3rem;
-  font-weight: 500;
-  color: #F29F05;
-  text-align: center;
-  margin-bottom: 3.4375rem;
-  line-height: 1;
+.com-title {
+	font-size: 3rem;
+	font-weight: 500;
+	color: #f29f05;
+	text-align: center;
+	margin-bottom: 3.4375rem;
+	line-height: 1;
 }
-.tar{
-  text-align: right;
+
+.com-title {
+	&.sm {
+		margin-top: -20px;
+		font-size: 25px;
+		font-weight: 500;
+		color: #f29f05;
+    margin-bottom: 1.9375rem;
+	}
 }
-.tac{
-  text-align: center;
+
+.custom-bullet-list {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	li {
+		position: relative;
+		padding-left: 10px;
+		@include make-before {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 5px;
+			height: 5px;
+			@include bg-url("img", "bullet-list.svg", true, center, contain);
+		}
+		font-size: 16px;
+	}
 }
-.tal{
-  text-align: left;
+
+.tar {
+	text-align: right;
+}
+.tac {
+	text-align: center;
+}
+.tal {
+	text-align: left;
 }

@@ -30,7 +30,7 @@
 			font-weight: 500;
 		}
 		.list {
-			margin-top: 1.75rem;
+			margin-top: 2rem;
 			li {
 				position: relative;
 				padding-bottom: 0.75rem;
@@ -50,6 +50,15 @@
 				&:last-of-type {
 					padding-bottom: 0;
 				}
+			}
+		}
+	}
+
+	&.type2{
+		li{
+			background: #fff;
+			.icon,.title{
+				text-align: center;
 			}
 		}
 	}
@@ -223,3 +232,4 @@
 	height: 6.25rem; /* 자식 요소와 동일한 크기 */
 	visibility: hidden; /* 투명하게 처리 */
 }
+

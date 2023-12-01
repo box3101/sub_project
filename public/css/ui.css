@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -145,10 +146,48 @@ a {
 .com-title {
   font-size: 3rem;
   font-weight: 500;
-  color: #F29F05;
+  color: #f29f05;
   text-align: center;
   margin-bottom: 3.4375rem;
   line-height: 1;
+}
+
+.com-title.sm {
+  margin-top: -20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #f29f05;
+  margin-bottom: 1.9375rem;
+}
+
+.custom-bullet-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.custom-bullet-list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-image: url("../img/bullet-list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .tar {
@@ -21111,7 +21150,7 @@ body.on {
   font-weight: 500;
 }
 .com-card > li .list {
-  margin-top: 1.75rem;
+  margin-top: 2rem;
 }
 .com-card > li .list li {
   position: relative;
@@ -21135,6 +21174,12 @@ body.on {
 }
 .com-card > li .list li:last-of-type {
   padding-bottom: 0;
+}
+.com-card.type2 li {
+  background: #fff;
+}
+.com-card.type2 li .icon, .com-card.type2 li .title {
+  text-align: center;
 }
 
 .sub-info {

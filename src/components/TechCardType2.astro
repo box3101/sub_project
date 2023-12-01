@@ -1,0 +1,19 @@
+---
+const { icon, title, items } = Astro.props;
+---
+
+<li>
+	<div data-aos="fade-left" data-aos-delay="0" class="icon">
+		<img src={icon} alt="">
+	</div>
+	<div data-aos="fade-up" data-aos-delay="200" class="title">{title}</div>
+	<ul data-aos="fade-up" data-aos-delay="400" class="list">
+		{
+			items && items.length > 0
+				? items.map((el) => {
+						return <li>{el}</li>;
+				  })
+				: null
+		}
+	</ul>
+</li>

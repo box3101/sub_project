@@ -146,10 +146,48 @@ a {
 .com-title {
   font-size: 3rem;
   font-weight: 500;
-  color: #F29F05;
+  color: #f29f05;
   text-align: center;
   margin-bottom: 3.4375rem;
   line-height: 1;
+}
+
+.com-title.sm {
+  margin-top: -20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #f29f05;
+  margin-bottom: 1.9375rem;
+}
+
+.custom-bullet-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.custom-bullet-list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-image: url("../img/bullet-list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .tar {
@@ -21112,7 +21150,7 @@ body.on {
   font-weight: 500;
 }
 .com-card > li .list {
-  margin-top: 1.75rem;
+  margin-top: 2rem;
 }
 .com-card > li .list li {
   position: relative;
@@ -21136,6 +21174,12 @@ body.on {
 }
 .com-card > li .list li:last-of-type {
   padding-bottom: 0;
+}
+.com-card.type2 li {
+  background: #fff;
+}
+.com-card.type2 li .icon, .com-card.type2 li .title {
+  text-align: center;
 }
 
 .sub-info {
@@ -21676,7 +21720,7 @@ body {
   color: #999999;
 }
 
-.sub-info .solu-menu01 p {
+.sub-info .img-type p {
   font-size: 25px;
   font-weight: 500;
   color: #f29f05;
@@ -21684,80 +21728,151 @@ body {
   margin-bottom: 34px;
   text-align: center;
 }
-.sub-info .solu-menu01 img {
+.sub-info .img-type img {
   width: 100%;
 }
 
-.sub-info .solu-menu02.sw-type {
+.sub-info .sw-type {
   display: flex;
   padding: 25px 25px 36px;
   background: #d9e2eb;
   width: 100%;
 }
-.sub-info .solu-menu02.sw-type img {
+.sub-info .sw-type img {
   width: 100%;
 }
-.sub-info .solu-menu02.sw-type .sw-type-wrap {
+.sub-info .sw-type .sw-type-wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 39px 36px 40px;
 }
-.sub-info .solu-menu02.sw-type .sw-type-wrap .sw-type-tit {
+.sub-info .sw-type .sw-type-wrap .sw-type-tit {
   font-size: 32px;
   font-weight: 500;
   line-height: 47px;
   margin-bottom: 16px;
 }
-.sub-info .solu-menu02.sw-type .sw-type-wrap .sw-type-tit span {
+.sub-info .sw-type .sw-type-wrap .sw-type-tit span {
   color: #f29f05;
 }
-.sub-info .solu-menu02.sw-type .sw-type-wrap .sw-type-txt {
+.sub-info .sw-type .sw-type-wrap .sw-type-txt {
   font-size: 16px;
   line-height: 25px;
   font-weight: 400;
 }
-
-.ico-wave {
+.sub-info .ico-wave {
   background: url(../../img/ico-wave.svg);
   width: 260px;
   height: 100px;
 }
 
-.sub-info .solu-menu03.role-table {
+.sub-info .table-type {
   display: flex;
   background: #1f2833;
   border-radius: 15px;
   padding: 20px;
 }
-.sub-info .solu-menu03.role-table .con-left-wrap p {
+.sub-info .table-type .con-left-wrap {
+  padding: 33px 25px 0 5px;
+  text-align: center;
+}
+.sub-info .table-type .con-left-wrap p {
   font-size: 32px;
   font-weight: 500;
   line-height: 47px;
   color: #fff;
   margin-bottom: 24px;
 }
-.sub-info .solu-menu03.role-table .con-right-wrap {
+.sub-info .table-type .con-right-wrap {
   display: flex;
   flex-direction: column;
   background: #fff;
 }
-.sub-info .solu-menu03.role-table .con-right-wrap .role-table-wrap table th,
-.sub-info .solu-menu03.role-table .con-right-wrap .role-table-wrap table td {
+.sub-info .table-type .con-right-wrap .role-table-wrap table {
+  width: 100%;
+}
+.sub-info .table-type .con-right-wrap .role-table-wrap table th,
+.sub-info .table-type .con-right-wrap .role-table-wrap table td {
   height: 40px;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
-  border: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 7px;
 }
-.sub-info .solu-menu03.role-table .con-right-wrap .role-table-wrap table th {
+.sub-info .table-type .con-right-wrap .role-table-wrap table th:last-child,
+.sub-info .table-type .con-right-wrap .role-table-wrap table td:last-child {
+  border-right: none;
+}
+.sub-info .table-type .con-right-wrap .role-table-wrap table th:last-child,
+.sub-info .table-type .con-right-wrap .role-table-wrap table td:last-child {
+  border-left: 1px solid #fff;
+}
+.sub-info .table-type .con-right-wrap .role-table-wrap table th {
   font-size: 18px;
   font-weight: 600;
-  background: #a265ca;
   color: #fff;
 }
-.sub-info .solu-menu03.role-table .con-right-wrap .role-table-wrap table td {
+.sub-info .table-type .con-right-wrap .role-table-wrap table thead tr:nth-child(even) {
+  background: #ba8dd8;
+}
+.sub-info .table-type .con-right-wrap .role-table-wrap table thead tr:nth-child(odd) {
+  background: #a265ca;
+}
+.sub-info .table-type .con-right-wrap .role-table-wrap table tbody tr:nth-child(even) {
+  background: #e8d9f2;
+}
+.sub-info .table-type .con-right-wrap .role-table-wrap table tbody tr:nth-child(odd) {
   background: #f3ecf8;
+}
+.sub-info .table-type .note-wrap {
+  padding: 32px 30px 25px;
+}
+.sub-info .table-type .note-wrap p {
+  font-size: 18px;
+  color: #222222;
+  line-height: 26px;
+  font-weight: 500;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 17.5px;
+}
+.sub-info .table-type .note-wrap ul {
+  padding-top: 17.5px;
+  font-size: 0;
+}
+.sub-info .table-type .note-wrap ul li {
+  font-size: 16px;
+  color: initial;
+  line-height: 24px;
+  padding-bottom: 12px;
+}
+.sub-info .table-type .note-wrap ul li::before {
+  content: "";
+  display: inline-block;
+  background: url(../../img/ico-check.svg);
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+
+.sub-info .solu-menu09.table-type .con-left-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sub-info .solu-menu09.table-type .role-table-wrap table thead tr:nth-child(odd) {
+  background: #428dff;
+}
+.sub-info .solu-menu09.table-type .role-table-wrap table thead tr:nth-child(even) {
+  background: #7aafff;
+}
+.sub-info .solu-menu09.table-type .role-table-wrap table tbody tr:nth-child(odd) {
+  background: #d9e8ff;
+}
+.sub-info .solu-menu09.table-type .role-table-wrap table tbody tr:nth-child(even) {
+  background: #c6dcff;
 }
 
 /*이찬용*/
