@@ -1,4 +1,4 @@
-body{overflow-x: hidden;}
+main{overflow: hidden;}
 @media(max-width:map-get($media-size,smallDesk)){
   html{font-size: 14px;}
   // .header{background: #fff;}
@@ -36,6 +36,8 @@ body{overflow-x: hidden;}
   .com-step .title-wrap{justify-content: center;}
   .sub-banner .inner article h1{padding-left: 13px;}
   .header.sub.on{height: 5rem;}
+  .custom-bullet-list{flex-direction: column;}
+  /* scoll */
 }
 @media(max-width:map-get($media-size,tablet)){
   html{font-size: 13px;}
@@ -43,7 +45,7 @@ body{overflow-x: hidden;}
   .com-step{height: 14rem;}
   .com-card > li{flex:0 0 100%;}
   section.box {padding-bottom: 2.75rem;}
-
+  
 }
 @media(max-width:map-get($media-size,largeMo)){
   html{font-size: 12px;}
@@ -51,4 +53,5 @@ body{overflow-x: hidden;}
   /* sub */
   .com-step {height: 24rem;}
   .com-step .info{justify-content: flex-start; padding-top: 20px;padding-left: 10px;padding-right: 10px;}
+  .com-card > li{padding-left: 10px;padding-right: 10px;}
 }

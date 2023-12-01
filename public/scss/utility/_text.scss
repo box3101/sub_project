@@ -25,6 +25,7 @@
 	li {
 		position: relative;
 		padding-left: 10px;
+		word-break: keep-all;
 		@include make-before {
 			position: absolute;
 			left: 0;

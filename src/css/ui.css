@@ -112,7 +112,6 @@ section {
 
 body {
   line-height: 1;
-  -webkit-text-size-adjust: 75%;
 }
 
 ol,
@@ -169,6 +168,7 @@ a {
 .custom-bullet-list li {
   position: relative;
   padding-left: 10px;
+  word-break: keep-all;
   font-size: 16px;
 }
 .custom-bullet-list li:before {
@@ -21377,8 +21377,8 @@ body.on {
   visibility: hidden; /* 투명하게 처리 */
 }
 
-body {
-  overflow-x: hidden;
+main {
+  overflow: hidden;
 }
 
 @media (max-width: 1280px) {
@@ -21507,6 +21507,10 @@ body {
   .header.sub.on {
     height: 5rem;
   }
+  .custom-bullet-list {
+    flex-direction: column;
+  }
+  /* scoll */
 }
 @media (max-width: 800px) {
   html {
@@ -21537,6 +21541,10 @@ body {
   .com-step .info {
     justify-content: flex-start;
     padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .com-card > li {
     padding-left: 10px;
     padding-right: 10px;
   }
