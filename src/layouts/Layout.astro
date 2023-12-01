@@ -11,7 +11,7 @@ const { pageTitle, idName } = Astro.props;
 		<meta name="description" content="프로젝트 설명" />
 		<meta name="viewport" content="width=device-width" />
 		<!-- 스타일 -->
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="/css/ui.css" />
 		<!-- 스타일 eee-->
 		<title>{pageTitle}</title>
@@ -22,7 +22,7 @@ const { pageTitle, idName } = Astro.props;
 				<slot />
 			</div>
 
-			<ComContact />	
+			<ComContact />
 			<ComContactPopup />
 		</main>
 
@@ -34,6 +34,7 @@ const { pageTitle, idName } = Astro.props;
 		<script defer src="/js/textAni.js"></script>
 		<script defer src="/js/subMenuScroll.js"></script>
 		<script defer src="/js/common.js"></script>
+		<script defer src="/js/SolutionsTab.js"></script>
 		<!-- 스크립트 eee-->
 	</body>
 </html>

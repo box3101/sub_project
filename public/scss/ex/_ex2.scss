@@ -369,6 +369,79 @@
 	}
 }
 
+.sub-info .solu-menu09 {
+	.tab-list {
+		display: flex;
+		gap: 5px;
+		cursor: pointer;
+		.tab-button {
+			padding: 26px 15px;
+			width: 236px;
+			font-size: 16px;
+			line-height: 24px;
+			border: 1px solid #412859;
+			border-bottom: none;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			text-align: center;
+
+			&.on {
+				background: #412859;
+				color: #fff;
+			}
+		}
+	}
+
+	.tab-content-wrap {
+		display: none;
+		&.show {
+			display: block;
+		}
+	}
+	.tab-content {
+		display: flex;
+		justify-content: space-between;
+		background: #412859;
+		padding: 40px 50px;
+		align-items: center;
+
+		.con-left-wrap {
+			.tit {
+				font-size: 32px;
+				line-height: 42px;
+				font-weight: 500;
+				color: #fff;
+				margin-bottom: 10px;
+
+				&.line-height {
+					line-height: 60px;
+				}
+
+				span {
+					font-size: 40px;
+				}
+			}
+			.txt {
+				display: flex;
+				gap: 12px;
+				li {
+					font-size: 16px;
+					color: #fff;
+					span {
+						font-weight: 600;
+						color: #f29f05;
+					}
+				}
+			}
+		}
+
+		img {
+			width: 620px;
+			height: 620px;
+		}
+	}
+}
+
 @media (max-width: map-get($media-size,smallDesk)) {
 }
 @media (max-width: map-get($media-size,tablet)) {
