@@ -84,6 +84,7 @@ summary,
 time,
 mark,
 audio,
+input, textarea, button,
 video {
   margin: 0;
   padding: 0;
@@ -20497,6 +20498,7 @@ html {
 }
 .floating-banner .tar img {
   cursor: pointer;
+  width: 3rem;
 }
 .floating-banner .contact-pop {
   display: none;
@@ -20805,9 +20807,7 @@ body.on {
   padding: 0.9375rem;
   font-size: 1rem;
   color: #333;
-  font-weight: 500;
   font-family: "Oswald";
-  font-weight: 500;
 }
 .com-popup-wrap .com-popup .popup-info button {
   width: 100%;
@@ -21377,10 +21377,6 @@ body.on {
   visibility: hidden; /* 투명하게 처리 */
 }
 
-main {
-  overflow: hidden;
-}
-
 @media (max-width: 1280px) {
   html {
     font-size: 14px;
@@ -21547,6 +21543,9 @@ main {
   .com-card > li {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  main {
+    overflow: hidden;
   }
 }
 /*이은영*/

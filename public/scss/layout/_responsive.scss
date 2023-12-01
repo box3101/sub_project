@@ -1,4 +1,3 @@
-main{overflow: hidden;}
 @media(max-width:map-get($media-size,smallDesk)){
   html{font-size: 14px;}
   // .header{background: #fff;}
@@ -54,4 +53,5 @@ main{overflow: hidden;}
   .com-step {height: 24rem;}
   .com-step .info{justify-content: flex-start; padding-top: 20px;padding-left: 10px;padding-right: 10px;}
   .com-card > li{padding-left: 10px;padding-right: 10px;}
+   main{overflow: hidden;}
 }
