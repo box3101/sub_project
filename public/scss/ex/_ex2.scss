@@ -9,8 +9,8 @@
 
 	.intro-img02 {
 		height: 42.625rem;
-		margin-top: 80px;
-		padding: 40px 60px;
+		margin-top: 5rem;
+		padding: 2.5rem 3.75rem;
 		border: 1px solid #e5e5e5;
 	}
 
@@ -27,30 +27,30 @@
 		flex-direction: column;
 
 		&.perfor {
-			gap: 26px;
-			margin-right: 40px;
+			gap: 2.5rem;
+			margin-right: 2.5rem;
 		}
 		&.proven {
-			gap: 38px;
-			margin: 56px 35px 0 0;
+			gap: 2.5rem;
+			margin: 3.5rem 2.5rem 0 0;
 		}
 		&.advan {
-			margin-top: 167px;
+			margin-top: 10.4375rem;
 		}
 
 		.intro-advantages__item {
-			width: 370px;
-			height: 365px;
+			width: 23.125rem;
+			height: 22.8125rem;
 			background: #f6f6f6;
-			padding: 25px 30px;
+			padding: 1.5625rem 1.875rem;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 
 			.icon {
-				width: 90px;
-				height: 90px;
+				width: 5.625rem;
+				height: 5.625rem;
 			}
 
 			.ico-perfor {
@@ -70,31 +70,31 @@
 			}
 
 			p {
-				font-size: 30px;
-				line-height: 45px;
+				font-size: 1.875rem;
+				line-height: 2.8125rem;
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				height: 100px;
+				height: 6.25rem;
 				color: #222222;
 			}
 			.intro-advantages__list {
-				margin-top: 21px;
+				margin-top: 1.3125rem;
 				li {
-					font-size: 16px;
-					line-height: 24px;
-					padding: 5px;
+					font-size: 1rem;
+					line-height: 1.5rem;
+					padding: 0.3125rem;
 					position: relative;
 					color: #222222;
 
 					&::before {
 						content: "";
 						background: #a265ca;
-						width: 5px;
-						height: 5px;
+						width: 0.3125rem;
+						height: 0.3125rem;
 						position: absolute;
-						left: -10px;
-						top: 15px;
+						left: -0.625rem;
+						top: 0.9375rem;
 					}
 				}
 			}
@@ -104,17 +104,17 @@
 
 .sub-info .intro-menu03 {
 	p {
-		font-size: 24px;
+		font-size: 1.5rem;
 		color: #777777;
-		line-height: 36px;
+		line-height: 2.25rem;
 		font-weight: 500;
 		text-align: center;
 	}
 	.radio-wrap {
-		margin-top: 57px;
+		margin-top: 3.5625rem;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 38px;
+		gap: 2.375rem;
 
 		.radio-card {
 			display: flex;
@@ -123,17 +123,17 @@
 			flex-direction: column;
 			flex: calc(30%);
 			border: 1px solid #e5e5e5;
-			padding: 20px;
+			padding: 1.25rem;
 
 			.icon-wrap {
 				display: flex;
-				gap: 45px;
+				gap: 2.8125rem;
 			}
 
 			.icon {
-				width: 140px;
-				height: 65px;
-				margin-top: 9px;
+				width: 8.75rem;
+				height: 4.0625rem;
+				margin-top: 0.5625rem;
 
 				&.ico-am {
 					background-image: url(../../img/Partner_logo01.svg);
@@ -159,18 +159,18 @@
 			}
 
 			.top-title {
-				font-size: 30px;
-				line-height: 45px;
+				font-size: 1.875rem;
+				line-height: 2.8125rem;
 				color: #222222;
 				text-align: center;
 			}
 
 			.mid-title {
-				height: 75px;
-				font-size: 24px;
-				line-height: 36px;
+				height: 4.6875rem;
+				font-size: 1.5rem;
+				line-height: 2.25rem;
 				color: inherit;
-				margin: 15px 0;
+				margin: 0.9375rem 0;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -178,16 +178,16 @@
 			}
 
 			.con-txt {
-				font-size: 16px;
-				line-height: 24px;
+				font-size: 1rem;
+				line-height: 1.5rem;
 				color: inherit;
 				text-align: left;
-				margin-bottom: 12px;
+				margin: 0.9375rem 0 0.75rem;
 				word-wrap: break-word;
 			}
 			.con-txt-gray {
-				font-size: 14px;
-				line-height: 21px;
+				font-size: 0.875rem;
+				line-height: 1.3125rem;
 				color: #999999;
 			}
 		}
@@ -197,16 +197,19 @@
 .sub-info {
 	.img-type {
 		p {
-			font-size: 25px;
+			font-size: 1.5625rem;
 			font-weight: 500;
 			color: #f29f05;
-			line-height: 37px;
-			margin-bottom: 34px;
+			line-height: 2.3125rem;
+			margin-bottom: 2.125rem;
 			text-align: center;
 		}
 
-		img {
-			width: 100%;
+		.img04 {
+			width: 100% !important;
+		}
+		.mo-img04 {
+			display: none;
 		}
 	}
 }
@@ -214,7 +217,7 @@
 .sub-info {
 	.sw-type {
 		display: flex;
-		padding: 25px 25px 36px;
+		padding: 1.5625rem 1.5625rem 2.25rem;
 		background: #d9e2eb;
 		width: 100%;
 
@@ -226,29 +229,29 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			padding: 39px 36px 40px;
+			padding: 2.4375rem 2.25rem 2.5rem;
 
 			.sw-type-tit {
-				font-size: 32px;
+				font-size: 2rem;
 				font-weight: 500;
-				line-height: 47px;
-				margin-bottom: 16px;
+				line-height: 2.9375rem;
+				margin-bottom: 1rem;
 
 				span {
 					color: #f29f05;
 				}
 			}
 			.sw-type-txt {
-				font-size: 16px;
-				line-height: 25px;
+				font-size: 1rem;
+				line-height: 1.5625rem;
 				font-weight: 400;
 			}
 		}
 	}
 	.ico-wave {
 		background: url(../../img/ico-wave.svg);
-		width: 260px;
-		height: 100px;
+		width: 16.25rem;
+		height: 6.25rem;
 	}
 }
 
@@ -256,18 +259,18 @@
 	.table-type {
 		display: flex;
 		background: #1f2833;
-		border-radius: 15px;
-		padding: 20px;
+		border-radius: 0.9375rem;
+		padding: 1.25rem;
 
 		.con-left-wrap {
-			padding: 33px 25px 0 5px;
+			padding: 2.0625rem 1.5625rem 0 0.3125rem;
 			text-align: center;
 			p {
-				font-size: 32px;
+				font-size: 2rem;
 				font-weight: 500;
-				line-height: 47px;
+				line-height: 2.9375rem;
 				color: #fff;
-				margin-bottom: 24px;
+				margin-bottom: 1.5rem;
 			}
 		}
 		.con-right-wrap {
@@ -279,13 +282,13 @@
 				width: 100%;
 				th,
 				td {
-					height: 40px;
+					height: 2.5rem;
 					text-align: center;
-					font-size: 16px;
-					line-height: 24px;
+					font-size: 1rem;
+					line-height: 1.5rem;
 					border-right: 1px solid #fff;
 					border-bottom: 1px solid #fff;
-					padding: 7px;
+					padding: 0.4375rem;
 
 					&:last-child {
 						border-right: none;
@@ -295,7 +298,7 @@
 					}
 				}
 				th {
-					font-size: 18px;
+					font-size: 1.125rem;
 					font-weight: 600;
 					color: #fff;
 				}
@@ -314,32 +317,32 @@
 			}
 		}
 		.note-wrap {
-			padding: 32px 30px 25px;
+			padding: 2rem 1.875rem 1.5625rem;
 
 			p {
-				font-size: 18px;
+				font-size: 1.125rem;
 				color: #222222;
-				line-height: 26px;
+				line-height: 1.625rem;
 				font-weight: 500;
 				border-bottom: 1px solid #ebebeb;
-				padding-bottom: 17.5px;
+				padding-bottom: 1.0938rem;
 			}
 			ul {
-				padding-top: 17.5px;
+				padding-top: 1.0938rem;
 				font-size: 0;
 
 				li {
-					font-size: 16px;
+					font-size: 1rem;
 					color: initial;
-					line-height: 24px;
-					padding-bottom: 12px;
+					line-height: 1.5rem;
+					padding-bottom: 0.75rem;
 					&::before {
 						content: "";
 						display: inline-block;
 						background: url(../../img/ico-check.svg);
-						width: 12px;
-						height: 12px;
-						margin-right: 8px;
+						width: 0.75rem;
+						height: 0.75rem;
+						margin-right: 0.5rem;
 					}
 				}
 			}
@@ -372,13 +375,13 @@
 .sub-info .solu-menu09 {
 	.tab-list {
 		display: flex;
-		gap: 5px;
+		gap: 0.3125rem;
 		cursor: pointer;
 		.tab-button {
-			padding: 26px 15px;
-			width: 236px;
-			font-size: 16px;
-			line-height: 24px;
+			padding: 1.625rem 0.9375rem;
+			width: 14.75rem;
+			font-size: 1rem;
+			line-height: 1.5rem;
 			border: 1px solid #412859;
 			border-bottom: none;
 			border-top-left-radius: 10px;
@@ -402,30 +405,30 @@
 		display: flex;
 		justify-content: space-between;
 		background: #412859;
-		padding: 40px 50px;
+		padding: 2.5rem 3.125rem;
 		align-items: center;
 
 		.con-left-wrap {
 			.tit {
-				font-size: 32px;
-				line-height: 42px;
+				font-size: 2rem;
+				line-height: 2.625rem;
 				font-weight: 500;
 				color: #fff;
-				margin-bottom: 10px;
+				margin-bottom: 0.625rem;
 
 				&.line-height {
-					line-height: 60px;
+					line-height: 3.75rem;
 				}
 
 				span {
-					font-size: 40px;
+					font-size: 2.5rem;
 				}
 			}
 			.txt {
 				display: flex;
-				gap: 12px;
+				gap: 0.75rem;
 				li {
-					font-size: 16px;
+					font-size: 1rem;
 					color: #fff;
 					span {
 						font-weight: 600;
@@ -436,16 +439,69 @@
 		}
 
 		img {
-			width: 620px;
-			height: 620px;
+			width: 38.75rem;
+			height: 38.75rem;
 		}
 	}
 }
 
 @media (max-width: map-get($media-size,smallDesk)) {
+	.sub-info .intro-menu03 .radio-wrap .radio-card .icon {
+		background: no-repeat center/cover;
+	}
 }
 @media (max-width: map-get($media-size,tablet)) {
 }
 @media (max-width: map-get($media-size,largeMo)) {
+	.sub-contents {
+		width: 100%;
+		.sub-info {
+			.img-type {
+				.img04 {
+					display: none;
+				}
+				.mo-img04 {
+					display: block;
+				}
+			}
+			.sw-type {
+				flex-direction: column-reverse;
+				text-align: center;
+				padding: 25px 20px 36px;
+				.ico-wave {
+					display: none;
+				}
+			}
+			.table-type {
+				flex-direction: column;
+				border-radius: 0px;
+				.note-wrap {
+					background: #000;
+					p,
+					ul li {
+						color: #fff;
+					}
+					li::before {
+						content: "";
+						display: inline-block;
+						background: url(../../img/ico-mo-check.svg);
+						width: 12px;
+						height: 12px;
+						margin-right: 8px;
+					}
+				}
+				.ico-wave {
+					display: none;
+				}
+			}
+			.tab-content {
+				flex-direction: column;
+				gap: 35px;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 // 작업 eee
