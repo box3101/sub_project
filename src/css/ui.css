@@ -20354,7 +20354,7 @@ a {
 .header .mobile-menu > li {
   position: relative;
 }
-.header .mobile-menu > li:nth-of-type(2):before {
+.header .mobile-menu > li:nth-of-type(2):before, .header .mobile-menu > li:nth-of-type(3):before {
   content: "";
   display: block;
   position: absolute;
@@ -20367,7 +20367,7 @@ a {
   width: 21px;
   height: 55px;
 }
-.header .mobile-menu > li:nth-of-type(2).on:before {
+.header .mobile-menu > li:nth-of-type(2).on:before, .header .mobile-menu > li:nth-of-type(3).on:before {
   content: "";
   display: block;
   top: -18px;
@@ -21585,6 +21585,9 @@ body.on {
   .com-card > li {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .com-popup-wrap .com-popup {
+    width: 92%;
   }
 }
 /*이은영*/

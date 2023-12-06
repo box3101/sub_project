@@ -73,10 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
 				if(!$subMenu.classList.contains("active")){
 					for(const el2 of $$subMenu) el2.classList.remove("active");
 					$subMenu.classList.add("active");
-					this.querySelector("li:nth-of-type(2)").classList.add("on")
+					el.closest("li").classList.add("on");
 				}else{
 					$subMenu.classList.remove("active");
-					this.querySelector("li:nth-of-type(2)").classList.remove("on")
+					el.closest("li").classList.remove("on");
 				}
 			}
 		}
