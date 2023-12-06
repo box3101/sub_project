@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -21710,7 +21709,7 @@ body.on {
 }
 .sub-info .intro-menu03 .radio-wrap .radio-card .icon-wrap {
   display: flex;
-  gap: 2.8125rem;
+  gap: 0.8125rem;
 }
 .sub-info .intro-menu03 .radio-wrap .radio-card .icon {
   width: 8.75rem;
@@ -22009,6 +22008,9 @@ body.on {
   .sub-contents .sub-info .tab-list {
     gap: 0;
   }
+  .sub-contents .sub-info .intro-menu03 .radio-wrap {
+    gap: 1.375rem;
+  }
 }
 @media (max-width: 800px) {
   .sub-contents .sub-info .intro-img01 {
@@ -22027,6 +22029,12 @@ body.on {
     font-size: 1.475rem;
     height: 3.25rem;
     line-height: 1.8125rem;
+  }
+  .sub-contents .sub-info .intro-menu03 .radio-wrap {
+    gap: 1.375rem;
+  }
+  .sub-contents .sub-info .intro-menu03 .radio-wrap .radio-card {
+    flex: 45%;
   }
   .sub-contents .sub-info .sw-type {
     flex-direction: column-reverse;
