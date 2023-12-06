@@ -42,8 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// 메인 메뉴 토글
 	document.querySelector('.menu-toggle').addEventListener('click', function() {
-			document.querySelector('.mobile-menu').classList.toggle('active');
-			this.classList.toggle('active');
 
 		  const $logo = document.querySelector('.logo');
 			const $bg = document.querySelector('.header .bg');
@@ -52,10 +50,14 @@ document.addEventListener('DOMContentLoaded', function() {
 			if($logo.classList.contains("on")){
 				$logo.querySelector("img").setAttribute("src","../img/logo-sub.png");
 				$bg.classList.add("on");
+				
 			}else{
 				$logo.querySelector("img").setAttribute("src","../img/logo.png");
 				$bg.classList.remove("on");
 			}
+
+			document.querySelector('.mobile-menu').classList.toggle('active');
+			this.classList.toggle('active');
 	});
 
 	// 서브메뉴 토글

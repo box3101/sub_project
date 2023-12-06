@@ -20230,7 +20230,7 @@ a {
   height: 100%;
 }
 .header .logo a img {
-  width: 9.875rem;
+  width: 100%;
 }
 .header .gnb {
   height: 100%;
@@ -21782,7 +21782,7 @@ body.on {
 .sub-info .img-type img {
   width: 100%;
 }
-.sub-info .img-type .mo-img04 {
+.sub-info .img-type .mo-img {
   display: none;
 }
 
@@ -22096,13 +22096,16 @@ body.on {
   .sub-contents .sub-info .intro-menu02 .intro-advantages-wrap .intro-advantages__item .intro-advantages__list li {
     font-size: 1.2rem;
   }
+  .sub-contents .sub-info .intro-menu03 .radio-wrap .radio-card {
+    flex: 100%;
+  }
   .sub-contents .sub-info .img-type img {
     width: 100%;
   }
-  .sub-contents .sub-info .img-type .img04 {
+  .sub-contents .sub-info .img-type .img04, .sub-contents .sub-info .img-type .img06, .sub-contents .sub-info .img-type .img08 {
     display: none;
   }
-  .sub-contents .sub-info .img-type .mo-img04 {
+  .sub-contents .sub-info .img-type .mo-img {
     display: block;
   }
   .sub-contents .sub-info .sw-type {
