@@ -211,7 +211,7 @@
 		 img {
 				width: 100%;
 		 }
-		 .mo-img04 {
+		 .mo-img {
 				display: none;
 		 }
 	}
@@ -571,14 +571,19 @@
 							} 
 					 }
 				} 
+				.intro-menu03 .radio-wrap {
+					.radio-card {
+						flex: 100%;
+					}
+				}
 				.img-type {
 					 img {
 							width: 100%;
 					 }
-					 .img04 {
+					 .img04, .img06, .img08 {
 							display: none;
 					 }
-					 .mo-img04 {
+					 .mo-img {
 							display: block;
 					 }
 				}

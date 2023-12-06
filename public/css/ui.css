@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -21782,7 +21781,7 @@ body.on {
 .sub-info .img-type img {
   width: 100%;
 }
-.sub-info .img-type .mo-img04 {
+.sub-info .img-type .mo-img {
   display: none;
 }
 
@@ -22096,13 +22095,16 @@ body.on {
   .sub-contents .sub-info .intro-menu02 .intro-advantages-wrap .intro-advantages__item .intro-advantages__list li {
     font-size: 1.2rem;
   }
+  .sub-contents .sub-info .intro-menu03 .radio-wrap .radio-card {
+    flex: 100%;
+  }
   .sub-contents .sub-info .img-type img {
     width: 100%;
   }
-  .sub-contents .sub-info .img-type .img04 {
+  .sub-contents .sub-info .img-type .img04, .sub-contents .sub-info .img-type .img06, .sub-contents .sub-info .img-type .img08 {
     display: none;
   }
-  .sub-contents .sub-info .img-type .mo-img04 {
+  .sub-contents .sub-info .img-type .mo-img {
     display: block;
   }
   .sub-contents .sub-info .sw-type {
