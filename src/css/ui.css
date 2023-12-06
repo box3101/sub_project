@@ -21882,6 +21882,69 @@ body.on {
   background: #c6dcff;
 }
 
+.sub-info .solu-menu09 .tab-list {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.sub-info .solu-menu09 .tab-list .tab-button {
+  padding: 26px 15px;
+  width: 236px;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #412859;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+.sub-info .solu-menu09 .tab-list .tab-button.on {
+  background: #412859;
+  color: #fff;
+}
+.sub-info .solu-menu09 .tab-content-wrap {
+  display: none;
+}
+.sub-info .solu-menu09 .tab-content-wrap.show {
+  display: block;
+}
+.sub-info .solu-menu09 .tab-content {
+  display: flex;
+  justify-content: space-between;
+  background: #412859;
+  padding: 40px 50px;
+  align-items: center;
+}
+.sub-info .solu-menu09 .tab-content .con-left-wrap .tit {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.sub-info .solu-menu09 .tab-content .con-left-wrap .tit.line-height {
+  line-height: 60px;
+}
+.sub-info .solu-menu09 .tab-content .con-left-wrap .tit span {
+  font-size: 40px;
+}
+.sub-info .solu-menu09 .tab-content .con-left-wrap .txt {
+  display: flex;
+  gap: 12px;
+}
+.sub-info .solu-menu09 .tab-content .con-left-wrap .txt li {
+  font-size: 16px;
+  color: #fff;
+}
+.sub-info .solu-menu09 .tab-content .con-left-wrap .txt li span {
+  font-weight: 600;
+  color: #f29f05;
+}
+.sub-info .solu-menu09 .tab-content img {
+  width: 620px;
+  height: 620px;
+}
+
 /*이찬용*/
 
 /*# sourceMappingURL=ui.css.map */
