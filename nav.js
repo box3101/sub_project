@@ -17,8 +17,6 @@ const navMenu = [
     url : `Solutions`,
     items : [
       { url : `Solutions` , title: "SDR Technolog"},
-      { url : `Audio` , title: "Audio DSP Technology"},
-      { url : `Future` , title: "Future Roadmap"},
     ],
   },
   {

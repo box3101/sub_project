@@ -12,491 +12,545 @@ const pageTitle = `Home > Solutuions`;
 ---
 
 <Layout pageTitle={pageTitle} idName="Solutions">
-   <Header type="sub" />
-   <SubBanner title="Solutions" bgUrl="bg-intro" />
-   <SubLayout>
-      <SubMenu items={SolutionsMenu} />
-      <SubContent>
-         <!-- TODO 콘텐츠를 추가 내용 작성 -->
-         <div id="wrap2">
-            <SubCntBox subCntTit="Turn-Key Approach with α-OrionTM" id="box0">
-               <div class="solu-menu01 img-type" data-aos="fade-up" data-delay="300">
-                  <p>When R&D time is short or the resource is limited</p>
-                  <img src="../../img/img04.png" alt="" class="img04" />
-                  <img src="../../img/mo-img04.png" alt="" class="mo-img04" />
-               </div>
-            </SubCntBox>
-            <SubCntBox subCntTit="SW Architecture Subsystem Type" id="box1">
-               <div class="solu-menu02 sw-type" data-aos="fade-up" data-delay="200">
-                  <img src="../../img/img05.png" alt="" />
-                  <div class="sw-type-wrap" data-aos="fade-left" data-delay="300">
-                     <div>
-                        <p class="sw-type-tit">
-                           Hybrid Approach with <span>α-OrionTM</span>
-                        </p>
-                        <p class="sw-type-txt">
-                           When R&D time is short or resource is limited
-                        </p>
-                     </div>
-                     <img class="ico-wave" src="../../img/ico-wave.svg" />
-                  </div>
-               </div>
-            </SubCntBox>
-         </div>
+	<Header type="sub" />
+	<SubBanner title="Solutions" bgUrl="bg-intro" />
+	<SubLayout>
+		<SubMenu items={SolutionsMenu} />
+		<SubContent>
+			<!-- TODO 콘텐츠를 추가 내용 작성 -->
+			<div id="wrap2">
+				<SubCntBox subCntTit="Turn-Key Approach with α-OrionTM" id="box0">
+					<div class="solu-menu01 img-type" data-aos="fade-up" data-delay="300">
+						<p>When R&D time is short or the resource is limited</p>
+						<img src="../../img/img04.png" alt="" class="img04" />
+						<img src="../../img/mo-img04.png" alt="" class="mo-img04" />
+					</div>
+				</SubCntBox>
+				<SubCntBox subCntTit="SW Architecture Subsystem Type" id="box1">
+					<div class="solu-menu02 sw-type" data-aos="fade-up" data-delay="200">
+						<img src="../../img/img05.png" alt="" />
+						<div class="sw-type-wrap" data-aos="fade-left" data-delay="300">
+							<div>
+								<p class="sw-type-tit">
+									Hybrid Approach with <span>α-OrionTM</span>
+								</p>
+								<p class="sw-type-txt">
+									When R&D time is short or resource is limited
+								</p>
+							</div>
+							<img class="ico-wave" src="../../img/ico-wave.svg" />
+						</div>
+					</div>
+				</SubCntBox>
+				<SubCntBox subCntTit="α-OrionTM Model Role & Responsibility" id="box2">
+					<div
+						class="solu-menu03 table-type"
+						data-aos="fade-up"
+						data-delay="300"
+					>
+						<div class="con-left-wrap" data-aos="fade-right" data-delay="300">
+							<p>Quick & Easy</p>
+							<img class="ico-wave" src="../../img/ico-wave.svg" />
+						</div>
+						<div class="con-right-wrap">
+							<div class="role-table-wrap">
+								<table>
+									<colgroup>
+										<col style="width: 200px" />
+										<col style="width: 180px" />
+										<col style="width: 180px" />
+										<col style="width: 180px" />
+										<col style="width: 180px" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th rowspan="2">Task</th>
+											<th colspan="2">R2D</th>
+											<th colspan="2">Customer</th>
+										</tr>
+										<tr>
+											<th>Role</th>
+											<th>Duty</th>
+											<th>Role</th>
+											<th>Duty</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Graphic HMI</td>
+											<td>No</td>
+											<td>provides example</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>HMI ↔ α-Orion API</td>
+											<td>Together</td>
+											<td>Implementation</td>
+											<td>Together</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>Radio Control (Analog)</td>
+											<td>Yes</td>
+											<td>Provide suggestion</td>
+											<td>No</td>
+											<td>Define Scenario</td>
+										</tr>
+										<tr>
+											<td>Radio Control (Digital)</td>
+											<td>Yes</td>
+											<td>Provide suggestion</td>
+											<td>No</td>
+											<td>Define Scenario</td>
+										</tr>
+										<tr>
+											<td>Digital Radio Proc.</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+											<td>No</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>SoC I/F</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+											<td>No</td>
+											<td rowspan="2">Provides HW platform</td>
+										</tr>
+										<tr>
+											<td>RF Tuner I/F</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+											<td>No</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="note-wrap">
+								<p>Note</p>
+								<ul>
+									<li>
+										R2D can provide example Android base Graphic HMI for
+										reference review purpose only.
+									</li>
+									<li>Customer may outsource to R2D for HMI implementation.</li>
+									<li>
+										Customized or additional API can be implemented upon
+										request.
+									</li>
+									<li>Radio Control scenario needs to be discussed.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</SubCntBox>
 
-         <SubCntBox subCntTit="α-OrionTM Model Role & Responsibility" id="box2">
-            <div class="solu-menu03 table-type" data-aos="fade-up" data-delay="300">
-               <div class="con-left-wrap" data-aos="fade-right" data-delay="300">
-                  <p>Quick & Easy</p>
-                  <img class="ico-wave" src="../../img/ico-wave.svg" />
-               </div>
-               <div class="con-right-wrap">
-                  <div class="role-table-wrap">
-                     <table>
-                        <colgroup>
-                           <col style="width: 200px" />
-                           <col style="width: 180px" />
-                           <col style="width: 180px" />
-                           <col style="width: 180px" />
-                           <col style="width: 180px" />
-                        </colgroup>
-                        <thead>
-                           <tr>
-                              <th rowspan="2">Task</th>
-                              <th colspan="2">R2D</th>
-                              <th colspan="2">Customer</th>
-                           </tr>
-                           <tr>
-                              <th>Role</th>
-                              <th>Duty</th>
-                              <th>Role</th>
-                              <th>Duty</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>Graphic HMI</td>
-                              <td>No</td>
-                              <td>provides example</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>HMI ↔ α-Orion API</td>
-                              <td>Together</td>
-                              <td>Implementation</td>
-                              <td>Together</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>Radio Control (Analog)</td>
-                              <td>Yes</td>
-                              <td>Provide suggestion</td>
-                              <td>No</td>
-                              <td>Define Scenario</td>
-                           </tr>
-                           <tr>
-                              <td>Radio Control (Digital)</td>
-                              <td>Yes</td>
-                              <td>Provide suggestion</td>
-                              <td>No</td>
-                              <td>Define Scenario</td>
-                           </tr>
-                           <tr>
-                              <td>Digital Radio Proc.</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                              <td>No</td>
-                              <td>-</td>
-                           </tr>
-                           <tr>
-                              <td>SoC I/F</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                              <td>No</td>
-                              <td rowspan="2">Provides HW platform</td>
-                           </tr>
-                           <tr>
-                              <td>RF Tuner I/F</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                              <td>No</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="note-wrap">
-                     <p>Note</p>
-                     <ul>
-                        <li>R2D can provide example Android base Graphic HMI for reference review purpose only.
-                        </li>
-                        <li>Customer may outsource to R2D for HMI implementation.</li>
-                        <li>Customized or additional API can be implemented upon request.
-                        </li>
-                        <li>Radio Control scenario needs to be discussed.</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </SubCntBox>
+				<SubCntBox subCntTit="Framework Approach with α-Trinity TM" id="box3">
+					<div class="solu-menu04 img-type" data-aos="fade-up" data-delay="300">
+						<p>1:1 replacement of legacy chipset solution</p>
+						<img src="../../img/img06.png" alt="" />
+					</div>
+				</SubCntBox>
+				<SubCntBox subCntTit="SW Architecture Framework Type" id="box4">
+					<div class="solu-menu05 sw-type" data-aos="fade-up" data-delay="200">
+						<img src="../../img/img07.png" alt="" />
+						<div class="sw-type-wrap" data-aos="fade-left" data-delay="300">
+							<div>
+								<p class="sw-type-tit">
+									Hybrid Approach with <span>α-TrinityTM</span>
+								</p>
+								<p class="sw-type-txt">
+									To utilize the existing SW stack, typical choice
+								</p>
+							</div>
+							<img class="ico-wave" src="../../img/ico-wave.svg" />
+						</div>
+					</div>
+				</SubCntBox>
+				<SubCntBox
+					subCntTit="α-TrinityTM Model Role & Responsibility"
+					id="box5"
+				>
+					<div
+						class="solu-menu06 table-type"
+						data-aos="fade-up"
+						data-delay="200"
+					>
+						<div class="con-left-wrap" data-aos="fade-right" data-delay="300">
+							<p>Same as Usual</p>
+							<img class="ico-wave" src="../../img/ico-wave.svg" />
+						</div>
+						<div class="con-right-wrap">
+							<div class="role-table-wrap">
+								<table>
+									<colgroup>
+										<col style="width: 200px" />
+										<col style="width: 180px" />
+										<col style="width: 180px" />
+										<col style="width: 180px" />
+										<col style="width: 180px" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th rowspan="2">Task</th>
+											<th colspan="2">R2D</th>
+											<th colspan="2">Customer</th>
+										</tr>
+										<tr>
+											<th>Role</th>
+											<th>Duty</th>
+											<th>Role</th>
+											<th>Duty</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Graphic HMI</td>
+											<td>No</td>
+											<td>provides example</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>Radio Control (Analog)</td>
+											<td>No</td>
+											<td>-</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>Radio Control (Digital)</td>
+											<td>No</td>
+											<td>-</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>MW ↔ α Trinity API</td>
+											<td>Yes</td>
+											<td>Support</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>Digital Radio Proc.</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+											<td>No</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>SoC I/F</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+											<td>No</td>
+											<td rowspan="2">Provides HW platform</td>
+										</tr>
+										<tr>
+											<td>RF Tuner I/F</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+											<td>No</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="note-wrap">
+								<p>Note</p>
+								<ul>
+									<li>
+										R2D can provide example PC GUI for testing and reference
+										control purpose only.
+									</li>
+									<li>HW configuration needs to be discussed.</li>
+									<li>
+										The customer has to provide Target BSP to R2D for proper
+										development.
+									</li>
+									<li>
+										System architecture related items have to be discussed prior
+										to the R&D start.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</SubCntBox>
+				<SubCntBox subCntTit="Core Library Approach with α-InfuserTM" id="box6">
+					<div class="solu-menu07 img-type" data-aos="fade-up" data-delay="300">
+						<p>Full flexibility of system integration</p>
+						<img src="../../img/img08.png" alt="" />
+					</div>
+				</SubCntBox>
+				<SubCntBox subCntTit="SW Architecture Library Type" id="box7">
+					<div class="solu-menu08 sw-type" data-aos="fade-up" data-delay="200">
+						<img src="../../img/img09.png" alt="" />
+						<div class="sw-type-wrap" data-aos="fade-left" data-delay="300">
+							<div>
+								<p class="sw-type-tit">
+									Hybrid Approach with <span>α-InfuserTM</span>
+								</p>
+								<p class="sw-type-txt">
+									When SDR framework is already available
+								</p>
+							</div>
+							<img class="ico-wave" src="../../img/ico-wave.svg" />
+						</div>
+					</div>
+				</SubCntBox>
+				<SubCntBox
+					subCntTit="α-InfuserTM Model Role & Responsibility"
+					id="box8"
+				>
+					<div
+						class="solu-menu09 table-type"
+						data-aos="fade-up"
+						data-delay="200"
+					>
+						<div class="con-left-wrap" data-aos="fade-right" data-delay="300">
+							<p>
+								More <br />
+								 fine <br />
+								 Control
+							</p>
+							<img class="ico-wave" src="../../img/ico-wave.svg" />
+						</div>
+						<div class="con-right-wrap">
+							<div class="role-table-wrap">
+								<table>
+									<colgroup>
+										<col style="width: 200px" />
+										<col style="width: 180px" />
+										<col style="width: 180px" />
+										<col style="width: 180px" />
+										<col style="width: 180px" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th rowspan="2">Task</th>
+											<th colspan="2">R2D</th>
+											<th colspan="2">Customer</th>
+										</tr>
+										<tr>
+											<th>Role</th>
+											<th>Duty</th>
+											<th>Role</th>
+											<th>Duty</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Graphic HMI</td>
+											<td>No</td>
+											<td>provides example</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>Radio Control (Analog)</td>
+											<td>No</td>
+											<td>Provide suggestion</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>Radio Control (Digital)</td>
+											<td>No</td>
+											<td>Provide suggestion</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>App ↔ α-Infuser API</td>
+											<td>Yes</td>
+											<td>Support</td>
+											<td>No</td>
+											<td>Implementation</td>
+										</tr>
+										<tr>
+											<td>Digital Radio Proc.</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+											<td>No</td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>SoC I/F</td>
+											<td>No</td>
+											<td>Implementation</td>
+											<td>No</td>
+											<td rowspan="2">Provides HW platform</td>
+										</tr>
+										<tr>
+											<td>RF Tuner I/F</td>
+											<td>Yes</td>
+											<td>Implementation</td>
+											<td>No</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</SubCntBox>
+				<SubCntBox subCntTit="Advanced Performance" id="box9">
+					<div class="solu-menu09" data-aos="fade-up" data-delay="300">
+						<ul class="tab-list">
+							<li class="tab-button on" data-id="0">
+								RF Interference Solution for EV
+							</li>
+							<li class="tab-button" data-id="1">
+								Extreme Performance for DAB
+							</li>
+							<li class="tab-button" data-id="2">
+								Superior Performance for HD Radio
+							</li>
+							<li class="tab-button" data-id="3">
+								High Performance for HD Radio
+							</li>
+							<li class="tab-button" data-id="4">
+								Superior Performance for DRM30
+							</li>
+						</ul>
+						<div class="tab-content-wrap show">
+							<div class="tab-content">
+								<div
+									class="con-left-wrap"
+									data-aos="flip-left"
+									data-delay="300"
+								>
+									<p class="tit">
+										<span>RF</span>&nbsp;Interference Solution for <span
+											>EV</span
+										>
+									</p>
+									<ul class="txt">
+										<li><span>P</span>robeless</li>
+										<li><span>R</span>F</li>
+										<li><span>I</span>nterference</li>
+										<li><span>S</span>uppressing</li>
+										<li><span>S</span>oftware</li>
+										<li><span>M</span>odule</li>
+									</ul>
+								</div>
+								<div class="con-right-wrap" data-aos="fade-up" data-delay="300">
+									<img src="../../img/img10.png" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="tab-content-wrap">
+							<div class="tab-content">
+								<div
+									class="con-left-wrap"
+									data-aos="flip-left"
+									data-delay="300"
+								>
+									<p class="tit">
+										<span>Extreme</span> Performance for <span>DAB</span>
+									</p>
+									<ul class="txt">
+										<li><span>A</span>daptive</li>
+										<li><span>I</span>mpairment</li>
+										<li><span>C</span>orrection</li>
+										<li><span>E</span>nhancement</li>
+									</ul>
+								</div>
+								<div class="con-right-wrap" data-aos="fade-up" data-delay="300">
+									<img src="../../img/img11.png" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="tab-content-wrap">
+							<div class="tab-content">
+								<div
+									class="con-left-wrap"
+									data-aos="flip-left"
+									data-delay="300"
+								>
+									<p class="tit">
+										<span>Superior</span> Performance for
+										<span>HD Radio</span>
+									</p>
+									<ul class="txt">
+										<li><span>H</span>yper</li>
+										<li><span>A</span>djacent</li>
+										<li><span>A</span>nalog</li>
+										<li><span>R</span>ejection</li>
+										<li><span>P</span>ivoting</li>
+									</ul>
+								</div>
+								<div class="con-right-wrap">
+									<img
+										src="../../img/img12.png"
+										alt=""
+										data-aos="fade-up"
+										data-delay="300"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="tab-content-wrap">
+							<div class="tab-content">
+								<div
+									class="con-left-wrap"
+									data-aos="flip-left"
+									data-delay="300"
+								>
+									<p class="tit">
+										<span>High</span> Performance for
+										<span>HD Radio</span>
+									</p>
+									<ul class="txt">
+										<li><span>D</span>igital</li>
+										<li><span>A</span>ggregation</li>
+										<li><span>S</span>can</li>
+										<li><span>H</span>andler</li>
+									</ul>
+								</div>
+								<div class="con-right-wrap">
+									<img
+										src="../../img/img13.png"
+										alt=""
+										data-aos="fade-up"
+										data-delay="300"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="tab-content-wrap">
+							<div class="tab-content">
+								<div
+									class="con-left-wrap"
+									data-aos="flip-left"
+									data-delay="300"
+								>
+									<p class="tit">
+										<span>Superior</span>&nbsp;Performance for
+										<span>DRM30</span>
+									</p>
+									<ul class="txt">
+										<li><span>A</span>robeless</li>
+										<li><span>D</span>RM-<span>A</span>M</li>
+										<li><span>M</span>ultiplex</li>
+										<li><span>S</span>can</li>
+									</ul>
+								</div>
+								<div class="con-right-wrap">
+									<img
+										src="../../img/img14.png"
+										alt=""
+										data-aos="fade-up"
+										data-delay="300"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</SubCntBox>
+			</div>
 
-         <SubCntBox subCntTit="Framework Approach with α-Trinity TM" id="box3">
-            <div class="solu-menu04 img-type" data-aos="fade-up" data-delay="300">
-               <p>1:1 replacement of legacy chipset solution</p>
-               <img src="../../img/img06.png" alt="" />
-            </div>
-         </SubCntBox>
-         <SubCntBox subCntTit="SW Architecture Framework Type" id="box4">
-            <div class="solu-menu05 sw-type" data-aos="fade-up" data-delay="200">
-               <img src="../../img/img07.png" alt="" />
-               <div class="sw-type-wrap" data-aos="fade-left" data-delay="300">
-                  <div>
-                     <p class="sw-type-tit">
-                        Hybrid Approach with <span>α-TrinityTM</span>
-                     </p>
-                     <p class="sw-type-txt">
-                        To utilize the existing SW stack, typical choice
-                     </p>
-                  </div>
-                  <img class="ico-wave" src="../../img/ico-wave.svg" />
-               </div>
-            </div>
-         </SubCntBox>
-         <SubCntBox subCntTit="α-TrinityTM Model Role & Responsibility" id="box5">
-            <div class="solu-menu06 table-type" data-aos="fade-up" data-delay="200">
-               <div class="con-left-wrap" data-aos="fade-right" data-delay="300">
-                  <p>Same as Usual</p>
-                  <img class="ico-wave" src="../../img/ico-wave.svg" />
-               </div>
-               <div class="con-right-wrap">
-                  <div class="role-table-wrap">
-                     <table>
-                        <colgroup>
-                           <col style="width: 200px" />
-                           <col style="width: 180px" />
-                           <col style="width: 180px" />
-                           <col style="width: 180px" />
-                           <col style="width: 180px" />
-                        </colgroup>
-                        <thead>
-                           <tr>
-                              <th rowspan="2">Task</th>
-                              <th colspan="2">R2D</th>
-                              <th colspan="2">Customer</th>
-                           </tr>
-                           <tr>
-                              <th>Role</th>
-                              <th>Duty</th>
-                              <th>Role</th>
-                              <th>Duty</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>Graphic HMI</td>
-                              <td>No</td>
-                              <td>provides example</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>Radio Control (Analog)</td>
-                              <td>No</td>
-                              <td>-</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>Radio Control (Digital)</td>
-                              <td>No</td>
-                              <td>-</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>MW ↔ α Trinity API</td>
-                              <td>Yes</td>
-                              <td>Support</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>Digital Radio Proc.</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                              <td>No</td>
-                              <td>-</td>
-                           </tr>
-                           <tr>
-                              <td>SoC I/F</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                              <td>No</td>
-                              <td rowspan="2">Provides HW platform</td>
-                           </tr>
-                           <tr>
-                              <td>RF Tuner I/F</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                              <td>No</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-                  <div class="note-wrap">
-                     <p>Note</p>
-                     <ul>
-                        <li>R2D can provide example PC GUI for testing and reference control purpose only.
-                        </li>
-                        <li>HW configuration needs to be discussed.</li>
-                        <li>The customer has to provide Target BSP to R2D for proper development.
-                        </li>
-                        <li>System architecture related items have to be discussed prior to the R&D start.
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </SubCntBox>
-         <SubCntBox subCntTit="Core Library Approach with α-InfuserTM" id="box6">
-            <div class="solu-menu07 img-type" data-aos="fade-up" data-delay="300">
-               <p>Full flexibility of system integration</p>
-               <img src="../../img/img08.png" alt="" />
-            </div>
-         </SubCntBox>
-         <SubCntBox subCntTit="SW Architecture Library Type" id="box7">
-            <div class="solu-menu08 sw-type" data-aos="fade-up" data-delay="200">
-               <img src="../../img/img09.png" alt="" />
-               <div class="sw-type-wrap" data-aos="fade-left" data-delay="300">
-                  <div>
-                     <p class="sw-type-tit">
-                        Hybrid Approach with <span>α-InfuserTM</span>
-                     </p>
-                     <p class="sw-type-txt">When SDR framework is already available</p>
-                  </div>
-                  <img class="ico-wave" src="../../img/ico-wave.svg" />
-               </div>
-            </div>
-         </SubCntBox>
-         <SubCntBox subCntTit="α-InfuserTM Model Role & Responsibility" id="box8">
-            <div class="solu-menu09 table-type" data-aos="fade-up" data-delay="200">
-               <div class="con-left-wrap" data-aos="fade-right" data-delay="300">
-                  <p>
-                     More <br />
-                      fine <br />
-                      Control
-                  </p>
-                  <img class="ico-wave" src="../../img/ico-wave.svg" />
-               </div>
-               <div class="con-right-wrap">
-                  <div class="role-table-wrap">
-                     <table>
-                        <colgroup>
-                           <col style="width: 200px" />
-                           <col style="width: 180px" />
-                           <col style="width: 180px" />
-                           <col style="width: 180px" />
-                           <col style="width: 180px" />
-                        </colgroup>
-                        <thead>
-                           <tr>
-                              <th rowspan="2">Task</th>
-                              <th colspan="2">R2D</th>
-                              <th colspan="2">Customer</th>
-                           </tr>
-                           <tr>
-                              <th>Role</th>
-                              <th>Duty</th>
-                              <th>Role</th>
-                              <th>Duty</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>Graphic HMI</td>
-                              <td>No</td>
-                              <td>provides example</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>Radio Control (Analog)</td>
-                              <td>No</td>
-                              <td>Provide suggestion</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>Radio Control (Digital)</td>
-                              <td>No</td>
-                              <td>Provide suggestion</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>App ↔ α-Infuser API</td>
-                              <td>Yes</td>
-                              <td>Support</td>
-                              <td>No</td>
-                              <td>Implementation</td>
-                           </tr>
-                           <tr>
-                              <td>Digital Radio Proc.</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                              <td>No</td>
-                              <td>-</td>
-                           </tr>
-                           <tr>
-                              <td>SoC I/F</td>
-                              <td>No</td>
-                              <td>Implementation</td>
-                              <td>No</td>
-                              <td rowspan="2">Provides HW platform</td>
-                           </tr>
-                           <tr>
-                              <td>RF Tuner I/F</td>
-                              <td>Yes</td>
-                              <td>Implementation</td>
-                              <td>No</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-               </div>
-            </div>
-         </SubCntBox>
-         <SubCntBox subCntTit="Advanced Performance" id="box9">
-            <div class="solu-menu09" data-aos="fade-up" data-delay="300">
-               <ul class="tab-list">
-                  <li class="tab-button on" data-id="0">
-                     RF Interference Solution for EV
-                  </li>
-                  <li class="tab-button" data-id="1">Extreme Performance for DAB</li>
-                  <li class="tab-button" data-id="2">
-                     Superior Performance for HD Radio
-                  </li>
-                  <li class="tab-button" data-id="3">
-                     High Performance for HD Radio
-                  </li>
-                  <li class="tab-button" data-id="4">
-                     Superior Performance for DRM30
-                  </li>
-               </ul>
-               <div class="tab-content-wrap show">
-                  <div class="tab-content">
-                     <div class="con-left-wrap" data-aos="flip-left" data-delay="300">
-                        <p class="tit">
-                           <span>RF</span>&nbsp;Interference Solution for <span>EV</span>
-                        </p>
-                        <ul class="txt">
-                           <li><span>P</span>robeless</li>
-                           <li><span>R</span>F</li>
-                           <li><span>I</span>nterference</li>
-                           <li><span>S</span>uppressing</li>
-                           <li><span>S</span>oftware</li>
-                           <li><span>M</span>odule</li>
-                        </ul>
-                     </div>
-                     <div class="con-right-wrap" data-aos="fade-up" data-delay="300">
-                        <img src="../../img/img10.png" alt="" />
-                     </div>
-                  </div>
-               </div>
-               <div class="tab-content-wrap">
-                  <div class="tab-content">
-                     <div class="con-left-wrap" data-aos="flip-left" data-delay="300">
-                        <p class="tit">
-                           <span>Extreme</span> Performance for <span>DAB</span>
-                        </p>
-                        <ul class="txt">
-                           <li><span>A</span>daptive</li>
-                           <li><span>I</span>mpairment</li>
-                           <li><span>C</span>orrection</li>
-                           <li><span>E</span>nhancement</li>
-                        </ul>
-                     </div>
-                     <div class="con-right-wrap" data-aos="fade-up" data-delay="300">
-                        <img src="../../img/img11.png" alt="" />
-                     </div>
-                  </div>
-               </div>
-               <div class="tab-content-wrap">
-                  <div class="tab-content">
-                     <div class="con-left-wrap" data-aos="flip-left" data-delay="300">
-                        <p class="tit">
-                           <span>Superior</span> Performance for
-                           <span>HD Radio</span>
-                        </p>
-                        <ul class="txt">
-                           <li><span>H</span>yper</li>
-                           <li><span>A</span>djacent</li>
-                           <li><span>A</span>nalog</li>
-                           <li><span>R</span>ejection</li>
-                           <li><span>P</span>ivoting</li>
-                        </ul>
-                     </div>
-                     <div class="con-right-wrap">
-                        <img
-                           src="../../img/img12.png"
-                           alt=""
-                           data-aos="fade-up"
-                           data-delay="300"
-                        />
-                     </div>
-                  </div>
-               </div>
-               <div class="tab-content-wrap">
-                  <div class="tab-content">
-                     <div class="con-left-wrap" data-aos="flip-left" data-delay="300">
-                        <p class="tit">
-                           <span>High</span> Performance for
-                           <span>HD Radio</span>
-                        </p>
-                        <ul class="txt">
-                           <li><span>D</span>igital</li>
-                           <li><span>A</span>ggregation</li>
-                           <li><span>S</span>can</li>
-                           <li><span>H</span>andler</li>
-                        </ul>
-                     </div>
-                     <div class="con-right-wrap">
-                        <img
-                           src="../../img/img13.png"
-                           alt=""
-                           data-aos="fade-up"
-                           data-delay="300"
-                        />
-                     </div>
-                  </div>
-               </div>
-               <div class="tab-content-wrap">
-                  <div class="tab-content">
-                     <div class="con-left-wrap" data-aos="flip-left" data-delay="300">
-                        <p class="tit">
-                           <span>Superior</span>&nbsp;Performance for
-                           <span>DRM30</span>
-                        </p>
-                        <ul class="txt">
-                           <li><span>A</span>robeless</li>
-                           <li><span>D</span>RM-<span>A</span>M</li>
-                           <li><span>M</span>ultiplex</li>
-                           <li><span>S</span>can</li>
-                        </ul>
-                     </div>
-                     <div class="con-right-wrap">
-                        <img
-                           src="../../img/img14.png"
-                           alt=""
-                           data-aos="fade-up"
-                           data-delay="300"
-                        />
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </SubCntBox>
-         <!-- 콘텐츠를 추가 내용 작성 eee -->
-      </SubContent>
-   </SubLayout>
+			<!-- 콘텐츠를 추가 내용 작성 eee -->
+		</SubContent>
+	</SubLayout>
 </Layout>

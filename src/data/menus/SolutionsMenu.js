@@ -30,5 +30,8 @@ export const SolutionsMenu = [
 	{
 		name: "Advanced Features",
 		link: "",
+		level2: [
+			{ name: "Advanced Features", link: "" },
+		],
 	},
 ];
