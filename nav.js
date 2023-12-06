@@ -19,12 +19,6 @@ const navMenu = [
       { url : `Solutions` , title: "SDR Technolog"},
     ],
   },
-  {
-    title : "News2"
-  },
-  {
-    title : "Contact"
-  },
 ]
 
 export default navMenu;

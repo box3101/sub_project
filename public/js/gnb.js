@@ -44,6 +44,18 @@ document.addEventListener('DOMContentLoaded', function() {
 	document.querySelector('.menu-toggle').addEventListener('click', function() {
 			document.querySelector('.mobile-menu').classList.toggle('active');
 			this.classList.toggle('active');
+
+		  const $logo = document.querySelector('.logo');
+			const $bg = document.querySelector('.header .bg');
+
+			$logo.classList.toggle("on");
+			if($logo.classList.contains("on")){
+				$logo.querySelector("img").setAttribute("src","../img/logo-sub.png");
+				$bg.classList.add("on");
+			}else{
+				$logo.querySelector("img").setAttribute("src","../img/logo.png");
+				$bg.classList.remove("on");
+			}
 	});
 
 	// 서브메뉴 토글
@@ -57,8 +69,10 @@ document.addEventListener('DOMContentLoaded', function() {
 				if(!$subMenu.classList.contains("active")){
 					for(const el2 of $$subMenu) el2.classList.remove("active");
 					$subMenu.classList.add("active");
+					this.querySelector("li:nth-of-type(2)").classList.add("on")
 				}else{
 					$subMenu.classList.remove("active");
+					this.querySelector("li:nth-of-type(2)").classList.remove("on")
 				}
 			}
 		}

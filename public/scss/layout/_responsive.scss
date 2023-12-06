@@ -37,6 +37,7 @@
   .header.sub.on{height: 5rem;}
   .custom-bullet-list{flex-direction: column;}
   /* scoll */
+  .header.on{height: 5rem;}
 }
 @media(max-width:map-get($media-size,tablet)){
   html{font-size: 13px;}
@@ -53,5 +54,5 @@
   .com-step {height: 24rem;}
   .com-step .info{justify-content: flex-start; padding-top: 20px;padding-left: 10px;padding-right: 10px;}
   .com-card > li{padding-left: 10px;padding-right: 10px;}
-   main{overflow: hidden;}
+  //  main{overflow: hidden;}
 }
