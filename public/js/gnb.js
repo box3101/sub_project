@@ -56,8 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
 				$bg.classList.remove("on");
 			}
 
-			document.querySelector('.mobile-menu').classList.toggle('active');
-			this.classList.toggle('active');
+			setTimeout(function(){
+		  	document.querySelector('.mobile-menu').classList.toggle('active');
+				document.querySelector('.menu-toggle').classList.toggle('active');
+			},30)
 	});
 
 	// 서브메뉴 토글
