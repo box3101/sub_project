@@ -74,6 +74,7 @@
 					 justify-content: center;
 					 height: 6.25rem;
 					 color: #222222;
+					 text-align: center;
 				}
 				.intro-advantages__list {
 					 margin-top: 1.3125rem;
@@ -465,9 +466,6 @@
 				gap: 0;
 		 }
 		}
-	// 	.table-type {
-	// 	 padding: 15px;
-	//  }
 }
 @media (max-width: map-get($media-size,tablet)) {
 	.sub-contents {
@@ -475,9 +473,25 @@
 				.intro-img01 {
 					 width: 100%;
 				}
-				// .intro-menu02 .intro-advantages__item {
-					 
-				// }
+				.intro-menu02 {
+					.intro-advantages-wrap {
+						&.perfor {
+							margin-right: 1.5rem;
+						}
+						&.proven {
+							margin-right: 1.5rem;
+						}
+					}
+				.intro-advantages__item {
+					padding: 0.5625rem 1.875rem;
+					p {
+						font-size: 1.475rem;
+						height: 3.25rem;
+						line-height: 1.8125rem;
+					}
+					}
+				} 
+				
 				.sw-type {
 					 flex-direction: column-reverse;
 					 text-align: center;
@@ -493,7 +507,7 @@
 					padding: 15px;
 				}
 				.tab-list {
-					 flex-wrap: wrap;
+					//  flex-wrap: wrap;
 					 
 					 .tab-button {
 							flex: calc(30% - 10px);
@@ -534,7 +548,7 @@
 					 
 					 .intro-advantages-wrap  {
 							width: 100%;
-							margin-right: 0;
+							margin-right: 0 !important;
 							flex-wrap: nowrap;
 							&.proven {
 								 margin-top: 2.5rem;
@@ -545,9 +559,16 @@
 							}
 
 							.intro-advantages__item {
-								 width: 100%;
-								 height: 100%;
-							}
+								width: 100%;
+								padding: 1.5625rem 1.875rem;
+								p {
+									font-size: 1.875rem;
+									height: 5.25rem;
+							 }
+							 .intro-advantages__list li {
+								font-size: 1.2rem;
+							 }
+							} 
 					 }
 				} 
 				.img-type {
@@ -600,6 +621,7 @@
 					 }
 				}
 				.tab-list {
+					flex-wrap: wrap;
 					 .tab-button {
 							padding: 8px 15px;
 							height: 56px;

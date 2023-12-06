@@ -21621,6 +21621,7 @@ body.on {
   justify-content: center;
   height: 6.25rem;
   color: #222222;
+  text-align: center;
 }
 .sub-info .intro-menu02 .intro-advantages-wrap .intro-advantages__item .intro-advantages__list {
   margin-top: 1.3125rem;
@@ -21970,6 +21971,20 @@ body.on {
   .sub-contents .sub-info .intro-img01 {
     width: 100%;
   }
+  .sub-contents .sub-info .intro-menu02 .intro-advantages-wrap.perfor {
+    margin-right: 1.5rem;
+  }
+  .sub-contents .sub-info .intro-menu02 .intro-advantages-wrap.proven {
+    margin-right: 1.5rem;
+  }
+  .sub-contents .sub-info .intro-menu02 .intro-advantages__item {
+    padding: 0.5625rem 1.875rem;
+  }
+  .sub-contents .sub-info .intro-menu02 .intro-advantages__item p {
+    font-size: 1.475rem;
+    height: 3.25rem;
+    line-height: 1.8125rem;
+  }
   .sub-contents .sub-info .sw-type {
     flex-direction: column-reverse;
     text-align: center;
@@ -21983,9 +21998,6 @@ body.on {
   }
   .sub-contents .sub-info .table-type {
     padding: 15px;
-  }
-  .sub-contents .sub-info .tab-list {
-    flex-wrap: wrap;
   }
   .sub-contents .sub-info .tab-list .tab-button {
     flex: calc(30% - 10px);
@@ -22023,7 +22035,7 @@ body.on {
   }
   .sub-contents .sub-info .intro-menu02 .intro-advantages-wrap {
     width: 100%;
-    margin-right: 0;
+    margin-right: 0 !important;
     flex-wrap: nowrap;
   }
   .sub-contents .sub-info .intro-menu02 .intro-advantages-wrap.proven {
@@ -22035,7 +22047,14 @@ body.on {
   }
   .sub-contents .sub-info .intro-menu02 .intro-advantages-wrap .intro-advantages__item {
     width: 100%;
-    height: 100%;
+    padding: 1.5625rem 1.875rem;
+  }
+  .sub-contents .sub-info .intro-menu02 .intro-advantages-wrap .intro-advantages__item p {
+    font-size: 1.875rem;
+    height: 5.25rem;
+  }
+  .sub-contents .sub-info .intro-menu02 .intro-advantages-wrap .intro-advantages__item .intro-advantages__list li {
+    font-size: 1.2rem;
   }
   .sub-contents .sub-info .img-type img {
     width: 100%;
@@ -22083,6 +22102,9 @@ body.on {
   }
   .sub-contents .sub-info .table-type .ico-wave {
     display: none;
+  }
+  .sub-contents .sub-info .tab-list {
+    flex-wrap: wrap;
   }
   .sub-contents .sub-info .tab-list .tab-button {
     padding: 8px 15px;
