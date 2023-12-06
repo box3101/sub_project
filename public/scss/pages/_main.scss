@@ -2,7 +2,7 @@
 	@for $i from 1 to 5 {
 		.box#{$i} {
 			background: url("../img/bg-main0#{$i}.jpg");
-			background-attachment: fixed;
+			// background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center center;
@@ -31,6 +31,7 @@
 	.box2 {
 		ul {
 			display: flex;
+			margin-top:  5rem;
 			li {
 				flex: 1;
 				text-align: center;

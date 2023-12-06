@@ -84,6 +84,8 @@
 				background: #fff;
 				min-width: 13.75rem;
 				padding: 1.25rem;
+				border: 1px solid #ddd;
+				box-shadow: 3px 1px 6px rgba(0,0,0,0.1);
 
 				li {
 					text-align: center;
@@ -224,5 +226,17 @@
 		.submenu-toggle {
 			cursor: pointer;
 		}
+	}
+}
+
+footer{
+	height: 44px;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	p{
+		font-size: 0.875rem;
+		color: #666666;
 	}
 }

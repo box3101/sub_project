@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -20268,6 +20269,8 @@ a {
   background: #fff;
   min-width: 13.75rem;
   padding: 1.25rem;
+  border: 1px solid #ddd;
+  box-shadow: 3px 1px 6px rgba(0, 0, 0, 0.1);
 }
 .header .gnb > li .sub-menu li {
   text-align: center;
@@ -20399,6 +20402,18 @@ a {
 }
 .header .mobile-menu .submenu-toggle {
   cursor: pointer;
+}
+
+footer {
+  height: 44px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-size: 0.875rem;
+  color: #666666;
 }
 
 .inner {
@@ -20867,7 +20882,6 @@ body.on {
 
 #main .box1 {
   background: url("../img/bg-main01.jpg");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -20876,7 +20890,6 @@ body.on {
 }
 #main .box2 {
   background: url("../img/bg-main02.jpg");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -20885,7 +20898,6 @@ body.on {
 }
 #main .box3 {
   background: url("../img/bg-main03.jpg");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -20894,7 +20906,6 @@ body.on {
 }
 #main .box4 {
   background: url("../img/bg-main04.jpg");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -20917,6 +20928,7 @@ body.on {
 }
 #main .box2 ul {
   display: flex;
+  margin-top: 5rem;
 }
 #main .box2 ul li {
   flex: 1;
@@ -21587,6 +21599,14 @@ body.on {
   }
   .com-popup-wrap .com-popup {
     width: 92%;
+  }
+  #main .box3 .off {
+    opacity: 1;
+    height: auto;
+    visibility: visible;
+  }
+  .sub-banner {
+    background-position: right -200px center;
   }
 }
 /*이은영*/
