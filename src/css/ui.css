@@ -20192,13 +20192,41 @@ a {
 }
 .header.sub .gnb > li > a {
   color: #000;
+  position: relative;
+}
+.header.sub .gnb > li > a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #A265CA;
+  transition: all 0.4s ease-in-out;
+}
+.header.sub .gnb > li > a:hover:before {
+  content: "";
+  display: block;
+  width: 110px;
 }
 .header.sub .gnb > li .sub-menu {
   top: 5.875rem;
 }
 .header.on {
   height: 4rem;
-  border-bottom: 1px solid rgba(204, 204, 204, 0.3607843137);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header.on .gnb > li .sub-menu {
+  top: 3.96rem;
+}
+.header.on:not(.sub) {
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header.on:not(.sub) .gnb > li .sub-menu {
+  top: 3.875rem;
 }
 .header .bg {
   display: none;
@@ -20265,7 +20293,7 @@ a {
   visibility: hidden;
   transition: all 0.4s;
   position: absolute;
-  top: 4.375rem;
+  top: 5.075rem;
   background: #fff;
   min-width: 13.75rem;
   padding: 1.25rem;
@@ -21139,7 +21167,7 @@ body.on {
 }
 #main .box3 .off li {
   position: relative;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #fff;
   margin-bottom: 0.9375rem;
   padding-left: 0.9375rem;
@@ -21607,6 +21635,19 @@ body.on {
   }
   .sub-banner {
     background-position: right -200px center;
+  }
+  #main .box3 ul:not(.off) > li .img {
+    background-size: 2rem !important;
+  }
+  section.box::before {
+    content: "";
+    display: block;
+    height: 120px; /* 공간의 높이, 필요에 따라 조절 */
+    margin-top: -120px; /* 음수 마진으로 공간을 조절 */
+    visibility: hidden;
+  }
+  .aa.pb100 {
+    margin-bottom: 100px;
   }
 }
 /*이은영*/

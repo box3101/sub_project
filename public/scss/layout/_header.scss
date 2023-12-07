@@ -9,15 +9,39 @@
 		background: #fff;
 		.gnb > li > a {
 			color: #000;
+			position: relative;
+			@include make-before{
+				position: absolute;
+				left: 50%;
+				 transform: translateX(-50%); bottom: 0;
+				width: 0; height: 3px; background: $main-color;
+				transition: all 0.4s ease-in-out;
+			}
+			&:hover{
+				@include make-before{
+					width: 110px;
+				}
+			}
 		}
 		.gnb > li .sub-menu {
 			top: 5.875rem;
 		}
 	}
-	&.on {
+	&.on{
 		height: 4rem;
-		border-bottom: 1px solid #cccccc5c;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+   .gnb > li .sub-menu {
+			top: 3.96rem;
+	 }
 	}
+	&.on:not(.sub) {
+		background: rgba(0,0,0,0.9);
+		border-bottom: 1px solid rgba(255,255,255,0.2);
+		.gnb > li .sub-menu{
+			top: 3.875rem;
+		}
+	}
+	
 	.bg {
 		display: none;
 		position: fixed;
@@ -80,12 +104,13 @@
 				visibility: hidden;
 				transition: all 0.4s;
 				position: absolute;
-				top: 4.375rem;
+				top: 5.075rem;
 				background: #fff;
 				min-width: 13.75rem;
 				padding: 1.25rem;
 				border: 1px solid #ddd;
 				box-shadow: 3px 1px 6px rgba(0,0,0,0.1);
+				
 
 				li {
 					text-align: center;

@@ -6,15 +6,19 @@ import SubContent from "../../components/SubContent.astro";
 import SubBanner from "../../components/SubBanner.astro";
 import SubMenu from "../../components/SubMenu.astro";
 import SubCntBox from "../../components/SubCntBox.astro";
+import Edit from "../../components/Edit.astro";
 import { introMenu } from "../../data/menus/introMenu.js";
 import "../../css/ui.css";
 
 const pageTitle = `Home > Technology`;
 ---
 
+<Edit width='360px' height='50px' 'top'='{}' 'left'='{}' />
+
 <Layout pageTitle={pageTitle} idName="Technology">
 	<Header type="sub" />
 	<SubBanner title="Technology" bgUrl="bg-intro" />
+	<Edit width="360px" height="50px" />
 	<SubLayout>
 		<SubMenu items={introMenu} />
 		<SubContent>

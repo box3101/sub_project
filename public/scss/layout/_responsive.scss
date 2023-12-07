@@ -58,4 +58,13 @@
   .com-popup-wrap .com-popup{width: 92%;}
   #main .box3 .off{opacity:1; height: auto;visibility:visible}
   .sub-banner{background-position: right -200px center;}
+  #main .box3 ul:not(.off) > li .img{    background-size: 2rem!important;}
+  section.box::before{
+    content: "";
+    display: block;
+    height: 120px; /* 공간의 높이, 필요에 따라 조절 */
+    margin-top: -120px; /* 음수 마진으로 공간을 조절 */
+    visibility: hidden;
+  }
+  .aa.pb100{margin-bottom: 100px;}
 }
