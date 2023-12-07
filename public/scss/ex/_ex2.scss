@@ -222,11 +222,6 @@
 		 display: flex;
 		 padding: 1.5625rem 1.5625rem 2.25rem;
 		 background: #d9e2eb;
-		 width: 100%;
-
-		 img {
-				width: 100%;
-		 }
 
 		 .sw-type-wrap {
 				display: flex;
@@ -262,7 +257,7 @@
 		 display: flex;
 		 background: #1f2833;
 		 border-radius: 0.9375rem;
-		 padding: 20px 30px;
+		 padding: 25px 25px;
 
 		 .con-left-wrap {
 				padding: 2.0625rem 1.5625rem 0 0.3125rem;
@@ -279,46 +274,48 @@
 				display: flex;
 				flex-direction: column;
 				background: #fff;
+			}
+			table {
+				 width: 100%;
+				 th,
+				 td {
+						height: 2.5rem;
+						text-align: center;
+						font-size: 1rem;
+						line-height: 1.5rem;
+						border-right: 1px solid #fff;
+						border-bottom: 1px solid #fff;
+						padding: 0.4375rem;
+						vertical-align: middle;
 
-				.role-table-wrap table {
-					 width: 100%;
-					 th,
-					 td {
-							height: 2.5rem;
-							text-align: center;
-							font-size: 1rem;
-							line-height: 1.5rem;
-							border-right: 1px solid #fff;
-							border-bottom: 1px solid #fff;
-							padding: 0.4375rem;
-							vertical-align: middle;
-
-							&:last-child {
-								 border-right: none;
-							}
-							&:last-child {
-								 border-left: 1px solid #fff;
-							}
-					 }
-					 th {
-							font-size: 1.125rem;
-							font-weight: 600;
-							color: #fff;
-					 }
-					 thead tr:nth-child(even) {
-							background: #ba8dd8;
-					 }
-					 thead tr:nth-child(odd) {
-							background: #a265ca;
-					 }
-					 tbody tr:nth-child(even) {
-							background: #e8d9f2;
-					 }
-					 tbody tr:nth-child(odd) {
-							background: #f3ecf8;
-					 }
-				}
-		 }
+						&:last-child {
+							 border-right: none;
+						}
+						&:last-child {
+							 border-left: 1px solid #fff;
+						}
+				 }
+				 th {
+						font-size: 1.125rem;
+						font-weight: 600;
+						color: #fff;
+				 }
+				 tbody tr:last-child td, tbody tr:nth-child(6) td {
+					border-bottom: none;
+				 }
+				 thead tr:nth-child(even) {
+						background: #ba8dd8;
+				 }
+				 thead tr:nth-child(odd) {
+						background: #a265ca;
+				 }
+				 tbody tr:nth-child(even) {
+						background: #e8d9f2;
+				 }
+				 tbody tr:nth-child(odd) {
+						background: #f3ecf8;
+				 }
+			}
 		 .note-wrap {
 				padding: 2rem 1.875rem 1.5625rem;
 
@@ -406,6 +403,7 @@
 
 	.tab-content-wrap {
 		 display: none;
+		 margin-top: -1px;
 		 &.show {
 				display: block;
 		 }
@@ -468,7 +466,33 @@
 		 .intro-menu03 .radio-wrap{
 			gap: 1.375rem;
 		}
-		}
+	}
+}
+@media (max-width: 1099px) {
+	.sub-contents .sub-info {
+		.sw-type {
+			flex-direction: column-reverse;
+			text-align: center;
+			padding: 25px;
+			img {
+			 width: 100%;
+			}
+			.sw-type-wrap {
+				 padding: 5px 36px 25px;
+				 .sw-type-txt {
+					font-size: 1.2rem;
+				 }
+			}
+			.ico-wave {
+				 display: none;
+			}
+	 }
+	}
+}
+@media (max-width: 960px) {
+	.sub-contents .sub-info .intro-menu03 .radio-wrap .radio-card {
+		flex: 46%;
+	}
 }
 @media (max-width: map-get($media-size,tablet)) {
 	.sub-contents {
@@ -519,18 +543,22 @@
 					 
 					 .tab-button {
 							flex: calc(30% - 10px);
+							padding: 0.625rem 1.25rem
 					 }
 				}
 				.tab-content {
 					 flex-direction: column;
-					 gap: 35px;
-					 padding: 2.5rem 2.125rem;
+					 gap: 30px;
+					//  padding: 0.625rem 1.25rem;
 					 img {
 							width: 100%;
 							height: auto;
 					 }
 					 .con-right-wrap {
 							width: 100%;
+					 }
+					 .con-left-wrap {
+							padding-right: 0;
 					 }
 				}
 		 }
@@ -609,13 +637,14 @@
 				.table-type {
 					 flex-direction: column;
 					 border-radius: 0px;
-					 padding: 10px;
+					 padding: 12px;
 					 .con-left-wrap {
-							padding: 0.3125rem 1.5625rem 0.3125rem 1.3125rem;
+							padding: 0  1.5625rem 0 1.3125rem;
 					 }
 					 .note-wrap {
 							background: #1f2833;
 							padding: 2rem 0 1.5625rem;
+							margin: -1px;
 							p,
 							ul li {
 								 color: #fff;
@@ -641,11 +670,30 @@
 							display: flex;
 							justify-content: center;
 							align-items: center;
+						  border-top-left-radius: 0;
+              border-top-right-radius: 0;
 					 }
 				}
 				.tab-content {
 					 flex-direction: column;
-					 gap: 35px;
+					 gap: 25px;
+					 padding: 1.5rem 1.125rem;
+					 .con-left-wrap {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						
+						.tit {
+							font-size: 1.4rem;
+							span {
+								font-size: 2rem;
+							}
+						}
+						.txt {
+							flex-wrap: wrap;
+						}
+					 }
 					 img {
 							width: 100%;
 					 }
