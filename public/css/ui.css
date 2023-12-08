@@ -21765,7 +21765,7 @@ body.on {
   flex-direction: column;
   flex: 30%;
   border: 1px solid #e5e5e5;
-  padding: 1.25rem;
+  padding: 1.25rem 0.25rem 20px 1.25rem;
 }
 .sub-info .intro-menu03 .radio-wrap .radio-card .icon-wrap {
   display: flex;

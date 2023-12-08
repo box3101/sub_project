@@ -110,7 +110,7 @@
 	}
 	.radio-wrap {
 		 margin-top: 3.5625rem;
-		 display: flex;
+		 display: flex; 
 		 flex-wrap: wrap;
 		 gap: 2.375rem;
 
@@ -121,7 +121,7 @@
 				flex-direction: column;
 				flex: calc(30%);
 				border: 1px solid #e5e5e5;
-				padding: 1.25rem;
+				padding: 1.25rem 0.25rem 20px 1.25rem;
 
 				.icon-wrap {
 					 display: flex;
