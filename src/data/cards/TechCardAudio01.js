@@ -1,7 +1,7 @@
 export const TechCardAudio01 = [
 	{
 		icon: "../img/audio-ico01.svg",
-		title: "First Solution in the Market",
+		title: "Affordable Comprehensive Solution",
 		items: [
 			"Price of the solution is one of the most critical decision making points and we understand well Therefore, RF2Digital always make sure that the solution is affordable in any case.",
 			"Yes, all the features for standard audio DSP are provided.",

@@ -11,8 +11,8 @@ export const techCardItems01 = [
 		num: "02",
 		title: "Fully Integrated SW stack",
 		items: [
-			"To ensure the best user experience, the solution offers the quickest time-to-audio performance.",
-			"Even with a single tuner, user satisfaction will be extremely high.",
+			"The software stack is designed with a plug-and-play structure for simpler and quicker integration.",
+			"All necessary SW components can be provided.",
 		],
 	},
 	{

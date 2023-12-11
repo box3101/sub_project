@@ -21651,6 +21651,22 @@ body.on {
 }
 /*이은영*/
 /*김영은*/
+.sub-title-sup {
+  text-align: center;
+  font-size: 2.8125rem;
+  color: #262626;
+  margin-top: 0;
+  padding: 3.75rem 3.75rem;
+  padding-top: 0;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+.sup {
+  vertical-align: super;
+  font-size: x-large;
+}
+
 .sub-info .intro-menu01 {
   text-align: center;
 }
@@ -22065,9 +22081,6 @@ body.on {
   .sub-contents .sub-info .intro-menu02 {
     justify-content: center;
   }
-  .sub-contents .sub-info .tab-list {
-    gap: 0;
-  }
   .sub-contents .sub-info .intro-menu03 .radio-wrap {
     gap: 1.375rem;
   }
@@ -22246,6 +22259,7 @@ body.on {
     display: none;
   }
   .sub-contents .sub-info .tab-list {
+    gap: 0;
     flex-wrap: wrap;
   }
   .sub-contents .sub-info .tab-list .tab-button {

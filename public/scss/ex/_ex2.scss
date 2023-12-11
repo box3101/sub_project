@@ -1,4 +1,21 @@
 // 작업
+
+.sub-title-sup {
+	text-align: center;
+    font-size: 2.8125rem;
+    color: #262626;
+    margin-top: 0;
+    padding: 3.75rem 3.75rem;
+    padding-top: 0;
+    line-height: 1.3;
+    word-break: keep-all;
+		
+}
+.sup {
+	vertical-align: super;
+	font-size: x-large;
+
+}
 .sub-info .intro-menu01 {
 	text-align: center;
 
@@ -460,9 +477,6 @@
 		 .intro-menu02 {
 				justify-content: center;
 		 }
-		 .tab-list {
-				gap: 0;
-		 }
 		 .intro-menu03 .radio-wrap{
 			gap: 1.375rem;
 		}
@@ -663,6 +677,7 @@
 					 }
 				}
 				.tab-list {
+					gap: 0;
 					flex-wrap: wrap;
 					 .tab-button {
 							padding: 8px 15px;

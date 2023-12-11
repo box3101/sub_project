@@ -1,18 +1,17 @@
 export const techCardItems02 = [
 	{
 		num: "01",
-		title: "Verified & Validated Solution",
+		title: "First Solution in the Market",
 		items: [
-			"The solution is widely used in mass production and PoC projects by major global Tier1 companies.",
-			"The solution has been verified & validated by European OEM",
+			"Fully supports including CDR audio CODEC.",
+			"Ready for FM-CDR simulcast with seamless linking.",
 		],
 	},
 	{
 		num: "02",
-		title: "Fully Integrated SW stack",
+		title: "Fully Customizable",
 		items: [
-			"To ensure the best user experience, the solution offers the quickest time-to-audio performance.",
-			"Even with a single tuner, user satisfaction will be extremely high.",
+			'To meet diverse and complex customer needs, it can be fully customized to be the "Perfect Fit" solution, unlike chipsets.',
 		],
 	},
 	{
@@ -30,22 +29,6 @@ export const techCardItems02 = [
 		items: [
 			"To ensure the best user experience, the solution offers the quickest time-to-audio performance.",
 			"Even with a single tuner, user satisfaction will be extremely high.",
-		],
-	},
-	{
-		num: "05",
-		title: "Dynamic Configuration",
-		items: [
-			"Tuner configuration can be dynamically re-arranged",
-			"From MRC to Dual/Single transition can be seamlessly done",
-		],
-	},
-	{
-		num: "06",
-		title: "Complete SW Stack is Available",
-		items: [
-			"For Tier1 companies that are unfamiliar with DAB.",
-			"Simply implement the HMI, and the system will be complete.",
 		],
 	},
 ];
