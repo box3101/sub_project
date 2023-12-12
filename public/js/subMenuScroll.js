@@ -53,7 +53,9 @@
 					posArr.push(insertCode);
 				}
 
-				posArr.push($wrap_div_last.offsetTop + $wrap_div_last.clientHeight);
+				setTimeout(function(){
+					posArr.push($wrap_div_last.offsetTop + $wrap_div_last.clientHeight);
+				},100)
 			}
 		}
 
