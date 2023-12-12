@@ -1,0 +1,15 @@
+---
+// 2가지 (메인화면, 서브화면일때) headerType 설정
+type FooterProps = {
+	type: "main" | "sub";
+	title: string;
+};
+
+// Prop 받기
+const { type } = Astro.props as FooterProps;
+---
+
+
+<footer class={type === "main" ? "footer" : "footer sub"} >
+  <p>COPYRIGHT (C) 2024 RF2Digital Inc. ALL RIGHTS RESERVED.</p>
+</footer>

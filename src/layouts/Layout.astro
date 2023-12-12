@@ -1,7 +1,9 @@
 ---
 import ComContact from "../components/ComContact.astro";
 import ComContactPopup from "../components/ComContactPopup.astro";
+import Footer from "../layouts/Footer.astro";
 const { pageTitle, idName } = Astro.props;
+
 ---
 
 <!doctype html>
@@ -24,6 +26,7 @@ const { pageTitle, idName } = Astro.props;
 
 			<ComContact />
 			<ComContactPopup />
+			
 		</main>
 
 		<!-- 스크립트 -->

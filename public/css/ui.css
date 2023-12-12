@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -20442,6 +20443,11 @@ footer p {
   font-size: 0.875rem;
   color: #666666;
 }
+footer.sub {
+  border-top: 1px solid #F1F1F1;
+  background: #fff;
+  color: #666666;
+}
 
 .inner {
   position: relative;
@@ -20570,7 +20576,7 @@ html {
 .floating-banner {
   position: fixed;
   right: 6.3125rem;
-  bottom: 2.8125rem;
+  bottom: 2.7125rem;
   z-index: 100;
 }
 .floating-banner.on .contact-pop {
@@ -20877,6 +20883,13 @@ body.on {
   font-size: 1rem;
   color: #333;
 }
+.com-popup-wrap .com-popup .popup-info input::placeholder {
+  color: #BBBBBB;
+  font-weight: 400;
+}
+.com-popup-wrap .com-popup .popup-info input:hover {
+  border: 2px solid rgb(242, 159, 5);
+}
 .com-popup-wrap .com-popup .popup-info textarea {
   width: 100%;
   height: 5.625rem;
@@ -20888,6 +20901,13 @@ body.on {
   font-size: 1rem;
   color: #333;
   font-family: "Oswald";
+}
+.com-popup-wrap .com-popup .popup-info textarea::placeholder {
+  color: #BBBBBB;
+  font-weight: 400;
+}
+.com-popup-wrap .com-popup .popup-info textarea:hover {
+  border: 2px solid rgb(242, 159, 5);
 }
 .com-popup-wrap .com-popup .popup-info button {
   width: 100%;

@@ -70,6 +70,9 @@ body.on{
 				padding-left: 0.9375rem;
 				font-size: 1rem;
         color: #333;
+
+				&::placeholder{color: #BBBBBB;font-weight: 400;}
+				&:hover{border: 2px solid rgb(242, 159, 5);}
 			}
 
 			textarea {
@@ -83,6 +86,8 @@ body.on{
 				font-size: 1rem;
         color: #333;
 				font-family: 'Oswald';
+				&::placeholder{color: #BBBBBB;font-weight: 400;}
+				&:hover{border: 2px solid rgb(242, 159, 5);}
 			}
 
 			button {
