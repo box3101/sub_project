@@ -31,7 +31,7 @@
 	.box2 {
 		ul {
 			display: flex;
-			margin-top:  5rem;
+			margin-top: 5rem;
 			li {
 				flex: 1;
 				text-align: center;
@@ -92,8 +92,22 @@
 						.img {
 							@include bg-url("img", "ico0#{$i}_off.svg", true, "center", auto);
 						}
-						&:hover {
+						@media (min-width: map-get($media-size,smallDesk)) {
+							&:hover {
+								.img {
+									@include bg-url(
+										"img",
+										"ico0#{$i}_on.svg",
+										true,
+										"center",
+										auto
+									);
+								}
+							}
+						}
+						@media (max-width: map-get($media-size,largeMo)) {
 							.img {
+								background-color: #F29F05;
 								@include bg-url(
 									"img",
 									"ico0#{$i}_on.svg",
@@ -101,10 +115,10 @@
 									"center",
 									auto
 								);
-                @media (max-width: map-get($media-size,smallDesk)) {
-                  background-size: 30px;
-                }
 							}
+						}
+						@media (max-width: map-get($media-size,smallDesk)) {
+							background-size: 30px;
 						}
 					}
 				}
@@ -126,16 +140,18 @@
 					border-radius: 50%;
 				}
 
-				&:hover {
-					flex: 2;
-					background: rgba(0, 0, 0, 0.7);
-					.off {
-						opacity: 1;
-						visibility: visible;
-						height: auto;
-					}
-					.img {
-						background: #f29f05;
+				@media (min-width: map-get($media-size,smallDesk)) {
+					&:hover {
+						flex: 2;
+						background: rgba(0, 0, 0, 0.7);
+						.off {
+							opacity: 1;
+							visibility: visible;
+							height: auto;
+						}
+						.img {
+							background: #f29f05;
+						}
 					}
 				}
 			}

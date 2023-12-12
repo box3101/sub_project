@@ -20791,6 +20791,7 @@ section.box {
 .sub-layout .sub-contents {
   flex: 1;
   background: #fff;
+  width: 100%;
 }
 .sub-layout .sub-contents .sub-title {
   text-align: center;
@@ -20981,7 +20982,7 @@ body.on {
   flex: 1;
   text-align: center;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1367px) {
   #main .box2 ul li:hover img {
     transform: rotateY(180deg);
   }
@@ -21035,18 +21036,33 @@ body.on {
   background-size: auto;
   background-repeat: no-repeat;
 }
-#main .box3 ul:not(.off) > li:nth-of-type(1):hover .img {
-  background-image: url("../img/ico01_on.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: "center";
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-@media (max-width: 1280px) {
+@media (min-width: 1367px) {
   #main .box3 ul:not(.off) > li:nth-of-type(1):hover .img {
+    background-image: url("../img/ico01_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(1) .img {
+    background-color: #F29F05;
+    background-image: url("../img/ico01_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1367px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(1) {
     background-size: 30px;
   }
 }
@@ -21060,18 +21076,33 @@ body.on {
   background-size: auto;
   background-repeat: no-repeat;
 }
-#main .box3 ul:not(.off) > li:nth-of-type(2):hover .img {
-  background-image: url("../img/ico02_on.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: "center";
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-@media (max-width: 1280px) {
+@media (min-width: 1367px) {
   #main .box3 ul:not(.off) > li:nth-of-type(2):hover .img {
+    background-image: url("../img/ico02_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(2) .img {
+    background-color: #F29F05;
+    background-image: url("../img/ico02_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1367px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(2) {
     background-size: 30px;
   }
 }
@@ -21085,18 +21116,33 @@ body.on {
   background-size: auto;
   background-repeat: no-repeat;
 }
-#main .box3 ul:not(.off) > li:nth-of-type(3):hover .img {
-  background-image: url("../img/ico03_on.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: "center";
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-@media (max-width: 1280px) {
+@media (min-width: 1367px) {
   #main .box3 ul:not(.off) > li:nth-of-type(3):hover .img {
+    background-image: url("../img/ico03_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(3) .img {
+    background-color: #F29F05;
+    background-image: url("../img/ico03_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1367px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(3) {
     background-size: 30px;
   }
 }
@@ -21110,18 +21156,33 @@ body.on {
   background-size: auto;
   background-repeat: no-repeat;
 }
-#main .box3 ul:not(.off) > li:nth-of-type(4):hover .img {
-  background-image: url("../img/ico04_on.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: "center";
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-@media (max-width: 1280px) {
+@media (min-width: 1367px) {
   #main .box3 ul:not(.off) > li:nth-of-type(4):hover .img {
+    background-image: url("../img/ico04_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(4) .img {
+    background-color: #F29F05;
+    background-image: url("../img/ico04_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1367px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(4) {
     background-size: 30px;
   }
 }
@@ -21135,18 +21196,33 @@ body.on {
   background-size: auto;
   background-repeat: no-repeat;
 }
-#main .box3 ul:not(.off) > li:nth-of-type(5):hover .img {
-  background-image: url("../img/ico05_on.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: "center";
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-@media (max-width: 1280px) {
+@media (min-width: 1367px) {
   #main .box3 ul:not(.off) > li:nth-of-type(5):hover .img {
+    background-image: url("../img/ico05_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 600px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(5) .img {
+    background-color: #F29F05;
+    background-image: url("../img/ico05_on.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: "center";
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 1367px) {
+  #main .box3 ul:not(.off) > li:nth-of-type(5) {
     background-size: 30px;
   }
 }
@@ -21166,17 +21242,19 @@ body.on {
   background: #000;
   border-radius: 50%;
 }
-#main .box3 ul:not(.off) > li:hover {
-  flex: 2;
-  background: rgba(0, 0, 0, 0.7);
-}
-#main .box3 ul:not(.off) > li:hover .off {
-  opacity: 1;
-  visibility: visible;
-  height: auto;
-}
-#main .box3 ul:not(.off) > li:hover .img {
-  background: #f29f05;
+@media (min-width: 1367px) {
+  #main .box3 ul:not(.off) > li:hover {
+    flex: 2;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #main .box3 ul:not(.off) > li:hover .off {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+  #main .box3 ul:not(.off) > li:hover .img {
+    background: #f29f05;
+  }
 }
 #main .box3 .off {
   opacity: 0;
@@ -21474,7 +21552,7 @@ body.on {
   visibility: hidden; /* 투명하게 처리 */
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1367px) {
   html {
     font-size: 14px;
   }
@@ -21656,7 +21734,7 @@ body.on {
     background-position: right -200px center;
   }
   #main .box3 ul:not(.off) > li .img {
-    background-size: 2rem !important;
+    background-size: 2.5rem !important;
   }
   section.box::before {
     content: "";
@@ -22097,7 +22175,7 @@ body.on {
   height: 38.75rem;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1367px) {
   .sub-contents .sub-info .intro-menu02 {
     justify-content: center;
   }
