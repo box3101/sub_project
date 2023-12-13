@@ -1,7 +1,7 @@
 (function () {
 	const subMenu = document.querySelector(".subMenu");
 	if (subMenu) {
-		document.addEventListener("DOMContentLoaded", function () {
+		window.onload = function () {
 			dom초기화();
 			각박스의세로위치값();
 
@@ -14,7 +14,7 @@
 			if ($subMenu) 돔시작서브메뉴조건($$level2_li);
 			// level2 메뉴가 없을 경우
 			else 돔시작서브메뉴조건($$subMenu_li);
-		});
+		};
 
 		let posArr, len;
 
@@ -38,10 +38,7 @@
 					posArr.push(insertCode);
 				}
 
-				setTimeout(function(){
-					posArr.push($wrap_div_last.offsetTop + $wrap_div_last.clientHeight);
-				},100)
-				
+				posArr.push($wrap_div_last.offsetTop + $wrap_div_last.clientHeight);
 			}
 			// 서브메뉴가 없을경우
 			else {
@@ -53,9 +50,7 @@
 					posArr.push(insertCode);
 				}
 
-				setTimeout(function(){
-					posArr.push($wrap_div_last.offsetTop + $wrap_div_last.clientHeight);
-				},100)
+				posArr.push($wrap_div_last.offsetTop + $wrap_div_last.clientHeight);
 			}
 		}
 
@@ -85,7 +80,7 @@
 				$$subMenu_li.forEach(function (el) {
 					for (let i = 0; i < len; i++) {
 						if (k >= posArr[i] && k < posArr[i + 1]) {
-							for(const el of $$subMenu_li) el.classList.remove(class_name)
+							for (const el of $$subMenu_li) el.classList.remove(class_name);
 							$$subMenu_li[i].classList.add(class_name);
 						}
 					}
@@ -102,16 +97,14 @@
 		}
 	}
 
-	function 돔시작서브메뉴조건(li){
+	function 돔시작서브메뉴조건(li) {
 		li.forEach(function (el, idx) {
 			el.addEventListener("click", function (e) {
 				e.preventDefault();
-	
+
 				var i = idx; // li의 위치값 찾기.
 				moveScroll(i);
 			});
 		});
 	}
-
-
 })();
