@@ -7,9 +7,14 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sass": "concurrently \"sass --watch public/scss/ui.scss:src/css/ui.css\" \"sass --watch public/scss/ui.scss:public/css/ui.css\""
   },
   "dependencies": {
-    "astro": "^3.4.3"
+    "astro": "^3.4.3",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
