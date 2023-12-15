@@ -105,7 +105,7 @@
 								}
 							}
 						}
-						@media (max-width: map-get($media-size,largeMo)) {
+						@media (max-width: map-get($media-size,smallDesk)) {
 							.img {
 								background-color: #F29F05;
 								@include bg-url(
