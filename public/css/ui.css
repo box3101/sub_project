@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -21610,14 +21611,6 @@ body.on {
     width: 100%;
   }
   /* main */
-  #main #wrap > section {
-    height: auto;
-    min-height: auto;
-    padding: 10rem 15px;
-  }
-  #navi {
-    display: none;
-  }
   #main .box2 ul {
     flex-wrap: wrap;
     gap: 43px;
@@ -21705,6 +21698,14 @@ body.on {
 @media (max-width: 600px) {
   html {
     font-size: 12px;
+  }
+  #main #wrap > section {
+    height: auto;
+    min-height: auto;
+    padding: 10rem 15px;
+  }
+  #navi {
+    display: none;
   }
   #main #wrap > section {
     padding: 7rem -15rem;
