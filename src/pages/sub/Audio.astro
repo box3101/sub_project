@@ -21,7 +21,9 @@ const pageTitle = `Home > Technology`;
 		<SubMenu items={technologyMenuItems} />
 		<SubContent>
 			<div id="wrap2" class="tech">
-				<SubCntBox subCntTit="TruWave™ Concept" id="box0">
+				<!-- <SubCntBox subCntTit="" id="box0"> -->
+				<section class="box" id="box0">
+					<h1 class="sub-title">TruWave<sup>TM</sup> Concept</h1>
 					<ul class="com-card type2">
 						{
 							TechCardAudio01.map((el, idx) => {
@@ -35,15 +37,32 @@ const pageTitle = `Home > Technology`;
 							})
 						}
 					</ul>
-				</SubCntBox>
-				<SubCntBox subCntTit="TruWave™ Audio Chain" id="box1">
-					<h3 data-aos="fade-up" data-aos-delay="100" class="com-title sm">Example Audio Chain Configuration</h3>
-					<ul data-aos="fade-up" data-aos-delay="200" class="custom-bullet-list">
-						<li>Audio chain can be re-arranged based on the system requirement</li>
+				</section>
+				<section class="box" id="box0">
+					<h1 class="sub-title">TruWave<sup>TM</sup> Audio Chain</h1>
+
+					<h3 data-aos="fade-up" data-aos-delay="100" class="com-title sm">
+						Example Audio Chain Configuration
+					</h3>
+					<ul
+						data-aos="fade-up"
+						data-aos-delay="200"
+						class="custom-bullet-list"
+					>
+						<li>
+							Audio chain can be re-arranged based on the system requirement
+						</li>
 						<li>Additional features can be implemented</li>
 					</ul>
-					<img data-aos="fade-up"  data-aos-delay="300" class="aa mt40 pb100" style="width: 100%;" src="../img/audio-img01.jpg" alt="">
-				</SubCntBox>
+					<img
+						data-aos="fade-up"
+						data-aos-delay="300"
+						class="aa mt40 pb100"
+						style="width: 100%;"
+						src="../img/audio-img01.jpg"
+						alt=""
+					/>
+				</section>
 			</div>
 		</SubContent>
 	</SubLayout>

@@ -82,7 +82,7 @@
 						background: $main-color;
 						border-radius: 50%;
 						left:-0.3825rem;
-						top: 0.875rem;
+						top: 0.9rem;
 					}
 					> a {
 						color: $main-color;
@@ -174,3 +174,13 @@
 }
 
 
+.mt-30{
+	margin-top: -2.575rem!important;
+}
+
+sup {
+	vertical-align: super;
+	font-size: smaller;
+	font-size: 1.5625rem;
+	font-weight: 500;
+}

@@ -25,7 +25,7 @@ window.addEventListener("scroll", function () {
     const $$link = document.querySelectorAll('.sub-layout .sub-menu > ul > li > a');
     $$link.forEach(function(el){
       el.addEventListener("click",function(e){
-        e.preventDefault();
+        // e.preventDefault();
         // e.stopPropagation();
       })
     })

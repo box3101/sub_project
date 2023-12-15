@@ -196,9 +196,11 @@
 		z-index: 100;
 		padding-top: 4rem;
 		z-index: 2;
-		width: calc(100% - 10px);
+		// width: calc(100% - 10px);
 		&.active {
-			display: block;
+			@media(max-width:map-get($media-size,smallDesk)){
+				display: block;
+			}
 		}
 		> li {
 			position: relative;

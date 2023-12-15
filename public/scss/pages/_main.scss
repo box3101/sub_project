@@ -79,13 +79,15 @@
 				flex: 1;
 				text-align: center;
 				cursor: pointer;
-				height: 43.75rem;
+				height: 45.625rem;
 				flex-grow: 1;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
-				transition: all 0.7s ease-in-out;
+				transition: all 1s ease-in-out;
+				border:1px solid rgba(255, 255, 255, 0.1);
+
 
 				@for $i from 1 to 6 {
 					&:nth-of-type(#{$i}) {
@@ -131,26 +133,31 @@
 				}
 				.img {
 					display: inline-flex;
-					margin-bottom: 4.0625rem;
 					width: 5rem;
 					height: 5rem;
 					align-items: center;
 					justify-content: center;
 					background: #000;
 					border-radius: 50%;
+					transition: all 0.7s ease-in-out;
 				}
 
 				@media (min-width: map-get($media-size,smallDesk)) {
 					&:hover {
-						flex: 2;
+						flex: 3;
 						background: rgba(0, 0, 0, 0.7);
 						.off {
 							opacity: 1;
 							visibility: visible;
 							height: auto;
 						}
+						p{
+							opacity: 1;
+							font-size: 1.5rem;
+						}
 						.img {
 							background: #f29f05;
+					margin-bottom: 4.0625rem;
 						}
 					}
 				}
@@ -160,7 +167,6 @@
 			opacity: 0;
 			visibility: hidden;
 			height: 0;
-			transition: all 1.6s ease-in-out;
 
 			li {
 				@include make-before {

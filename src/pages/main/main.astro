@@ -140,7 +140,7 @@ const pageTitle = `Home`;
 						<div class="img">
 							<!-- <img src="../img/ico01_off.svg" alt=""> -->
 						</div>
-						<ul class="off">
+						<ul class="off" data-aos="fade-up" data-aos-delay="300">
 							<li>RF2Digital Inc. is founded</li>
 							<li>Corporation R&D Center open</li>
 							<li>R&D MoU & ELA with Daimler for 5 years</li>
@@ -156,7 +156,7 @@ const pageTitle = `Home`;
 						<div class="img">
 							<!-- <img src="../img/ico02_off.svg" alt=""> -->
 						</div>
-						<ul class="off">
+						<ul class="off" data-aos="fade-up" data-aos-delay="300">
 							<li>Listed on National Venture Company</li>
 							<li>Selected as “First Penguin Company“ by KODIT</li>
 							<li>Awarded as Excellence Company in Patent reward</li>
@@ -171,7 +171,7 @@ const pageTitle = `Home`;
 						<div class="img">
 							<!-- <img src="../img/ico03_off.svg" alt=""> -->
 						</div>
-						<ul class="off">
+						<ul class="off" data-aos="fade-up" data-aos-delay="300">
 							<li>Listed as a SDR supplier at ‘L’ Tier1</li>
 							<li>Awarded a MP project for EU OEM</li>
 							<li>Listed for ARM Automotive Eco Partner</li>
@@ -182,7 +182,7 @@ const pageTitle = `Home`;
 						<div class="img">
 							<!-- <img src="../img/ico04_off.svg" alt=""> -->
 						</div>
-						<ul class="off">
+						<ul class="off" data-aos="fade-up" data-aos-delay="300">
 							<li>
 								Awarded additional MP project from ‘L’ Tier1 for Japan OEM
 							</li>
@@ -194,7 +194,7 @@ const pageTitle = `Home`;
 						<div class="img">
 							<!-- <img src="../img/ico05_off.svg" alt=""> -->
 						</div>
-						<ul class="off">
+						<ul class="off" data-aos="fade-up" data-aos-delay="300">
 							<li>
 								Awarded additional MP project from ‘L’ Tier1 for EU, Japan OEM
 							</li>
@@ -224,7 +224,6 @@ const pageTitle = `Home`;
 			</div>
 		</div>
 	</section>
-	
 
 	<ul id="navi">
 		<li><span>About us</span></li>
@@ -235,3 +234,21 @@ const pageTitle = `Home`;
 
 	<Footer type="main" />
 </Layout>
+
+<script>
+	// 메인 메뉴 토글
+	document.querySelector(".menu-toggle").addEventListener("click", function () {
+		const $logo = document.querySelector(".logo");
+		const $bg = document.querySelector(".header .bg");
+
+		$logo.classList.toggle("on");
+		if ($logo.classList.contains("on")) {
+			$logo.querySelector("img").setAttribute("src", "../img/logo-sub.png");
+			$bg.classList.add("on");
+		} else {
+			$logo.querySelector("img").setAttribute("src", "../img/logo.png");
+			$bg.classList.remove("on");
+		}
+
+	});
+</script>

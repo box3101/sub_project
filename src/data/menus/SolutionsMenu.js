@@ -1,7 +1,7 @@
 export const SolutionsMenu = [
 	{
 		name: "Alpha-Orion",
-		link: "",
+		link: "#box0",
 		level2: [
 			{ name: "Solution Concept" },
 			{ name: "SW Architecture" },
@@ -11,7 +11,7 @@ export const SolutionsMenu = [
 	},
 	{
 		name: "Alpha-Trinity",
-		link: "",
+		link: "#box3",
 		level2: [
 			{ name: "Solution Concept", link: "" },
 			{ name: "SW Architecture", link: "" },
@@ -20,7 +20,7 @@ export const SolutionsMenu = [
 	},
 	{
 		name: "Alpha-Infuser",
-		link: "",
+		link: "#box6",
 		level2: [
 			{ name: "Solution Concept", link: "" },
 			{ name: "SW Architecture", link: "" },
@@ -29,7 +29,7 @@ export const SolutionsMenu = [
 	},
 	{
 		name: "Advanced Features",
-		link: "",
+		link: "#box9",
 		level2: [
 			{ name: "Advanced Features", link: "" },
 		],
