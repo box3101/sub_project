@@ -73,6 +73,10 @@ body.on{
 
 				&::placeholder{color: #BBBBBB;font-weight: 400;}
 				&:hover{border: 2px solid rgb(242, 159, 5);}
+				&:focus {
+					outline: 2px solid rgb(242, 159, 5);
+					border: none;
+			}
 			}
 
 			textarea {
@@ -88,6 +92,10 @@ body.on{
 				font-family: 'Oswald';
 				&::placeholder{color: #BBBBBB;font-weight: 400;}
 				&:hover{border: 2px solid rgb(242, 159, 5);}
+				&:focus {
+					outline: 2px solid rgb(242, 159, 5);
+					border: none;
+			}
 			}
 
 			button {

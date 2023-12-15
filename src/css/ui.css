@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -20893,6 +20892,10 @@ body.on {
 .com-popup-wrap .com-popup .popup-info input:hover {
   border: 2px solid rgb(242, 159, 5);
 }
+.com-popup-wrap .com-popup .popup-info input:focus {
+  outline: 2px solid rgb(242, 159, 5);
+  border: none;
+}
 .com-popup-wrap .com-popup .popup-info textarea {
   width: 100%;
   height: 5.625rem;
@@ -20911,6 +20914,10 @@ body.on {
 }
 .com-popup-wrap .com-popup .popup-info textarea:hover {
   border: 2px solid rgb(242, 159, 5);
+}
+.com-popup-wrap .com-popup .popup-info textarea:focus {
+  outline: 2px solid rgb(242, 159, 5);
+  border: none;
 }
 .com-popup-wrap .com-popup .popup-info button {
   width: 100%;
