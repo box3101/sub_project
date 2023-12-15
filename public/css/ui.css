@@ -21635,13 +21635,6 @@ body.on {
     transition: 0s;
     padding: 2rem 0;
   }
-  #main .box3 .off {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 0s;
-  }
   #main .box4 .info {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -21706,6 +21699,13 @@ body.on {
   }
   #navi {
     display: none;
+  }
+  #main .box3 .off {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0s;
   }
   #main #wrap > section {
     padding: 7rem -15rem;

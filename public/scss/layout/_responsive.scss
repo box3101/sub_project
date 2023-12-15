@@ -23,7 +23,6 @@
   #main .box3 ul:not(.off){flex-direction: column;}
   #main .box3 .info{width: 100%;}
   #main .box3 ul:not(.off) > li{transition: 0s;padding: 2rem 0;}
-  #main .box3 .off{text-align: center;display: flex;flex-direction: column;align-items:center;transition: 0s;}
   #main .box4 .info{overflow-x: scroll;overflow-y: hidden;}
   .floating-banner{right: 10px;}
   /* sub */
@@ -50,6 +49,7 @@
   html{font-size: 12px;}
   #main #wrap>section{height: auto;min-height: auto;padding: 10rem 15px;}
   #navi{display: none;}
+  #main .box3 .off{text-align: center;display: flex;flex-direction: column;align-items:center;transition: 0s;}
   #main #wrap > section{padding: 7rem -15rem;}
   /* sub */
   .com-step {height: 24rem;}
