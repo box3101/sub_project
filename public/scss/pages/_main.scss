@@ -148,10 +148,14 @@
 					&:hover {
 						flex: 3;
 						background: rgba(0, 0, 0, 0.7);
+						>div{
+							position: relative;
+    top: -14%;
+						}
 						.off {
 							opacity: 1;
 							visibility: visible;
-							height: auto;
+							// height: auto;
 						}
 						p{
 							opacity: 1;

@@ -79,8 +79,7 @@
 					message: document.querySelector("#message").value,
 				};
 
-				// EmailJS를 이용해 이메일 보내기
-				emailjs.send("service_xyy2kh6", "ex1", data).then(
+				emailjs.send("test", "template_uh7y9se", data).then(
 					function (response) {
 						console.log("Success", response.status, response.text);
 						alert("Your email request has been sent!")
@@ -93,7 +92,6 @@
 				);
 			});
 
-		// 기존 팝업 닫기 로직 (변경 없음)
 		setTimeout(function () {
 			const $close = document.querySelector(".com-popup-wrap .close");
 			const $body = document.querySelector("body");

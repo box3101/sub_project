@@ -21272,10 +21272,13 @@ body.on {
     flex: 3;
     background: rgba(0, 0, 0, 0.7);
   }
+  #main .box3 ul:not(.off) > li:hover > div {
+    position: relative;
+    top: -14%;
+  }
   #main .box3 ul:not(.off) > li:hover .off {
     opacity: 1;
     visibility: visible;
-    height: auto;
   }
   #main .box3 ul:not(.off) > li:hover p {
     opacity: 1;
@@ -21767,7 +21770,7 @@ body.on {
 }
 @media (max-width: 600px) {
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
   #navi {
     display: none;
