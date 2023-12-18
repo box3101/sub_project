@@ -134,7 +134,7 @@
 	.mobile-nav {
 		position: absolute;
 		display: none;
-		right: 0.9375rem;
+		right: 15px;
 		top: 54%;
 		transform: translateY(-50%);
 		z-index: 101;
@@ -208,7 +208,7 @@
 			&:nth-of-type(2),&:nth-of-type(3) {
 				@include make-before {
 					position: absolute;
-					right: 10px;
+					right: 15px;
 					top: 30px;
 					transform: translateY(-7%);
 					@include bg-url("img", "header-mobile-gnb-arw-down.png");

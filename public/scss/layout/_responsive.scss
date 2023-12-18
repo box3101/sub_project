@@ -9,7 +9,7 @@
   .header .logo{left: 15px;}
   .sub-layout{padding: 2rem 0;padding-top: 0;}
   .sub-layout .sub-menu > ul{display: none;}
-  .sub-layout .sub-menu{top:5.0rem;z-index: 10;}
+  .sub-layout .sub-menu{top:4.9rem;z-index: 10;}
   .sub-layout .mobile-sub-menu{display: block;width: 100%;height: 48px;top: 105px;background: #eee;border:none;    border-bottom: 1px solid #8d8d8d;box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;cursor: pointer;z-index: 10; padding: 0 15px;}
   .sub-layout .sub-menu .mobile-sub-menu option{height: 30px; font-size: 1.2rem;cursor: pointer;}
   .sub-layout .inner{flex-direction: column;}
@@ -36,12 +36,12 @@
   .com-step-wrap li:nth-of-type(1),.com-step-wrap li:nth-of-type(2),.com-step-wrap li:nth-of-type(3),.com-step-wrap li:nth-of-type(4){right:auto}
   .com-step .info{width:calc(100% - 10.3125rem);padding-left: 1.8125rem;}
   .com-step .title-wrap{justify-content: center;}
-  .sub-banner .inner article h1{padding-left: 13px;}
+  .sub-banner .inner article h1{padding-left: 15px;}
   .header.sub.on{height: 5rem;}
   .custom-bullet-list{flex-direction: column;}
   /* scoll */
   .header.on{height: 5rem;}
-  #main .box3 .off{opacity:1; height: auto;visibility:visible}
+  #main .box3 .off{opacity:1; height: auto;visibility:visible;margin-top: 1.875em;}
   section.box{overflow-x: hidden;}
   .sub-info .solu-menu09 .tab-content img{
     height: auto!important;
@@ -90,4 +90,16 @@
     visibility: hidden;
   }
   .aa.pb100{margin-bottom: 100px;}
+  .sub-info .solu-menu09 .tab-list .tab-button{
+    font-size: 1rem !important;
+    word-break: break-word;
+    padding: none!important;
+    line-height: 1.4!important;
+  }
+  .sub-info .solu-menu09 .tab-content .con-left-wrap .tit{
+    font-size: 2rem!important;
+  }
+  .sub-info .solu-menu09 .tab-content .con-left-wrap .txt li{
+    font-size: 1.2rem!important;
+  }
 }
