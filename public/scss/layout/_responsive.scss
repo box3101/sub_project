@@ -1,5 +1,5 @@
 @media(max-width:map-get($media-size,smallDesk)){
-  html{font-size: 14px;}
+  html{font-size: 15px;}
   // .header{background: #fff;}
   .header .gnb{display: none;}
   .header .mobile-nav{display: block;}
@@ -43,9 +43,12 @@
   .header.on{height: 5rem;}
   #main .box3 .off{opacity:1; height: auto;visibility:visible}
   section.box{overflow-x: hidden;}
+  .sub-info .solu-menu09 .tab-content img{
+    height: auto;
+  }
 }
 @media(max-width:map-get($media-size,tablet)){
-  html{font-size: 13px;}
+  html{font-size: 14px;}
   /* sub */
   .com-step{height: 14rem;}
   .com-card > li{flex:0 0 100%;}
@@ -53,7 +56,7 @@
   
 }
 @media(max-width:map-get($media-size,largeMo)){
-  html{font-size: 12px;}
+  html{font-size: 13px;}
   #navi{display: none;}
   #main #wrap > section:nth-of-type(1){height: auto;}
 

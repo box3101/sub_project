@@ -21587,7 +21587,7 @@ body.on {
 }
 @media (max-width: 1367px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
   .header .gnb {
     display: none;
@@ -21732,10 +21732,13 @@ body.on {
   section.box {
     overflow-x: hidden;
   }
+  .sub-info .solu-menu09 .tab-content img {
+    height: auto;
+  }
 }
 @media (max-width: 800px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
   /* sub */
   .com-step {
@@ -21750,7 +21753,7 @@ body.on {
 }
 @media (max-width: 600px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
   }
   #navi {
     display: none;
