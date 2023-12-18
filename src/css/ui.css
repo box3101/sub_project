@@ -20430,6 +20430,7 @@ a {
   color: #555;
   padding: 15px 3vw;
   font-size: 1.3rem;
+  padding-left: calc(3vw + 15px);
 }
 .header .mobile-menu .submenu-toggle {
   cursor: pointer;
@@ -22243,6 +22244,12 @@ body.on {
   }
   .sub-contents .sub-info .intro-menu03 .radio-wrap {
     gap: 1.375rem;
+  }
+  .mobile-sub-menu {
+    appearance: none;
+    background: url("../../img/header-mobile-gnb-arw-down.png") no-repeat right 15px center !important;
+    background-size: 14px !important;
+    background-color: #eee !important;
   }
 }
 @media (max-width: 1099px) {
