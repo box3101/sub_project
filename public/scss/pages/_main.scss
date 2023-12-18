@@ -85,7 +85,7 @@
 				align-items: center;
 				justify-content: center;
 				flex-direction: column;
-				transition: all 1s ease-in-out;
+				transition: all 1s;
 				border:1px solid rgba(255, 255, 255, 0.1);
 
 
@@ -130,6 +130,7 @@
 					opacity: 0.7;
 					font-size: 1.375rem;
 					margin-bottom: 1.875rem;
+					
 				}
 				.img {
 					display: inline-flex;
@@ -139,7 +140,8 @@
 					justify-content: center;
 					background: #000;
 					border-radius: 50%;
-					transition: all 0.7s ease-in-out;
+					-webkit-transition: all .5s;
+   				 transition-delay: 0s;
 				}
 
 				@media (min-width: map-get($media-size,smallDesk)) {

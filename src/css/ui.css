@@ -21046,7 +21046,7 @@ body.on {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: all 1s ease-in-out;
+  transition: all 1s;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 #main .box3 ul:not(.off) > li:nth-of-type(1) .img {
@@ -21263,7 +21263,8 @@ body.on {
   justify-content: center;
   background: #000;
   border-radius: 50%;
-  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.5s;
+  transition-delay: 0s;
 }
 @media (min-width: 1367px) {
   #main .box3 ul:not(.off) > li:hover {
