@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -22476,6 +22475,11 @@ body.on {
   }
   .sub-contents .sub-info .tab-content img {
     width: 100%;
+  }
+}
+@media (max-width: 466px) {
+  .sub-contents .sub-info .sw-type .sw-type-wrap .sw-type-tit {
+    display: flex;
   }
 }
 /*이찬용*/
