@@ -46,15 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
 		  const $logo = document.querySelector('.logo');
 			const $bg = document.querySelector('.header .bg');
 
-			// $logo.classList.toggle("on");
-			// if($logo.classList.contains("on")){
-			// 	$logo.querySelector("img").setAttribute("src","../img/logo-sub.png");
-			// 	$bg.classList.add("on");
+			$logo.classList.toggle("on");
+			if($logo.classList.contains("on")){
+				// $logo.querySelector("img").setAttribute("src","../img/logo-sub.png");
+				$bg.classList.add("on");
 				
-			// }else{
-			// 	$logo.querySelector("img").setAttribute("src","../img/logo.png");
-			// 	$bg.classList.remove("on");
-			// }
+			}else{
+				// $logo.querySelector("img").setAttribute("src","../img/logo.png");
+				$bg.classList.remove("on");
+			}
 
 			setTimeout(function(){
 		  	document.querySelector('.mobile-menu').classList.toggle('active');
