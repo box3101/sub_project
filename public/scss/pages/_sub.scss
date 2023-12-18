@@ -233,3 +233,8 @@
 	visibility: hidden; /* 투명하게 처리 */
 }
 
+@media(max-width:map-get($media-size,smallDesk)){
+	.com-card > li {
+		flex: calc(49% - 5px) !important
+	}
+}
