@@ -21735,6 +21735,15 @@ body.on {
   .sub-info .solu-menu09 .tab-content img {
     height: auto !important;
   }
+  .sub-info .solu-menu09 .tab-list .tab-button {
+    font-size: 1.25rem !important;
+    word-break: break-word;
+    padding: 0 1rem !important;
+    line-height: 1.4 !important;
+  }
+  .sub-info .solu-menu09 .tab-content .con-left-wrap .tit {
+    font-size: 3rem !important;
+  }
 }
 @media (max-width: 800px) {
   html {
