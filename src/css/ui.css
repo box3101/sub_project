@@ -21644,6 +21644,9 @@ body.on {
     margin-left: -15px;
     width: calc(100% + 30px);
   }
+  .custom-bullet-list li {
+    text-align: center;
+  }
   /* main */
   #main #wrap > section {
     height: auto;
@@ -21725,6 +21728,9 @@ body.on {
     opacity: 1;
     height: auto;
     visibility: visible;
+  }
+  section.box {
+    overflow-x: hidden;
   }
 }
 @media (max-width: 800px) {
