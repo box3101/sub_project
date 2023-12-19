@@ -46,37 +46,25 @@ let counter = 0;
 </nav>
 
 <script>
-	document
-		.querySelector(".mobile-sub-menu")
-		.addEventListener("change", function (e) {
-			var selectedValue = this.value;
-			var stickyElementHeight = 150; // 상단 고정 요소의 높이
+document.querySelector(".mobile-sub-menu").addEventListener("change", function (e) {
+    var selectedValue = this.value;
+    var targetElement = document.querySelector(selectedValue);
+    if (targetElement) {
+        var targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        
+        window.scrollTo({
+            top: targetPosition - 150, // Adjust for any fixed elements, if necessary
+            behavior: "smooth"
+        });
+    }
+});
 
-			var targetElement = document.querySelector(selectedValue);
-			if (targetElement) {
-				var targetPosition = targetElement.offsetTop + 110;
-				if (window.matchMedia("(max-width: 768px)").matches) {
-					targetPosition = targetElement.offsetTop + 80;
-				}
-
-				// 스크롤 이동
-				window.scrollTo({
-					top: targetPosition,
-					behavior: "smooth", // 부드러운 스크롤 효과
-				});
-			}
-		});
-
-	// Prevent default scrolling on touchstart for iOS devices
-	// Target only iOS devices
+// iOS devices: Prevent scrolling on initial touch of the select element
 if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-    document.querySelector(".mobile-sub-menu").addEventListener("focus", function(e) {
-        var scrollPosition = window.scrollY; // Save the current scroll position
-
-        window.setTimeout(function() {
-            window.scrollTo(0, scrollPosition); // Restore the scroll position after a short delay
-        }, 0);
-    }, true);
+    document.querySelector(".mobile-sub-menu").addEventListener("touchend", function (e) {
+        // Delay the focus event to prevent the default iOS scroll
+        setTimeout(() => { this.blur(); }, 0);
+    });
 }
 
 </script>
