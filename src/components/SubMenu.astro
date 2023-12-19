@@ -48,7 +48,8 @@ let counter = 0;
 <script>
 	document
 		.querySelector(".mobile-sub-menu")
-		.addEventListener("change", function () {
+		.addEventListener("change", function (e) {
+			e.preventDefault();
 			var selectedValue = this.value;
 			var stickyElementHeight = 150; // 상단 고정 요소의 높이
 
