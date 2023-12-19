@@ -52,15 +52,12 @@ let counter = 0;
 			var selectedValue = this.value;
 			var stickyElementHeight = 150; // 상단 고정 요소의 높이
 
-			// 해당 앵커로 이동하지 않고, 직접 위치 계산
 			var targetElement = document.querySelector(selectedValue);
 			if (targetElement) {
 				var targetPosition = targetElement.offsetTop + 110;
 				if (window.matchMedia("(max-width: 768px)").matches) {
 					targetPosition = targetElement.offsetTop + 80;
 				}
-				// Prevent default only if target element exists
-				e.preventDefault();
 
 				// 스크롤 이동
 				window.scrollTo({
@@ -70,12 +67,12 @@ let counter = 0;
 			}
 		});
 
-	// Optional: Disable focus on the select element on touch devices
-	// if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-	// 	document
-	// 		.querySelector(".mobile-sub-menu")
-	// 		.addEventListener("touchend", function (e) {
-	// 			e.preventDefault();
-	// 		});
-	// }
+	// Prevent default scrolling on touchstart for iOS devices
+	if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+		document
+			.querySelector(".mobile-sub-menu")
+			.addEventListener("touchstart", function (e) {
+				e.preventDefault(); // Prevent the default scroll to top behavior
+			});
+	}
 </script>
