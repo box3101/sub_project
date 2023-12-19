@@ -20639,6 +20639,13 @@ section.box {
   padding-bottom: 6.75rem;
 }
 
+/* Targeting WebKit-based browsers (like Safari on iPhone and iPad) */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select {
+    font-size: 20px; /* Larger font size for iPhone and iPad */
+    color: blue; /* Different color for iPhone and iPad */
+  }
+}
 .sub-banner {
   margin-top: 5rem;
   height: 12.5rem;
