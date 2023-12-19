@@ -24,10 +24,17 @@ window.addEventListener("scroll", function () {
   if($subMenu){
     const $$link = document.querySelectorAll('.sub-layout .sub-menu > ul > li > a');
     $$link.forEach(function(el){
-      el.addEventListener("click",function(e){
-        // e.preventDefault();
-        // e.stopPropagation();
-      })
-    })
+      el.addEventListener("click",(e)=>{
+        e.preventDefault();
+        if(e.target.closest("li").querySelector("a") === el){
+          let scollDiv = document.querySelector('#' + el.getAttribute("href"));
+          let scollValue = scollDiv.offsetTop + 265;
+          window.scrollTo({
+            top: scollValue,
+            behavior: "smooth", // 부드러운 스크롤 효과
+          });
+        }
+      });
+    });
   }
 })();

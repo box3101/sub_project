@@ -55,9 +55,10 @@ let counter = 0;
 			// 해당 앵커로 이동하지 않고, 직접 위치 계산
 			var targetElement = document.querySelector(selectedValue);
 			if (targetElement) {
-				var targetPosition =
-					targetElement.getBoundingClientRect().top + window.pageYOffset - stickyElementHeight;
-
+				var targetPosition =targetElement.offsetTop + 110;
+				if (window.matchMedia("(max-width: 768px)").matches) {
+					targetPosition =targetElement.offsetTop + 80;
+			  } 
 				// 스크롤 이동
 				window.scrollTo({
 					top: targetPosition,
