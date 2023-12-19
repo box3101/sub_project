@@ -16,7 +16,7 @@ const navMenu = [
     title : "Solutions",
     url : `Solutions`,
     items : [
-      { url : `Solutions` , title: "SDR Technology"},
+      { url : `Solutions` , title: "- SDR Technology"},
     ],
   },
 ]
