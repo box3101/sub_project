@@ -22,63 +22,60 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 
 	//3 모든 .sub-menu의 마우스 범위를 넘어가면 든 GBN>LI의 Class on을 제거
-  const $$sub_menu = document.querySelectorAll('.sub-menu');
-  
-  $$sub_menu.forEach(function(el){
-    el.addEventListener("mouseleave",function(){
-      $$gnb_li.forEach(function (el) {
-        el.classList.remove("on");
-      });
-    })
-  })
+	const $$sub_menu = document.querySelectorAll(".sub-menu");
+
+	$$sub_menu.forEach(function (el) {
+		el.addEventListener("mouseleave", function () {
+			$$gnb_li.forEach(function (el) {
+				el.classList.remove("on");
+			});
+		});
+	});
 });
 
 // 모바일 메뉴
-document.addEventListener('DOMContentLoaded', function() {
-
-	const $mobileMenu = document.querySelector('.mobile-menu');
-	const $$subMenu = document.querySelectorAll('.submenu')
-	const $$subLink = document.querySelectorAll('.submenu-link')
+document.addEventListener("DOMContentLoaded", function () {
+	const $mobileMenu = document.querySelector(".mobile-menu");
+	const $$subMenu = document.querySelectorAll(".submenu");
+	const $$subLink = document.querySelectorAll(".submenu-link");
 
 	// 메인 메뉴 토글
-	document.querySelector('.menu-toggle').addEventListener('click', function() {
+	document.querySelector(".menu-toggle").addEventListener("click", function () {
+		const $logo = document.querySelector(".logo");
+		const $bg = document.querySelector(".header .bg");
 
-		  const $logo = document.querySelector('.logo');
-			const $bg = document.querySelector('.header .bg');
+		$logo.classList.toggle("on");
+		if ($logo.classList.contains("on")) {
+			// $logo.querySelector("img").setAttribute("src","../img/logo-sub.png");
+			$bg.classList.add("on");
+		} else {
+			// $logo.querySelector("img").setAttribute("src","../img/logo.png");
+			$bg.classList.remove("on");
+		}
 
-			$logo.classList.toggle("on");
-			if($logo.classList.contains("on")){
-				// $logo.querySelector("img").setAttribute("src","../img/logo-sub.png");
-				$bg.classList.add("on");
-				
-			}else{
-				// $logo.querySelector("img").setAttribute("src","../img/logo.png");
-				$bg.classList.remove("on");
-			}
-
-			setTimeout(function(){
-		  	document.querySelector('.mobile-menu').classList.toggle('active');
-				document.querySelector('.menu-toggle').classList.toggle('active');
-			},30)
+		setTimeout(function () {
+			document.querySelector(".mobile-menu").classList.toggle("active");
+			document.querySelector(".menu-toggle").classList.toggle("active");
+		}, 30);
 	});
 
 	// 서브메뉴 토글
-	$mobileMenu.addEventListener("click",function(e){
+	$mobileMenu.addEventListener("click", function (e) {
 		let target = e.target;
-		
-		for(const el of $$subLink){
+
+		for (const el of $$subLink) {
 			const $subMenu = el.parentElement.querySelector(".submenu");
-			if(target == el && $subMenu){
+			if (target == el && $subMenu) {
 				e.preventDefault();
-				if(!$subMenu.classList.contains("active")){
-					for(const el2 of $$subMenu) el2.classList.remove("active");
+				if (!$subMenu.classList.contains("active")) {
+					for (const el2 of $$subMenu) el2.classList.remove("active");
 					$subMenu.classList.add("active");
 					el.closest("li").classList.add("on");
-				}else{
+				} else {
 					$subMenu.classList.remove("active");
 					el.closest("li").classList.remove("on");
 				}
 			}
 		}
-	})
+	});
 });

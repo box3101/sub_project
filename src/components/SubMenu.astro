@@ -8,7 +8,10 @@ let counter = 0;
 		{
 			items.map((el, idx) => (
 				<li>
-					<a href={el.link}> <span>{el.name}</span></a>
+					<a href={el.link}>
+						{" "}
+						<span>{el.name}</span>
+					</a>
 					{/*level2가 있을 경우 */}
 					{el.level2 && el.level2.length > 0 && (
 						<ul class="level2-menu">
@@ -21,19 +24,19 @@ let counter = 0;
 					)}
 				</li>
 			))
-		} 
+		}
 	</ul>
 
 	<!-- 모바일용 select 메뉴 -->
-	<select class="mobile-sub-menu" onchange="location = this.value;">
+	<select class="mobile-sub-menu" ">
 		{
 			items.map((el) => {
-				if(el.level2){
+				if (el.level2) {
 					return el.level2.map((a) => {
 						const uniqueId = `box${counter++}`;
 						return <option value={`#${uniqueId}`}>{a.name}</option>;
-					})
-				}else{
+					});
+				} else {
 					const uniqueId = `box${counter++}`;
 					return <option value={`#${uniqueId}`}>{el.name}</option>;
 				}
@@ -41,3 +44,25 @@ let counter = 0;
 		}
 	</select>
 </nav>
+
+<script>
+	document
+		.querySelector(".mobile-sub-menu")
+		.addEventListener("change", function () {
+			var selectedValue = this.value;
+			var stickyElementHeight = 150; // 상단 고정 요소의 높이
+
+			// 해당 앵커로 이동하지 않고, 직접 위치 계산
+			var targetElement = document.querySelector(selectedValue);
+			if (targetElement) {
+				var targetPosition =
+					targetElement.getBoundingClientRect().top + window.pageYOffset - stickyElementHeight;
+
+				// 스크롤 이동
+				window.scrollTo({
+					top: targetPosition,
+					behavior: "smooth", // 부드러운 스크롤 효과
+				});
+			}
+		});
+</script>

@@ -3,7 +3,7 @@ const tabCnt = document.querySelectorAll(".tab-content-wrap");
 const tabList = document.querySelector(".tab-list");
 
 // 탭 클릭시 클릭 이벤트 호출
-if(tabList){
+if (tabList) {
 	tabList.addEventListener("click", function (e) {
 		for (let i = 0; i < tabBtn.length; i++) {
 			if (e.target == tabBtn[i]) {
@@ -11,7 +11,7 @@ if(tabList){
 			}
 		}
 	});
-	
+
 	function tabClickEvent(e) {
 		let current = e.target;
 		for (let i = 0; i < tabBtn.length; i++) {
@@ -24,5 +24,4 @@ if(tabList){
 		// 현재 클릭한 탭의 data 값을 이용하여 show 추가
 		tabCnt[current.dataset.id].classList.add("show");
 	}
-	
 }
