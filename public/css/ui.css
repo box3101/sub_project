@@ -20432,7 +20432,7 @@ a {
   color: #555;
   padding: 15px 3vw;
   font-size: 1.3rem;
-  padding-left: calc(3vw + 15px);
+  padding-left: calc(2vw + 15px);
 }
 .header .mobile-menu .submenu-toggle {
   cursor: pointer;
