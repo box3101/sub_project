@@ -49,17 +49,19 @@ let counter = 0;
 	document
 		.querySelector(".mobile-sub-menu")
 		.addEventListener("change", function (e) {
-			e.preventDefault();
 			var selectedValue = this.value;
 			var stickyElementHeight = 150; // 상단 고정 요소의 높이
 
 			// 해당 앵커로 이동하지 않고, 직접 위치 계산
 			var targetElement = document.querySelector(selectedValue);
 			if (targetElement) {
-				var targetPosition =targetElement.offsetTop + 110;
+				var targetPosition = targetElement.offsetTop + 110;
 				if (window.matchMedia("(max-width: 768px)").matches) {
-					targetPosition =targetElement.offsetTop + 80;
-			  } 
+					targetPosition = targetElement.offsetTop + 80;
+				}
+				// Prevent default only if target element exists
+				e.preventDefault();
+
 				// 스크롤 이동
 				window.scrollTo({
 					top: targetPosition,
@@ -67,4 +69,13 @@ let counter = 0;
 				});
 			}
 		});
+
+	// Optional: Disable focus on the select element on touch devices
+	if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+		document
+			.querySelector(".mobile-sub-menu")
+			.addEventListener("touchend", function (e) {
+				e.preventDefault();
+			});
+	}
 </script>
