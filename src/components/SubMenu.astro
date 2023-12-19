@@ -68,11 +68,15 @@ let counter = 0;
 		});
 
 	// Prevent default scrolling on touchstart for iOS devices
-	if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-		document
-			.querySelector(".mobile-sub-menu")
-			.addEventListener("touchstart", function (e) {
-				e.preventDefault(); // Prevent the default scroll to top behavior
-			});
-	}
+	// Target only iOS devices
+if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+    document.querySelector(".mobile-sub-menu").addEventListener("focus", function(e) {
+        var scrollPosition = window.scrollY; // Save the current scroll position
+
+        window.setTimeout(function() {
+            window.scrollTo(0, scrollPosition); // Restore the scroll position after a short delay
+        }, 0);
+    }, true);
+}
+
 </script>
