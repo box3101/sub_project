@@ -20394,9 +20394,9 @@ a {
   transform: translateY(-7%);
   background-image: url("../img/header-mobile-gnb-arw-down.png");
   background-repeat: no-repeat;
-  background-size: 21px 12px;
-  width: 21px;
-  height: 55px;
+  background-size: 16px;
+  width: 20px;
+  height: 20px;
 }
 .header .mobile-menu > li:nth-of-type(2).on:before, .header .mobile-menu > li:nth-of-type(3).on:before {
   content: "";

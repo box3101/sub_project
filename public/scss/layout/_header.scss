@@ -194,7 +194,7 @@
 		width: 100%;
 		position: relative;
 		z-index: 100;
-		padding-top: 4rem;
+		padding-top: 5rem;
 		z-index: 2;
 		// width: calc(100% - 10px);
 		&.active {
@@ -209,16 +209,16 @@
 				@include make-before {
 					position: absolute;
 					right: 15px;
-					top: 30px;
+					top: 25px;
 					transform: translateY(-7%);
 					@include bg-url("img", "header-mobile-gnb-arw-down.png");
-					background-size: 21px 12px;
-					width: 21px;
-					height: 55px;
+					background-size: 16px 16px;
+					width: 20px;
+					height: 20px;
 				}
 				&.on {
 					@include make-before {
-						top: -18px;
+						top: 20px;
 						transform: rotate(-180deg);
 					}
 				}
@@ -236,7 +236,7 @@
 
 			.submenu {
 				display: none; // 서브메뉴를 기본적으로 숨깁니다.
-				padding-left: 10px;
+				// padding-left: 10px;
 				&.active {
 					display: block;
 				}
